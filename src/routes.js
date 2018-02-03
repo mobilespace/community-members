@@ -6,12 +6,14 @@ import App from './App';
 import NotFound from './NotFound';
 
 // Community Members pages
+import Monte from './members/MonteThakkar';
 
 const Routes = (props) => {
   return (
     <Router {...props}>
       <Switch>
         <Route exact path="/" component={App} />
+        <Route path="/monte" component={Monte} />
         <Route component={NotFound} />
       </Switch>
     </Router>
