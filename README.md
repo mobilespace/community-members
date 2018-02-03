@@ -1,26 +1,32 @@
-## Community Members
+## MobileSpace - Community Members
 
-Are you new community member? Send your test pull requests here! Someone will review (and merge) them.
+This repo serves as an introduction to git & github for MobileSpace Season 2 community members.
+
+#### [Live Demo]()
 
 ---
 
-### Not sure what to do?
+### Getting started
 
-It's hard to get started when you're not sure about what to do, so here are some suggestions:
+Are you part of the MobileSpace Season 2 community? If so, please send a pull requests here! Someone will review (and merge) it.
 
-- Try adding a file with your username in the title. For example, my username is *monte9**, so I'd create a file named `monte9.html`.
+#### Objectives
 
-- Add your username to `human.txt`.
+- Learn the basics of Git & Github by forking this repo, making changes and submitted a PR
+- Learn the basics of React & React Router by making the necessary changes to add yourself to this website
 
-- (:+1: Bonus) Sort the `human.txt`, so the file is in an alphabetical order.
+#### TODO
 
-- (:+1: Bonus) Add some fun content to your own file.
+- [ ] Submit a PR adding yourself to this website
 
-### Not sure how to do it?
+- [ ] [:star: **Bonus**] Change the `background` & `font-family` on your own homepage
 
-1. You should **fork** this repository using the <kbd>Fork</kbd> button on the top right, see [this guide](https://help.github.com/articles/fork-a-repo/#fork-an-example-repository).
+- [ ] [:star: **Bonus**] Change the layout on your own homepage and add more relevant information to it
 
-2. Make your changes on your fork however you want. The easiest way is to make them through GitHub's interface. See [this guide](https://guides.github.com/activities/hello-world/#branch) for details. Note that you should be on a url like `https://github.com/your_username/hello-world` when you follow the steps in the guide.
+
+### Resources
+
+- Checkout [this PR](https://github.com/mobilespace/community-members/pull/1/files) which shows you all the changes needed to submit a PR
 
 ### Problems?
 
@@ -28,6 +34,4 @@ Feel free to [**create an issue**] when you have questions.
 
 ### Finally
 
-This repository should be safe place for everyone to try things in. Be nice to each other.
-
-If you're already an experienced GitHub user and wants to help, please add your username to the [MAINTAINERS list](MAINTAINERS.md), create a pull request, and I'll merge it after adding you as a collaborator, so you'll be able to merge pull requests in the future. Before that happens, feel free to review pull requests and comment when someone needs help.
+This repository should be safe place for everyone to try things in. Be nice to each other and in case you have any questions or need help reach to @monte9 (on github or slack).
