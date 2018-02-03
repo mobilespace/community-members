@@ -2,7 +2,7 @@
 
 This repo serves as an introduction to Git & Github for MobileSpace Season 2 community members.
 
-## [Demo]()
+### [Demo](https://mobilespace-members.netlify.com/)
 
 ## Getting started
 
@@ -32,4 +32,4 @@ Feel free to [**create an issue**](https://github.com/mobilespace/community-memb
 
 ## Finally
 
-This repository should be safe place for everyone to try things in. Be nice to each other and in case you have any questions or need help plesae reach out to **@monte9** (on Github or MobileSpace Slack)
+This repository should be safe place for everyone to try things in. Be nice to each other and in case you have any questions or need help please reach out to **@monte9** (on Github or MobileSpace Slack)
