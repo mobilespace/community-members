@@ -6,6 +6,9 @@ import './styles/App.css';
 // List of members
 const MONTE_AVATAR = 'https://avatars2.githubusercontent.com/u/7840686?s=400&v=4'
 const RYAN_AVATAR = 'https://avatars3.githubusercontent.com/u/5275250?s=460&v=4'
+const THOMAS_AVATAR = 'http://thomaszhu.com/resources/thomas_avatar.jpeg'
+const BHAVESH_AVATAR = 'https://avatars3.githubusercontent.com/u/13439148?s=460&v=4'
+const GIRISH_AVATAR = 'https://avatars2.githubusercontent.com/u/6697235?s=460&v=4'
 
 export default class App extends Component {
   render() {
@@ -19,6 +22,15 @@ export default class App extends Component {
           <Link to="/ryan">
             <img className="landing-page-avatar" src={RYAN_AVATAR} />
           </Link> 
+          <Link to="/thomas">
+            <img className="landing-page-avatar" src={THOMAS_AVATAR} />
+          </Link>
+          <Link to="/bhavesh"> 
+            <img className="landing-page-avatar" src={BHAVESH_AVATAR}/> 
+           </Link>
+          <Link to="/girish">
+            <img className="landing-page-avatar" src={GIRISH_AVATAR} />
+          </Link>
         </div>
       </div>
     );
