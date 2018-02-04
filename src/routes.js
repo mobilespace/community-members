@@ -7,6 +7,7 @@ import NotFound from './NotFound';
 
 // Community Members pages
 import Monte from './members/MonteThakkar';
+import Thomas from './members/ThomasZhu';
 import Bhavesh from './members/BhaveshChowdhury';
 import Girish from './members/GirishRawat';
 
@@ -16,6 +17,7 @@ const Routes = (props) => {
       <Switch>
         <Route exact path="/" component={App} />
         <Route path="/monte" component={Monte} />
+        <Route path="/thomas" component={Thomas} />
         <Route path="/bhavesh" component={Bhavesh} />
         <Route path="/girish" component={Girish} />
         <Route component={NotFound} />
