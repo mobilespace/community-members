@@ -17,7 +17,7 @@ export default class MonteThakkar extends Component {
         <div className="avatar-container">
           <img className="avatar" src={MONTE_AVATAR} />
         </div>
-        <div className="title">Monte Thakkar</div>
+        <div className="title">Thomas Zhu</div>
         <div className="subtitle">Explorer of Space</div>
         <div className="links-container">
           <a href="https://github.com/thomashzhu" className="link">
