@@ -5,6 +5,7 @@ import './styles/App.css';
 
 // List of members
 const MONTE_AVATAR = 'https://avatars2.githubusercontent.com/u/7840686?s=400&v=4'
+const EMANUEL_AVATAR = 'https://scontent-lax3-2.cdninstagram.com/vp/1ee634d2bdf29d5a327858a15ccfdf42/5B26F2E8/t51.2885-19/s150x150/18160691_1198139890329419_5383374010954285056_a.jpg'
 const JAHON_AVATAR = 'https://avatars0.githubusercontent.com/u/25942541?s=460&v=4'
 const SUKHJIT_AVATAR = 'https://avatars1.githubusercontent.com/u/18251293?s=400&u=1ee2922f2dd90d94bb4efbec7cc815ef510a0ad7&v=4'
 const MITUL_AVATAR = 'https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAqdAAAAJGYzNDZlZmE5LWUwYWEtNGVlMC1hODE5LTBmY2JkYTQ2ZDEwOA.jpg'
@@ -25,6 +26,9 @@ export default class App extends Component {
           <Link to="/monte">
             <img className="landing-page-avatar" src={MONTE_AVATAR} />
           </Link>
+          <Link to="/emanuel">
+            <img className="landing-page-avatar" src={EMANUEL_AVATAR} />
+          </Link> 
           <Link to="/affaan">
             <img className="landing-page-avatar" src={AFFAAN_AVATAR} />
           </Link>
@@ -33,7 +37,7 @@ export default class App extends Component {
           </Link>
           <Link to="/jahon">
             <img className="landing-page-avatar" src={JAHON_AVATAR} />
-         </Link>
+          </Link>
           <Link to="/sukhjit">
             <img className="landing-page-avatar" src={SUKHJIT_AVATAR} />
           </Link>

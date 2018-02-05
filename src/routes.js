@@ -7,6 +7,7 @@ import NotFound from './NotFound';
 
 // Community Members pages
 import Monte from './members/MonteThakkar';
+import Emanuel from './members/EmanuelSaunders'; 
 import Nicholas from './members/NicholasSzeto';
 import Jahon from './members/JakhongirKhusanov';
 import Sukhjit from './members/SukhjitSingh';
@@ -17,12 +18,14 @@ import Bhavesh from './members/BhaveshChowdhury';
 import Girish from './members/GirishRawat';
 import Affaan from './members/AffaanGhazzali';
 
+
 const Routes = (props) => {
   return (
     <Router {...props}>
       <Switch>
         <Route exact path="/" component={App} />
         <Route path="/monte" component={Monte} />
+        <Route path="/emanuel" component={Emanuel} /> 
         <Route path="/affaan" component={Affaan} />
         <Route path="/nicholas" component={Nicholas} />
         <Route path="/jahon" component={Jahon} />
