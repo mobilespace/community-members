@@ -15,6 +15,7 @@ import Ryan from './members/RyanLiszewski';
 import Thomas from './members/ThomasZhu';
 import Bhavesh from './members/BhaveshChowdhury';
 import Girish from './members/GirishRawat';
+import Affaan from './members/AffaanGhazzali';
 
 const Routes = (props) => {
   return (
@@ -22,6 +23,7 @@ const Routes = (props) => {
       <Switch>
         <Route exact path="/" component={App} />
         <Route path="/monte" component={Monte} />
+        <Route path="/affaan" component={Affaan} />
         <Route path="/nicholas" component={Nicholas} />
         <Route path="/jahon" component={Jahon} />
         <Route path="/sukhjit" component={Sukhjit} />
