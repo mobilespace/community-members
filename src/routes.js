@@ -8,7 +8,11 @@ import NotFound from './NotFound';
 // Community Members pages
 import Monte from './members/MonteThakkar';
 import Sukhjit from './members/SukhjitSingh';
-
+import Mitul from './members/MitulSavani';
+import Ryan from './members/RyanLiszewski';
+import Thomas from './members/ThomasZhu';
+import Bhavesh from './members/BhaveshChowdhury';
+import Girish from './members/GirishRawat';
 
 const Routes = (props) => {
   return (
@@ -17,6 +21,11 @@ const Routes = (props) => {
         <Route exact path="/" component={App} />
         <Route path="/monte" component={Monte} />
         <Route path="/sukhjit" component={Sukhjit} />
+        <Route path="/mitul" component={Mitul} />
+        <Route path="/ryan" component={Ryan} />
+        <Route path="/thomas" component={Thomas} />
+        <Route path="/bhavesh" component={Bhavesh} />
+        <Route path="/girish" component={Girish} />
         <Route component={NotFound} />
       </Switch>
     </Router>
