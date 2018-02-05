@@ -5,10 +5,12 @@ import './styles/App.css';
 
 // List of members
 const MONTE_AVATAR = 'https://avatars2.githubusercontent.com/u/7840686?s=400&v=4'
+const MITUL_AVATAR = 'https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAqdAAAAJGYzNDZlZmE5LWUwYWEtNGVlMC1hODE5LTBmY2JkYTQ2ZDEwOA.jpg'
 const RYAN_AVATAR = 'https://avatars3.githubusercontent.com/u/5275250?s=460&v=4'
 const THOMAS_AVATAR = 'http://thomaszhu.com/resources/thomas_avatar.jpeg'
 const BHAVESH_AVATAR = 'https://avatars3.githubusercontent.com/u/13439148?s=460&v=4'
 const GIRISH_AVATAR = 'https://avatars2.githubusercontent.com/u/6697235?s=460&v=4'
+
 
 export default class App extends Component {
   render() {
@@ -19,6 +21,8 @@ export default class App extends Component {
           <Link to="/monte">
             <img className="landing-page-avatar" src={MONTE_AVATAR} />
           </Link>
+          <Link to="/mitul">
+            <img className="landing-page-avatar" src={MITUL_AVATAR} />
           <Link to="/ryan">
             <img className="landing-page-avatar" src={RYAN_AVATAR} />
           </Link> 
