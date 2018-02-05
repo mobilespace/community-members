@@ -12,6 +12,7 @@ const RYAN_AVATAR = 'https://avatars3.githubusercontent.com/u/5275250?s=460&v=4'
 const THOMAS_AVATAR = 'http://thomaszhu.com/resources/thomas_avatar.jpeg'
 const BHAVESH_AVATAR = 'https://avatars3.githubusercontent.com/u/13439148?s=460&v=4'
 const GIRISH_AVATAR = 'https://avatars2.githubusercontent.com/u/6697235?s=460&v=4'
+const NICHOLAS_AVATAR = 'https://avatars1.githubusercontent.com/u/23561635?s=460&v=4'
 
 export default class App extends Component {
   render() {
@@ -21,6 +22,9 @@ export default class App extends Component {
         <div className="landing-page-avatar-container">
           <Link to="/monte">
             <img className="landing-page-avatar" src={MONTE_AVATAR} />
+          </Link>
+          <Link to="/nicholas">
+            <img className="landing-page-avatar" src={NICHOLAS_AVATAR} />
           </Link>
           <Link to="/jahon">
             <img className="landing-page-avatar" src={JAHON_AVATAR} />
