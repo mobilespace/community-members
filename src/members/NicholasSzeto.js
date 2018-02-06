@@ -5,9 +5,9 @@ import '../styles/MonteThakkar.css'
 
 import LeftArrow from '../assets/left-arrow.png';
 
-const MONTE_AVATAR = 'http://thomaszhu.com/resources/thomas_avatar.jpeg'
+const NICHOLAS_AVATAR = 'https://avatars1.githubusercontent.com/u/23561635?s=460&v=4'
 
-export default class MonteThakkar extends Component {
+export default class NicholasSzeto extends Component {
   render() {
     return (
       <div className="main-container">
@@ -15,18 +15,18 @@ export default class MonteThakkar extends Component {
           <img className="back-arrow-icon" src={LeftArrow} />
         </Link>
         <div className="avatar-container">
-          <img className="avatar" src={MONTE_AVATAR} />
+          <img className="avatar" src={NICHOLAS_AVATAR} />
         </div>
-        <div className="title">Thomas Zhu</div>
-        <div className="subtitle">Explorer of Space</div>
+        <div className="title">Nicholas Szeto</div>
+        <div className="subtitle">Aspiring Programmer</div>
         <div className="links-container">
-          <a href="https://github.com/thomashzhu" className="link">
+          <a href="https://github.com/niszeto" className="link">
             <img className="links-icon" src="http://bogas04.github.io/img/github.svg" />
           </a>
-          <a href="https://twitter.com/thomashzhu" className="link">
+          <a href="#" className="link">
             <img className="links-icon" src="http://www.freeiconspng.com/uploads/twitter-icon-download-18.png" />
           </a>
-          <a href="mailto:thomas.h.zhu@gmail.com?Subject=I%20would%20like%20to%20know%20more%20about%20MobileSpace!" target="_top" className="link">
+          <a href="mailto:niszeto@gmail.com?Subject=I%20would%20like%20to%20know%20more%20about%20MobileSpace!" target="_top" className="link">
             <img className="links-icon" src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Gmail_Icon.png" />
           </a>
         </div>
