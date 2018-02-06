@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import '../styles/MonteThakkar.css'
+import '../styles/RyanLiszewski.css'
 
 import LeftArrow from '../assets/left-arrow.png';
 
 const RYAN_AVATAR = 'https://avatars3.githubusercontent.com/u/5275250?s=460&v=4'
 
-export default class MonteThakkar extends Component {
+export default class RyanLiszewski extends Component {
   render() {
     return (
       <div className="main-container">
