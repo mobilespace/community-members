@@ -14,8 +14,8 @@ export default class RyanLiszewski extends Component {
         <Link to="/" className="back-arrow-container">
           <img className="back-arrow-icon" src={LeftArrow} />
         </Link>
-        <div className="avatar-container">
-          <img className="avatar" src={RYAN_AVATAR} />
+        <div className="avatar-container-ryan">
+          <img className="avatar-ryan" src={RYAN_AVATAR} />
         </div>
         <div className="title-ryan">Ryan Liszewski</div>
         <div className="subtitle-ryan">Jerk of all trades.</div>

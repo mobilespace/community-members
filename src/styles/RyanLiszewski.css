@@ -29,17 +29,17 @@
   height: 50px;
 }
 
-.avatar-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 0;
+.avatar-container-ryan {
+  position: absolute;
+  top: 50px;
+  right: 50px; 
+  
 }
 
-.avatar {
-  width: 120px;
-  height: 120px;
-  border-radius: 60px;
+.avatar-ryan {
+  width: 240px;
+  height: 240px;
+  border-radius: 120px;
 }
 
 .title-ryan {
