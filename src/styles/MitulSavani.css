@@ -1,10 +1,10 @@
 @font-face {
-    font-family: 'Encode Sans Expanded';
-    src: url('https://fonts.googleapis.com/css?family=Encode+Sans+Expanded');
+    font-family: 'Nanum Myeongjo', serif;
+    src: url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo');
   }
   
   * {
-    font-family: 'Encode Sans Expanded';
+    font-family: 'Nanum Myeongjo', serif;
     color: whitesmoke;
   }
   
@@ -15,7 +15,7 @@
     width: 100vw;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to bottom right, #726c20, rgb(24, 28, 54));
+    background: linear-gradient(to bottom right, #175257, rgb(24, 28, 54));
 }
 
 .main-container {
@@ -65,7 +65,12 @@
   }
   
   .subtitle {
-    font-size: 22px;
+    font-size: 25px;
+    margin-top: 20px;
+  }
+
+  .thirdheading {
+    font-size: 18px;
     margin-top: 20px;
   }
   
