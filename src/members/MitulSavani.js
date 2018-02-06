@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import '../styles/MonteThakkar.css'
+import '../styles/MitulSavani.css'
 
 import LeftArrow from '../assets/left-arrow.png';
 
@@ -10,7 +10,7 @@ const MITUL_AVATAR = 'https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAA
 export default class MitulSavani extends Component {
   render() {
     return (
-      <div className="main-container">
+      <div className="main-container2">
         <Link to="/" className="back-arrow-container">
           <img className="back-arrow-icon" src={LeftArrow} />
         </Link>
@@ -18,7 +18,8 @@ export default class MitulSavani extends Component {
           <img className="avatar" src={MITUL_AVATAR} />
         </div>
         <div className="title">Mitul Savani</div>
-        <div className="subtitle">In love with Java and Mathematics</div>
+        <div className="subtitle">Lower than 100% is considered as Failure</div>
+        <div className="thirdheading">Computer Science | Mathematics</div>
         <div className="links-container">
           <a href="https://github.com/mitulsavani" className="link">
             <img className="links-icon" src="http://bogas04.github.io/img/github.svg" />
