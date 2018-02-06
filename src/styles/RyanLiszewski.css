@@ -15,7 +15,7 @@
   width: 100vw;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom right, #536976, #292E49);
+  background: linear-gradient(to bottom right, #ee9ca7, #ffdde1) !important;
 }
 
 .back-arrow-container {
