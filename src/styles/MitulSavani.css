@@ -1,13 +1,22 @@
 @font-face {
-    font-family: 'Ailerons';
-    src: url('../assets/Ailerons-Typeface.otf');
+    font-family: 'Encode Sans Expanded';
+    src: url('https://fonts.googleapis.com/css?family=Encode+Sans+Expanded');
   }
   
   * {
-    font-family: 'Ailerons';
+    font-family: 'Encode Sans Expanded';
     color: whitesmoke;
   }
   
+  .main-container2 {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #726c20, rgb(24, 28, 54));
+}
 
 .main-container {
     display: flex;
@@ -19,15 +28,7 @@
     background: linear-gradient(to bottom right, #536976, #292E49);
 }
 
-.main-container2 {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to bottom right, #726c20, rgb(24, 28, 54));
-}
+
   
   .back-arrow-container {
     position: absolute;

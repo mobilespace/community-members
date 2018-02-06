@@ -10,7 +10,7 @@ const MITUL_AVATAR = 'https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAA
 export default class MitulSavani extends Component {
   render() {
     return (
-      <div className="main-container">
+      <div className="main-container2">
         <Link to="/" className="back-arrow-container">
           <img className="back-arrow-icon" src={LeftArrow} />
         </Link>
