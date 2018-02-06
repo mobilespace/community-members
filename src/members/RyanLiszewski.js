@@ -1,24 +1,24 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import '../styles/MonteThakkar.css'
+import '../styles/RyanLiszewski.css'
 
 import LeftArrow from '../assets/left-arrow.png';
 
 const RYAN_AVATAR = 'https://avatars3.githubusercontent.com/u/5275250?s=460&v=4'
 
-export default class MonteThakkar extends Component {
+export default class RyanLiszewski extends Component {
   render() {
     return (
-      <div className="main-container">
+      <div className="main-container-ryan">
         <Link to="/" className="back-arrow-container">
           <img className="back-arrow-icon" src={LeftArrow} />
         </Link>
-        <div className="avatar-container">
-          <img className="avatar" src={RYAN_AVATAR} />
+        <div className="avatar-container-ryan">
+          <img className="avatar-ryan" src={RYAN_AVATAR} />
         </div>
-        <div className="title">Ryan Liszewski</div>
-        <div className="subtitle">Jerk of all trades.</div>
+        <div className="title-ryan">Ryan Liszewski</div>
+        <div className="subtitle-ryan">Jerk of all trades.</div>
         <div className="links-container">
           <a href="https://github.com/ryanliszewski" className="link">
             <img className="links-icon" src="http://bogas04.github.io/img/github.svg" />
