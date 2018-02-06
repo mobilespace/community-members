@@ -6,7 +6,7 @@ import '../styles/MonteThakkar.css'
 import LeftArrow from '../assets/left-arrow.png';
 
 
-const TEODORA_IMG ='https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-1/c44.0.320.320/p320x320/20914645_1579156895438534_1027285013181250707_n.jpg?oh=0ff1b3c4c8bc8e00edb84cecd660d0fe&oe=5B1C897A'
+const TEODORA_AVATAR ='https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-1/c44.0.320.320/p320x320/20914645_1579156895438534_1027285013181250707_n.jpg?oh=0ff1b3c4c8bc8e00edb84cecd660d0fe&oe=5B1C897A'
 export default class TeodoraCaneva extends Component {
   render() {
     return (
@@ -15,10 +15,10 @@ export default class TeodoraCaneva extends Component {
           <img className="back-arrow-icon" src={LeftArrow} />
         </Link>
         <div className="avatar-container">
-          <img className="avatar" src={TEODORA_IMG} />
+          <img className="avatar" src={TEODORA_AVATAR} />
         </div>
         <div className="title">Teodora Caneva</div>
-        <div className="subtitle">Work in Progress</div>
+        <div className="subtitle">On a Secret Adventure</div>
         <div className="links-container">
           <a href="https://github.com/kodekat" className="link">
             <img className="links-icon" src="http://bogas04.github.io/img/github.svg" />
