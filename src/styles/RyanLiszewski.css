@@ -3,19 +3,19 @@
   src: url('../assets/Futura-Book-Regular.otf');
 }
 
-.title, .subtitle {
+.title-ryan, .subtitle-ryan {
   font-family: 'Futura Book';
   color: whitesmoke;
 }
 
-.main-container {
+.main-container-ryan {
   display: flex;
   flex-direction: column;
   height: 100vh;
   width: 100vw;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom right, #ee9ca7, #ffdde1) !important;
+  background: linear-gradient(to bottom right, #ee9ca7, #ffdde1);
 }
 
 .back-arrow-container {
@@ -42,7 +42,7 @@
   border-radius: 60px;
 }
 
-.title {
+.title-ryan {
   font-size: 65px;
   text-align: center;
 }
@@ -52,7 +52,7 @@
   cursor: pointer;
 }
 
-.subtitle {
+.subtitle-ryan {
   font-size: 22px;
   margin-top: 20px;
 }
