@@ -25,37 +25,37 @@ export default class RyanLiszewski extends Component {
         <div className="subtitle-ryan">Lover of coffee, coffee shops and more coffee.</div>
 
         <div className = "animation-container">
-          <div class="coffee-bag-container">
-            <div class="coffee-bag">
-              <span class="mast"></span>
-              <span class="bag-top"></span>
-              <span class="bag-body"></span>
-              <span class="logo">
-                <span class="bean bean-one"></span>
-                <span class="bean bean-two"></span>
+          <div className="coffee-bag-container">
+            <div className="coffee-bag">
+              <span className="mast"></span>
+              <span className="bag-top"></span>
+              <span className="bag-body"></span>
+              <span className="logo">
+                <span className="bean bean-one"></span>
+                <span className="bean bean-two"></span>
               </span>
-              <span class="info info-one"></span>
-              <span class="info info-two"></span>
-              <span class="info info-three"></span>
-              <span class="bag-bottom"></span>
+              <span className="info info-one"></span>
+              <span className="info info-two"></span>
+              <span className="info info-three"></span>
+              <span className="bag-bottom"></span>
               
             </div> {/* ./coffee-bag */}
           </div> {/* ./coffee-bag-container  */}
           
-          <span class="grounds-container">
-          <span class="grounds grounds-one"></span>
-          <span class="grounds grounds-two"></span>
-          <span class="grounds grounds-three"></span>
-          <span class="grounds grounds-four"></span>
+          <span className="grounds-container">
+          <span className="grounds grounds-one"></span>
+          <span className="grounds grounds-two"></span>
+          <span className="grounds grounds-three"></span>
+          <span className="grounds grounds-four"></span>
           </span>
         
-          <div class="filter"></div> 
-          <span class="roasting-top"></span>
+          <div className="filter"></div> 
+          <span className="roasting-top"></span>
         
-          <div class="roasting-body">
-            <span class="handle-container">
-              <span class="handle-one"></span>
-              <span class="handle-two"></span>
+          <div className="roasting-body">
+            <span classNames="handle-container">
+              <span className="handle-one"></span>
+              <span className="handle-two"></span>
             </span>
           </div>
         

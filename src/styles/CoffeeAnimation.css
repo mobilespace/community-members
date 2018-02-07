@@ -1,6 +1,6 @@
 .animation-container {
   width: 806px;
-  height: 400px;
+  height: 450px;
   margin: 0 auto;
   overflow: hidden;
   position: relative;
@@ -27,8 +27,8 @@ span {
   position: absolute;
   width: 72px;
   z-index: 2;
-  -webkit-transform: translate(806px, 0);
-  -webkit-animation: coffee-bag-mast 1s 1 .5s forwards;
+  transform: translate(806px, 0);
+  animation: coffee-bag-mast 1s 1 .5s forwards;
 }
 
 .bag-top {
@@ -38,8 +38,8 @@ span {
   position: absolute;
   width: 72px;
   z-index: 1;
-  -webkit-transform: translate(-806px, 0);
-  -webkit-animation: coffee-bag-top 1s 1 forwards;
+  transform: translate(-806px, 0);
+  animation: coffee-bag-top 1s 1 forwards;
 }
 
 .bag-body {
@@ -48,8 +48,8 @@ span {
   height: 125px;
   width: 72px;
   z-index: 1;
-  -webkit-transform: translate(-806px, 38px);
-  -webkit-animation: coffee-bag-body 1s 1 forwards;
+  transform: translate(-806px, 38px);
+  animation: coffee-bag-body 1s 1 forwards;
 }
 
 .logo {
@@ -59,8 +59,8 @@ span {
   position: absolute;
   width: 40px;
   z-index: 2;
-  -webkit-transform: translate(15px, -75px) scale(0.25);
-  -webkit-animation: coffee-logo 1s 1 forwards;
+  transform: translate(15px, -75px) scale(0.25);
+  animation: coffee-logo 1s 1 forwards;
 }
 .logo .bean {
   border-radius: 20px;
@@ -68,8 +68,8 @@ span {
   height: 8px;
   position: absolute;
   width: 20px;
-  -webkit-transform: rotate(45deg) scale(0.25);
-  -webkit-animation: bean-logo 1s 1 .5s forwards;
+  transform: rotate(45deg) scale(0.25);
+  animation: bean-logo 1s 1 .5s forwards;
 }
 .logo .bean.bean-one {
   left: 3px;
@@ -88,16 +88,16 @@ span {
   z-index: 2;
 }
 .info.info-one {
-  -webkit-transform: translate(-806px, -25px);
-  -webkit-animation: info-one 1s 1 .25s forwards;
+  transform: translate(-806px, -25px);
+  animation: info-one 1s 1 .25s forwards;
 }
 .info.info-two {
-  -webkit-transform: translate(-806px, -10px);
-  -webkit-animation: info-two 1s 1 .5s forwards;
+  transform: translate(-806px, -10px);
+  animation: info-two 1s 1 .5s forwards;
 }
 .info.info-three {
-  -webkit-transform: translate(-806px, 5px);
-  -webkit-animation: info-three 1s 1 .75s forwards;
+  transform: translate(-806px, 5px);
+  animation: info-three 1s 1 .75s forwards;
 }
 
 .bag-bottom {
@@ -109,13 +109,13 @@ span {
   position: absolute;
   width: 72px;
   z-index: 2;
-  -webkit-animation: coffee-bag-bottom .75s 1 forwards;
+  animation: coffee-bag-bottom .75s 1 forwards;
 }
 
 .grounds-container {
   opacity: 0;
   position: absolute;
-  -webkit-animation: grounds 1.25s 1 forwards 2.75s;
+  animation: grounds 1.25s 1 forwards 2.75s;
 }
 
 .grounds {
@@ -168,8 +168,8 @@ span {
   height: 90px;
   position: relative;
   width: 100px;
-  -webkit-transform: translate(400px, 550px);
-  -webkit-animation: filter 2.5s 1 2s forwards;
+  transform: translate(400px, 550px);
+  animation: filter 2.5s 1 2s forwards;
 }
 .filter:after, .filter:before {
   border-radius: 50%;
@@ -202,8 +202,8 @@ span {
   position: relative;
   width: 125px;
   z-index: 2;
-  -webkit-transform: translate(387px, -150px);
-  -webkit-animation: roasting-top 2s 1 3s forwards;
+  transform: translate(387px, -150px);
+  animation: roasting-top 2s 1 3s forwards;
 }
 .roasting-top:before {
   background: #32262c;
@@ -222,8 +222,8 @@ span {
   height: 90px;
   position: relative;
   width: 100px;
-  -webkit-transform: translate(400px, 550px);
-  -webkit-animation: roasting-body 2s 1 3s forwards;
+  transform: translate(400px, 550px);
+  animation: roasting-body 2s 1 3s forwards;
 }
 .roasting-body:before, .roasting-body:after {
   content: '';
@@ -278,8 +278,8 @@ span {
   border-radius: 4px;
   height: 12px;
   width: 164px;
-  -webkit-transform: translate(-806px, -66px);
-  -webkit-animation: screen 1.5s 1 4.25s forwards;
+  transform: translate(-806px, -66px);
+  animation: screen 1.5s 1 4.25s forwards;
 }
 
 .coffee-pot-top {
@@ -289,8 +289,8 @@ span {
   position: relative;
   width: 92px;
   z-index: 2;
-  -webkit-transform: translate(806px, -303px);
-  -webkit-animation: coffee-pot-top 1.5s 1 5s forwards;
+  transform: translate(806px, -303px);
+  animation: coffee-pot-top 1.5s 1 5s forwards;
 }
 
 .coffee-pot-glass-top {
@@ -299,8 +299,8 @@ span {
   border-radius: 6px;
   height: 16px;
   width: 92px;
-  -webkit-transform: translate(806px, -315px) skewX(25deg);
-  -webkit-animation: glass-top 1.5s 1 4.25s forwards;
+  transform: translate(806px, -315px) skewX(25deg);
+  animation: glass-top 1.5s 1 4.25s forwards;
 }
 
 .coffee-pot-glass-connector {
@@ -310,8 +310,8 @@ span {
   position: relative;
   width: 96px;
   z-index: 2;
-  -webkit-transform: translate(806px, -313px);
-  -webkit-animation: pot-connector 1.5s 1 5.25s forwards;
+  transform: translate(806px, -313px);
+  animation: pot-connector 1.5s 1 5.25s forwards;
 }
 
 .coffee-pot-glass-base {
@@ -321,8 +321,8 @@ span {
   height: 66px;
   position: relative;
   width: 92px;
-  -webkit-transform: translate(806px, -312px);
-  -webkit-animation: glass-bottom 1.5s 1 4.5s forwards;
+  transform: translate(806px, -312px);
+  animation: glass-bottom 1.5s 1 4.5s forwards;
 }
 
 .coffee-pot-gloss {
@@ -340,8 +340,8 @@ span {
   height: 86px;
   position: relative;
   width: 52px;
-  -webkit-transform: translate(806px, -411px);
-  -webkit-animation: coffee-pot-handle 1.5s 1 5s forwards;
+  transform: translate(806px, -411px);
+  animation: coffee-pot-handle 1.5s 1 5s forwards;
 }
 
 .handle-top {
@@ -369,8 +369,8 @@ span {
   border-radius: 4px;
   height: 12px;
   width: 110px;
-  -webkit-transform: translate(-806px, -66px);
-  -webkit-animation: water-attachment 1.5s 1 4.5s forwards;
+  transform: translate(-806px, -66px);
+  animation: water-attachment 1.5s 1 4.5s forwards;
 }
 
 .water-lid {
@@ -380,8 +380,8 @@ span {
   left: 13px;
   position: relative;
   width: 110px;
-  -webkit-transform: translate(-806px, -201px);
-  -webkit-animation: water-lid 1.5s 1 4.5s forwards;
+  transform: translate(-806px, -201px);
+  animation: water-lid 1.5s 1 4.5s forwards;
 }
 .water-lid:before {
   background: #2f2828;
@@ -402,8 +402,8 @@ span {
   left: 13px;
   position: relative;
   width: 110px;
-  -webkit-transform: translate(806px, -201px);
-  -webkit-animation: water-pot 1.5s 1 4.75s forwards;
+  transform: translate(806px, -201px);
+  animation: water-pot 1.5s 1 4.75s forwards;
 }
 .water-pot:before {
   background: #2f2828;
@@ -458,7 +458,7 @@ span {
   position: absolute;
   width: 100px;
   z-index: 1;
-  -webkit-animation: water-fill 4s 1 8.25s forwards;
+  animation: water-fill 4s 1 8.25s forwards;
 }
 
 .water-pot-gloss {
@@ -477,8 +477,8 @@ span {
   border-radius: 4px;
   height: 10px;
   width: 88px;
-  -webkit-transform: translate(806px, -200px);
-  -webkit-animation: warmer-plate 1.5s 1 4.5s forwards;
+  transform: translate(806px, -200px);
+  animation: warmer-plate 1.5s 1 4.5s forwards;
 }
 
 .warmer {
@@ -487,8 +487,8 @@ span {
   height: 130px;
   position: relative;
   width: 94px;
-  -webkit-transform: translate(806px, -200px);
-  -webkit-animation: big-warmer 1.5s 1 5s forwards;
+  transform: translate(806px, -200px);
+  animation: big-warmer 1.5s 1 5s forwards;
 }
 
 .warmer-accent {
@@ -522,8 +522,8 @@ span {
   height: 10px;
   position: relative;
   width: 88px;
-  -webkit-transform: translate(806px, -200px);
-  -webkit-animation: warmer-base 1.5s 1 5s forwards;
+  transform: translate(806px, -200px);
+  animation: warmer-base 1.5s 1 5s forwards;
 }
 .warmer-base:before {
   background: #191112;
@@ -542,8 +542,8 @@ span {
   border-radius: 4px;
   height: 10px;
   width: 94px;
-  -webkit-transform: translate(-806px, -397px);
-  -webkit-animation: coffee-warmer-plate 1.5s 1 4s forwards;
+  transform: translate(-806px, -397px);
+  animation: coffee-warmer-plate 1.5s 1 4s forwards;
 }
 
 .coffee-base-left-end, .coffee-base-right-end {
@@ -556,14 +556,14 @@ span {
 
 .coffee-base-left-end {
   border-radius: 10px 0 0 10px;
-  -webkit-transform: translate(806px, -397px);
-  -webkit-animation: base-left 1.5s 1 5.5s forwards;
+  transform: translate(806px, -397px);
+  animation: base-left 1.5s 1 5.5s forwards;
 }
 
 .coffee-base-right-end {
   border-radius: 0 10px 10px 0;
-  -webkit-transform: translate(806px, -487px);
-  -webkit-animation: base-right 1.5s 1 5.5s forwards;
+  transform: translate(806px, -487px);
+  animation: base-right 1.5s 1 5.5s forwards;
 }
 
 .coffee-maker-base {
@@ -573,8 +573,8 @@ span {
   position: relative;
   width: 344px;
   z-index: 2;
-  -webkit-transform: translate(806px, -431px);
-  -webkit-animation: coffee-base 1.5s 1 5.5s forwards;
+  transform: translate(806px, -431px);
+  animation: coffee-base 1.5s 1 5.5s forwards;
 }
 
 .control-panel {
@@ -584,8 +584,8 @@ span {
   position: relative;
   width: 283px;
   z-index: 3;
-  -webkit-transform: translate(806px, -459px);
-  -webkit-animation: control-panel 1.5s 1 5.75s forwards;
+  transform: translate(806px, -459px);
+  animation: control-panel 1.5s 1 5.75s forwards;
 }
 .control-panel span {
   background: #2a2225;
@@ -606,7 +606,7 @@ span {
 }
 
 .gauge-one {
-  -webkit-transform: translate(15px, 4px);
+  transform: translate(15px, 4px);
 }
 .gauge-one:after {
   background: #4ac861;
@@ -614,12 +614,12 @@ span {
 }
 
 .gauge-two {
-  -webkit-transform: translate(55px, -10px);
+  transform: translate(55px, -10px);
 }
 .gauge-two:after {
   background: #f00;
   right: 4px;
-  -webkit-animation: ready .75s 1 7.5s forwards;
+  animation: ready .75s 1 7.5s forwards;
 }
 
 .leg {
@@ -632,13 +632,13 @@ span {
 }
 
 .leg-one {
-  -webkit-transform: translate(806px, -498px);
-  -webkit-animation: leg-one 1.5s 1 6s forwards;
+  transform: translate(806px, -498px);
+  animation: leg-one 1.5s 1 6s forwards;
 }
 
 .leg-two {
-  -webkit-transform: translate(806px, -518px);
-  -webkit-animation: leg-two 1.5s 1 6s forwards;
+  transform: translate(806px, -518px);
+  animation: leg-two 1.5s 1 6s forwards;
 }
 
 .coffee-drip {
@@ -649,7 +649,7 @@ span {
   top: 159px;
   width: 5px;
   z-index: 1;
-  -webkit-animation: drip 1.25s 1 8.5s forwards;
+  animation: drip 1.25s 1 8.5s forwards;
 }
 
 .drip-cover {
@@ -660,70 +660,70 @@ span {
   top: 159px;
   width: 5px;
   z-index: 1;
-  -webkit-animation: drip 2.5s 1 10s forwards;
+  animation: drip 2.5s 1 10s forwards;
 }
 
 .coffee {
   background: #38271d;
   border-radius: 0 0 6px 6px;
-  bottom: 202px;
+  bottom: 36%;
   left: 404px;
   height: 0;
   position: absolute;
   width: 99px;
   z-index: 3;
-  -webkit-animation: coffee 3.5s 1 9.25s forwards;
+  animation: coffee 3.5s 1 9.25s forwards;
 }
 
-@-webkit-keyframes coffee-bag-mast {
+@keyframes coffee-bag-mast {
   0% {
-    -webkit-transform: translate(806px, 0);
+    transform: translate(806px, 0);
   }
   100% {
-    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
   }
 }
-@-webkit-keyframes coffee-bag-top {
+@keyframes coffee-bag-top {
   0% {
-    -webkit-transform: translate(-806px, 0);
+    transform: translate(-806px, 0);
   }
   100% {
-    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
   }
 }
-@-webkit-keyframes info-one {
+@keyframes info-one {
   0% {
-    -webkit-transform: translate(-806px, -25px);
+    transform: translate(-806px, -25px);
   }
   100% {
-    -webkit-transform: translate(8px, -25px);
+    transform: translate(8px, -25px);
   }
 }
-@-webkit-keyframes info-two {
+@keyframes info-two {
   0% {
-    -webkit-transform: translate(-806px, -10px);
+    transform: translate(-806px, -10px);
   }
   100% {
-    -webkit-transform: translate(8px, -10px);
+    transform: translate(8px, -10px);
   }
 }
-@-webkit-keyframes info-three {
+@keyframes info-three {
   0% {
-    -webkit-transform: translate(-806px, 5px);
+    transform: translate(-806px, 5px);
   }
   100% {
-    -webkit-transform: translate(8px, 5px);
+    transform: translate(8px, 5px);
   }
 }
-@-webkit-keyframes coffee-bag-body {
+@keyframes coffee-bag-body {
   0% {
-    -webkit-transform: translate(806px, 38px);
+    transform: translate(806px, 38px);
   }
   100% {
-    -webkit-transform: translate(0, 38px);
+    transform: translate(0, 38px);
   }
 }
-@-webkit-keyframes coffee-bag-bottom {
+@keyframes coffee-bag-bottom {
   0% {
     left: -806px;
   }
@@ -731,218 +731,218 @@ span {
     left: 0;
   }
 }
-@-webkit-keyframes coffee-logo {
+@keyframes coffee-logo {
   0% {
-    -webkit-transform: translate(15px, -75px) scale(0.25);
+    transform: translate(15px, -75px) scale(0.25);
   }
   100% {
-    -webkit-transform: translate(15px, -75px) scale(1);
+    transform: translate(15px, -75px) scale(1);
   }
 }
-@-webkit-keyframes bean-logo {
+@keyframes bean-logo {
   0% {
-    -webkit-transform: rotate(45deg) scale(0.25);
+    transform: rotate(45deg) scale(0.25);
   }
   100% {
-    -webkit-transform: rotate(45deg) scale(1);
+    transform: rotate(45deg) scale(1);
   }
 }
-@-webkit-keyframes coffee-bag {
+@keyframes coffee-bag {
   0% {
-    -webkit-transform: translate(-50%, -50%) rotate(0);
+    transform: translate(-50%, -50%) rotate(0);
   }
   50% {
-    -webkit-transform: translate(180%, -100%) rotate(-95deg);
+    transform: translate(180%, -100%) rotate(-95deg);
   }
   100% {
-    -webkit-transform: translate(806px, -100%);
+    transform: translate(806px, -100%);
   }
 }
-@-webkit-keyframes coffee-bag-exit {
+@keyframes coffee-bag-exit {
   100% {
-    -webkit-transform: translate(860px, -100%);
+    transform: translate(860px, -100%);
   }
 }
-@-webkit-keyframes filter {
+@keyframes filter {
   0% {
-    -webkit-transform: translate(400px, 550px);
+    transform: translate(400px, 550px);
   }
   50% {
-    -webkit-transform: translate(400px, 250px);
+    transform: translate(400px, 250px);
   }
   100% {
-    -webkit-transform: translate(400px, 40px);
+    transform: translate(400px, 40px);
   }
 }
-@-webkit-keyframes roasting-body {
+@keyframes roasting-body {
   0% {
-    -webkit-transform: translate(400px, 550px);
+    transform: translate(400px, 550px);
   }
   100% {
-    -webkit-transform: translate(400px, -65px);
+    transform: translate(400px, -65px);
   }
 }
-@-webkit-keyframes roasting-top {
+@keyframes roasting-top {
   0% {
-    -webkit-transform: translate(387px, -150px);
+    transform: translate(387px, -150px);
   }
   100% {
-    -webkit-transform: translate(387px, -48px);
+    transform: translate(387px, -48px);
   }
 }
-@-webkit-keyframes screen {
+@keyframes screen {
   0% {
-    -webkit-transform: translate(806px, -66px);
+    transform: translate(806px, -66px);
   }
   100% {
-    -webkit-transform: translate(355px, -66px);
+    transform: translate(355px, -66px);
   }
 }
-@-webkit-keyframes water-attachment {
+@keyframes water-attachment {
   0% {
-    -webkit-transform: translate(806px, -190px);
+    transform: translate(806px, -190px);
   }
   100% {
-    -webkit-transform: translate(340px, -190px);
+    transform: translate(340px, -190px);
   }
 }
-@-webkit-keyframes water-lid {
+@keyframes water-lid {
   0% {
-    -webkit-transform: translate(-806px, -201px);
+    transform: translate(-806px, -201px);
   }
   100% {
-    -webkit-transform: translate(234px, -201px);
+    transform: translate(234px, -201px);
   }
 }
-@-webkit-keyframes glass-top {
+@keyframes glass-top {
   0% {
-    -webkit-transform: translate(806px, -315px) skewX(25deg);
+    transform: translate(806px, -315px) skewX(25deg);
   }
   100% {
-    -webkit-transform: translate(397px, -315px) skewX(25deg);
+    transform: translate(397px, -315px) skewX(25deg);
   }
 }
-@-webkit-keyframes glass-bottom {
+@keyframes glass-bottom {
   0% {
-    -webkit-transform: translate(806px, -312px);
+    transform: translate(806px, -312px);
   }
   100% {
-    -webkit-transform: translate(404px, -312px);
+    transform: translate(404px, -312px);
   }
 }
-@-webkit-keyframes coffee-warmer-plate {
+@keyframes coffee-warmer-plate {
   0% {
-    -webkit-transform: translate(-806px, -397px);
+    transform: translate(-806px, -397px);
   }
   100% {
-    -webkit-transform: translate(407px, -397px);
+    transform: translate(407px, -397px);
   }
 }
-@-webkit-keyframes water-pot {
+@keyframes water-pot {
   0% {
-    -webkit-transform: translate(806px, -201px);
+    transform: translate(806px, -201px);
   }
   100% {
-    -webkit-transform: translate(233px, -201px);
+    transform: translate(233px, -201px);
   }
 }
-@-webkit-keyframes warmer-plate {
+@keyframes warmer-plate {
   0% {
-    -webkit-transform: translate(806px, -200px);
+    transform: translate(806px, -200px);
   }
   100% {
-    -webkit-transform: translate(258px, -200px);
+    transform: translate(258px, -200px);
   }
 }
-@-webkit-keyframes big-warmer {
+@keyframes big-warmer {
   0% {
-    -webkit-transform: translate(806px, -200px);
+    transform: translate(806px, -200px);
   }
   100% {
-    -webkit-transform: translate(255px, -200px);
+    transform: translate(255px, -200px);
   }
 }
-@-webkit-keyframes warmer-base {
+@keyframes warmer-base {
   0% {
-    -webkit-transform: translate(-806px, -200px);
+    transform: translate(-806px, -200px);
   }
   100% {
-    -webkit-transform: translate(258px, -200px);
+    transform: translate(258px, -200px);
   }
 }
-@-webkit-keyframes coffee-pot-top {
+@keyframes coffee-pot-top {
   0% {
-    -webkit-transform: translate(-806px, -503px);
+    transform: translate(-806px, -503px);
   }
   100% {
-    -webkit-transform: translate(408px, -303px);
+    transform: translate(408px, -303px);
   }
 }
-@-webkit-keyframes coffee-pot-handle {
+@keyframes coffee-pot-handle {
   0% {
-    -webkit-transform: translate(-806px, 703px);
+    transform: translate(-806px, 703px);
   }
   100% {
-    -webkit-transform: translate(479px, -411px);
+    transform: translate(479px, -411px);
   }
 }
-@-webkit-keyframes pot-connector {
+@keyframes pot-connector {
   0% {
-    -webkit-transform: translate(806px, 403px);
+    transform: translate(806px, 403px);
   }
   100% {
-    -webkit-transform: translate(404px, -313px);
+    transform: translate(404px, -313px);
   }
 }
-@-webkit-keyframes base-left {
+@keyframes base-left {
   0% {
-    -webkit-transform: translate(806px, 703px);
+    transform: translate(806px, 703px);
   }
   100% {
-    -webkit-transform: translate(218px, -397px);
+    transform: translate(218px, -397px);
   }
 }
-@-webkit-keyframes base-right {
+@keyframes base-right {
   0% {
-    -webkit-transform: translate(-806px, 703px);
+    transform: translate(-806px, 703px);
   }
   100% {
-    -webkit-transform: translate(546px, -487px);
+    transform: translate(546px, -487px);
   }
 }
-@-webkit-keyframes coffee-base {
+@keyframes coffee-base {
   0% {
-    -webkit-transform: translate(806px, 903px);
+    transform: translate(806px, 903px);
   }
   100% {
-    -webkit-transform: translate(218px, -431px);
+    transform: translate(218px, -431px);
   }
 }
-@-webkit-keyframes control-panel {
+@keyframes control-panel {
   0% {
-    -webkit-transform: translate(-806px, -459px);
+    transform: translate(-806px, -459px);
   }
   100% {
-    -webkit-transform: translate(246px, -459px);
+    transform: translate(246px, -459px);
   }
 }
-@-webkit-keyframes leg-one {
+@keyframes leg-one {
   0% {
-    -webkit-transform: translate(-806px, -800px);
+    transform: translate(-806px, -800px);
   }
   100% {
-    -webkit-transform: translate(248px, -498px);
+    transform: translate(248px, -498px);
   }
 }
-@-webkit-keyframes leg-two {
+@keyframes leg-two {
   0% {
-    -webkit-transform: translate(-806px, -800px);
+    transform: translate(-806px, -800px);
   }
   100% {
-    -webkit-transform: translate(508px, -518px);
+    transform: translate(508px, -518px);
   }
 }
-@-webkit-keyframes water-fill {
+@keyframes water-fill {
   0% {
     height: 32px;
   }
@@ -950,7 +950,7 @@ span {
     height: 0;
   }
 }
-@-webkit-keyframes drip {
+@keyframes drip {
   0% {
     height: 0;
   }
@@ -958,7 +958,7 @@ span {
     height: 93px;
   }
 }
-@-webkit-keyframes coffee {
+@keyframes coffee {
   0% {
     height: 0;
   }
@@ -966,7 +966,7 @@ span {
     height: 26px;
   }
 }
-@-webkit-keyframes ready {
+@keyframes ready {
   0% {
     background: #f00;
   }
@@ -974,7 +974,7 @@ span {
     background: #4ac861;
   }
 }
-@-webkit-keyframes grounds {
+@keyframes grounds {
   0% {
     opacity: 0;
     left: 450px;
