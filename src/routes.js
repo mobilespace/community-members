@@ -7,6 +7,7 @@ import NotFound from './NotFound';
 
 // Community Members pages
 import Monte from './members/MonteThakkar';
+import William from './members/WilliamHua';
 
 const Routes = (props) => {
   return (
@@ -14,6 +15,7 @@ const Routes = (props) => {
       <Switch>
         <Route exact path="/" component={App} />
         <Route path="/monte" component={Monte} />
+        <Route path="/william" component={William} />
         <Route component={NotFound} />
       </Switch>
     </Router>
