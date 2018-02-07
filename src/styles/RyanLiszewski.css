@@ -1,0 +1,85 @@
+@font-face {
+  font-family: 'Futura Book';
+  src: url('../assets/Futura-Book-Regular.otf');
+}
+
+.title-ryan, .subtitle-ryan {
+  font-family: 'Futura Book';
+  color: whitesmoke;
+  margin: 0 50px; 
+}
+
+.main-container-ryan {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to bottom right, #ee9ca7, #ffdde1);
+}
+
+.arrow-avatar-container {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100px;
+  background: linear-gradient(to bottom right, #f6cdd3, #9ceee3);
+  align-items: center;
+  justify-content: center space-between;
+}
+
+.back-arrow-container-ryan {
+  align-self: flex-start;
+  margin: auto; 
+  margin-left: 50px;
+}
+
+.back-arrow-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.avatar-container-ryan {
+  align-self: flex-end;
+  margin: auto; 
+  margin-right: 50px; 
+}
+
+.avatar-ryan {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+}
+
+.title-ryan {
+  font-size: 65px;
+  text-align: left;
+  margin-left: 50px;
+  margin-top: 50px;
+  
+}
+
+.link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.subtitle-ryan {
+  font-size: 22px;
+  margin-top: 20px;
+}
+
+.links-container-ryan {
+  display: flex;
+  flex-direction: row;
+  margin: 0 50px 20px;
+  margin-top: auto;
+  width: 200px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links-icon {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+}
