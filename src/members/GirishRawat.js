@@ -18,11 +18,11 @@ export default class GirishRawat extends Component {
           <h1> <span> Girish Rawat </span> </h1>
           <p class><span>Code + Deisgn + Memes</span></p>
           <p>
-            <a href="http://loremgibson.com/">Website ></a>
+            <a href="http://www.girish.design/">Website ></a>
             <br />
-            <a href="http://loremgibson.com/">Github ></a>
+            <a href="https://github.com/GirishRawat">Github ></a>
             <br />
-            <a href="http://loremgibson.com/">Twitter ></a>
+            <a href="twitter.com/GirishRawatGR">Twitter ></a>
           </p>
           <p> 
           <Link to="/" className="back-arrow-container"> EXIT</Link>
