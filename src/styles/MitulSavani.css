@@ -1,14 +1,15 @@
-@font-face {
-    font-family: 'Nanum Myeongjo', serif;
-    src: url('https://fonts.googleapis.com/css?family=Nanum+Myeongjo');
-  }
+@font-face{
+    font-family: 'Kaya_Medium';
+    src: url('../assets/Kaya_Medium.otf');
+}
+
+* .title-mitul, .subtitle-mitul, .thirdheading{
+    font-family: 'Kaya_Medium';
+    color: wheat;
+}
   
-  * {
-    font-family: 'Nanum Myeongjo', serif;
-    color: whitesmoke;
-  }
-  
-  .main-container2 {
+.main-container-mitul
+{
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -18,18 +19,6 @@
     background: linear-gradient(to bottom right, #175257, rgb(24, 28, 54));
 }
 
-.main-container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to bottom right, #536976, #292E49);
-}
-
-
-  
   .back-arrow-container {
     position: absolute;
     top: 50px;
@@ -41,22 +30,23 @@
     height: 50px;
   }
   
-  .avatar-container {
+  .avatar-container-mitul {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 20px 0;
   }
   
-  .avatar {
+  .avatar-mitul {
     width: 120px;
     height: 120px;
     border-radius: 60px;
   }
   
-  .title {
+  .title-mitul{
     font-size: 65px;
     text-align: center;
+    letter-spacing: 20px;
   }
   
   .link {
@@ -64,21 +54,21 @@
     cursor: pointer;
   }
   
-  .subtitle {
-    font-size: 25px;
+  .subtitle-mitul {
+    font-size: 30px;
     margin-top: 20px;
   }
 
   .thirdheading {
-    font-size: 18px;
+    font-size: 25px;
     margin-top: 20px;
   }
   
-  .links-container {
+  .links-container-mitul {
     display: flex;
     flex-direction: row;
     margin-top: 40px;
-    width: 200px;
+    width: 300px;
     justify-content: space-between;
   }
   
