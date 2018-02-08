@@ -25,7 +25,7 @@ export default class App extends Component {
       <div className="main-container">
         <div className="title"><a href="http://mobilespace.xyz/" className="link">MobileSpace</a> Community Members</div>
         <div className="landing-page-avatar-container">
-          <Link to="/monte">
+          <Link to="/monte/locked">
             <img className="landing-page-avatar" src={MONTE_AVATAR} />
           </Link>
           <Link to="/william">
@@ -39,7 +39,7 @@ export default class App extends Component {
           </Link>
           <Link to="/emanuel">
             <img className="landing-page-avatar" src={EMANUEL_AVATAR} />
-          </Link> 
+          </Link>
           <Link to="/affaan">
             <img className="landing-page-avatar" src={AFFAAN_AVATAR} />
           </Link>
@@ -57,12 +57,12 @@ export default class App extends Component {
           </Link>
           <Link to="/ryan">
             <img className="landing-page-avatar" src={RYAN_AVATAR} />
-          </Link> 
+          </Link>
           <Link to="/thomas">
             <img className="landing-page-avatar" src={THOMAS_AVATAR} />
           </Link>
-          <Link to="/bhavesh"> 
-            <img className="landing-page-avatar" src={BHAVESH_AVATAR}/> 
+          <Link to="/bhavesh">
+            <img className="landing-page-avatar" src={BHAVESH_AVATAR}/>
           </Link>
           <Link to="/girish">
             <img className="landing-page-avatar" src={GIRISH_AVATAR} />
