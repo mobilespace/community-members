@@ -26,9 +26,9 @@ Someone will review (and merge) it.
 
 ### Rockstars
 
-![Girish Homepage]('./screenshots/girish-homepage.gif')
-![Ryan Homepage]('./screenshots/ryan-homepage.gif')
-![Bhavesh Homepage]('./screenshots/bhavesh-homepage.gif')
+![Girish Homepage](./screenshots/girish-homepage.gif)
+![Ryan Homepage](./screenshots/ryan-homepage.gif)
+![Bhavesh Homepage](./screenshots/bhavesh-homepage.gif)
 
 <br />
 
@@ -53,11 +53,6 @@ Someone will review (and merge) it.
 - [ ] :star: **Bonus:** Change the secret phrase to a password & change locked screen UI
 
 - [ ] :star: **Bonus:** Cache whether the user entered the right secret phrase/password on the browser (update `unlocked = true` on browser's cache)
-
-
-## Resources
-
-- Checkout [this PR](https://github.com/mobilespace/community-members/pull/1/files) which shows you all the changes needed to submit a PR
 
 ## Problems?
 
