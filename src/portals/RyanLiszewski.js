@@ -30,7 +30,7 @@ export default class RyanLiszewskiPortal extends Component {
     const { phrase } = this.state
 
 
-    if (phrase === 'test' || phrase === 'TEST') {
+    if (phrase === 'cortado' || phrase === 'cortado') {
       this.setState({ redirect: true })
     } else {
       this.setState({ error: 'Access Denied' })

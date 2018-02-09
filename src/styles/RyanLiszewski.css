@@ -17,6 +17,24 @@
   background: linear-gradient(to bottom right, #ee9ca7, #ffdde1);
 }
 
+.home-container {
+  display: flex;
+}
+
+.column {
+  flex: 50%; 
+  max-width: 50%;
+  max-height: 50%;
+}
+
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 25%;
+  max-heigh: 50%;
+}
+
 .arrow-avatar-container {
   display: flex;
   flex-direction: row;

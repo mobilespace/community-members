@@ -11,18 +11,39 @@ const RYAN_AVATAR = 'https://avatars3.githubusercontent.com/u/5275250?s=460&v=4'
 export default class RyanLiszewski extends Component {
   render() {
     return (
+
       <div className="main-container-ryan">
         <div className="arrow-avatar-container">
             <Link to="/" className="back-arrow-container-ryan">
               <img className="back-arrow-icon" src={LeftArrow} />
             </Link>
+            <div className="title-ryan">Ryan Liszewski</div>
+            <div className="subtitle-ryan">Coffee. Learning. React.</div>
             <div className="avatar-container-ryan">
               <img className="avatar-ryan" src={RYAN_AVATAR} />
           </div>
         </div>
 
-        <div className="title-ryan">Ryan Liszewski</div>
-        <div className="subtitle-ryan">Lover of coffee, coffee shops and more coffee.</div>
+      <div className="home-container"> 
+        <div className="row"> 
+          <div className= "column"> 
+            <img className="ryan-grid" src={RYAN_AVATAR}/>
+          
+            <img className="ryan-grid" src={RYAN_AVATAR}/>
+          </div>
+        </div>
+
+        
+            <div className= "column"> 
+              <img className="ryan-grid" src={RYAN_AVATAR}/>
+            
+            
+              <img className="ryan-grid" src={RYAN_AVATAR}/>
+            </div>
+        </div>
+        
+        
+      
 
         <div className="links-container-ryan">
           <a href="https://github.com/ryanliszewski" className="link">
