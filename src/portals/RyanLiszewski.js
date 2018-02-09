@@ -6,7 +6,7 @@ import '../styles/RyanLiszewski.css'
 import CloseArrow from '../assets/close.png';
 import LockIcon from '../assets/lock.png'
 
-export default class MonteThakkarPortal extends Component {
+export default class RyanLiszewskiPortal extends Component {
   constructor(props) {
     super(props);
 
@@ -29,7 +29,8 @@ export default class MonteThakkarPortal extends Component {
   handleSubmit(event) {
     const { phrase } = this.state
 
-    if (phrase === 'cortado' || phrase === 'cortado') {
+
+    if (phrase === 'test' || phrase === 'TEST') {
       this.setState({ redirect: true })
     } else {
       this.setState({ error: 'Access Denied' })
@@ -48,7 +49,7 @@ export default class MonteThakkarPortal extends Component {
     const { phrase, redirect, error } = this.state
 
     if (redirect) {
-      return <Redirect to='/monte' />
+      return <Redirect to='/ryan' />
     }
 
     return (

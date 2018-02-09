@@ -10,7 +10,7 @@ import Monte from './members/MonteThakkar';
 import MonteLocked from './portals/MonteThakkar'
 
 import Ryan from './members/RyanLiszewski';
-import RyanLocked from './portals/MonteThakkar';
+import RyanLocked from './portals/RyanLiszewski';
 
 import William from './members/WilliamHua';
 import Teodora from './members/TeodoraCaneva';
