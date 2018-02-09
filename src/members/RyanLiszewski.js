@@ -53,7 +53,7 @@ export default class RyanLiszewski extends Component {
           <span className="roasting-top"></span>
         
           <div className="roasting-body">
-            <span classNames="handle-container">
+            <span className="handle-container">
               <span className="handle-one"></span>
               <span className="handle-two"></span>
             </span>

@@ -9,6 +9,9 @@ import NotFound from './NotFound';
 import Monte from './members/MonteThakkar';
 import MonteLocked from './portals/MonteThakkar'
 
+import Ryan from './members/RyanLiszewski';
+import RyanLocked from './portals/MonteThakkar';
+
 import William from './members/WilliamHua';
 import Teodora from './members/TeodoraCaneva';
 import Prakash from './members/PrakashGurung';
@@ -17,7 +20,6 @@ import Nicholas from './members/NicholasSzeto';
 import Jahon from './members/JakhongirKhusanov';
 import Sukhjit from './members/SukhjitSingh';
 import Mitul from './members/MitulSavani';
-import Ryan from './members/RyanLiszewski';
 import Thomas from './members/ThomasZhu';
 import Bhavesh from './members/BhaveshChowdhury';
 import Girish from './members/GirishRawat';
@@ -39,7 +41,8 @@ const Routes = (props) => {
         <Route path="/jahon" component={Jahon} />
         <Route path="/sukhjit" component={Sukhjit} />
         <Route path="/mitul" component={Mitul} />
-        <Route path="/ryan" component={Ryan} />
+        <Route exact path="/ryan" component={Ryan}/>
+        <Route path="/ryan/locked" component={RyanLocked} />
         <Route path="/thomas" component={Thomas} />
         <Route path="/bhavesh" component={Bhavesh} />
         <Route path="/girish" component={Girish} />
