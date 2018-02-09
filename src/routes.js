@@ -22,6 +22,7 @@ import Thomas from './members/ThomasZhu';
 import Bhavesh from './members/BhaveshChowdhury';
 import Girish from './members/GirishRawat';
 import Affaan from './members/AffaanGhazzali';
+import Karan from './members/KaranGupta';
 
 const Routes = (props) => {
   return (
@@ -43,6 +44,7 @@ const Routes = (props) => {
         <Route path="/thomas" component={Thomas} />
         <Route path="/bhavesh" component={Bhavesh} />
         <Route path="/girish" component={Girish} />
+        <Route path="/karan" component={Karan} />
         <Route component={NotFound} />
       </Switch>
     </Router>
