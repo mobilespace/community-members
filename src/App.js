@@ -18,6 +18,7 @@ const BHAVESH_AVATAR = 'https://avatars3.githubusercontent.com/u/13439148?s=460&
 const GIRISH_AVATAR = 'https://avatars2.githubusercontent.com/u/6697235?s=460&v=4'
 const AFFAAN_AVATAR = 'https://avatars0.githubusercontent.com/u/32111151?s=460&v=4'
 const NICHOLAS_AVATAR = 'https://avatars1.githubusercontent.com/u/23561635?s=460&v=4'
+const KARAN_AVATAR = 'https://avatars1.githubusercontent.com/u/19352928?s=460&v=4'
 
 export default class App extends Component {
   render() {
@@ -66,6 +67,9 @@ export default class App extends Component {
           </Link>
           <Link to="/girish">
             <img className="landing-page-avatar" src={GIRISH_AVATAR} />
+          </Link>
+          <Link to="/karan">
+            <img className="landing-page-avatar" src={KARAN_AVATAR} />
           </Link>
         </div>
       </div>
