@@ -26,26 +26,27 @@ export default class RyanLiszewski extends Component {
 
       <div className="home-container"> 
         <div className="row"> 
-          <div className= "column"> 
-            <img className="ryan-grid" src={RYAN_AVATAR}/>
           
+          <div className="column">
             <img className="ryan-grid" src={RYAN_AVATAR}/>
           </div>
-        </div>
+          <div className="column">
+            <img className="ryan-grid" src={RYAN_AVATAR}/>
+          </div>
 
-        
-            <div className= "column"> 
+          <div className="column">
               <img className="ryan-grid" src={RYAN_AVATAR}/>
-            
-            
+          </div>
+          <div className="column">
               <img className="ryan-grid" src={RYAN_AVATAR}/>
-            </div>
+          </div>
         </div>
+      </div>
         
         
       
 
-        <div className="links-container-ryan">
+        {/* <div className="links-container-ryan">
           <a href="https://github.com/ryanliszewski" className="link">
             <img className="links-icon" src="http://bogas04.github.io/img/github.svg" />
           </a>
@@ -55,7 +56,7 @@ export default class RyanLiszewski extends Component {
           <a href="https://www.linkedin.com/in/ryanliszewski" className = "link>">
             <img className="links-icon" src="http://www.iconninja.com/files/331/775/772/linkedin-website-logo-service-social-web-communication-icon.svg"/>
           </a> 
-        </div>
+        </div> */}
       </div>
     );
   }

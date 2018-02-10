@@ -18,26 +18,27 @@
 }
 
 .home-container {
-  display: flex;
+  height:80vh;
+  width: 100%;
+  flex: 1;
+  
 }
-
-.column {
-  flex: 50%; 
-  max-width: 50%;
-  max-height: 50%;
-}
-
-.column img {
-  vertical-align: middle;
-  height: 100%;
-}
-
 
 .row {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 
-  flex: 25vh;
-  max-height: 100vh;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  width: 50%;
+}
+
+.ryan-grid {
+  display:flex;
+  max-width: 100%;
 }
 
 .arrow-avatar-container {
