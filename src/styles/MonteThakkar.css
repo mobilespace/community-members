@@ -246,3 +246,32 @@ a {
   font-weight: bold;
   color: #91AAB4;
 }
+
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-row {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-icon {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+}
+
+.link-title {
+  font-size: 38px;
+  color: #CBDBD7;
+  font-family: 'Proxima-Nova-Regular';
+  text-decoration: none;
+}
