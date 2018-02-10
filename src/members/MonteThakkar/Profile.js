@@ -59,7 +59,7 @@ export default class Profile extends Component {
               Besides tech, I am also really passionate about teaching and take any oppurtunity I get to help mentor junior developers and share my technical expertise with them. In this spirit, I founded MobileSpace; a weekly meetup to teach iOS development at SF State. You can read more about it <a href="https://medium.com/@mthakkar_/mobilespace-a-passion-story-9dbc8afd5221" target="_Blank" className="LinkText" rel="noopener noreferrer">here</a>.
             </p>
             <p className="AboutText">
-              Currently, I am teaching MobileSpace Season 2 in React Native. Looking ahead, I am excited to see all our members master React Native and be able to find a internship or full-time position using these skills.
+              Currently, I am teaching <a href="https://github.com/mobilespace/Season2#season-2---looking-ahead" target="_Blank" className="LinkText" rel="noopener noreferrer">MobileSpace Season 2</a> in React Native. Looking ahead, I am excited to see all our members master React Native and be able to find a internship or full-time position using these skills.
             </p>
             <p className="AboutText">
               Lastly, I really enjoy meeting new people and having a casual convo over <span role="img" aria-label="Coffee" className="Inline">☕.</span> <a href="https://twitter.com/MThakkar_" target="_Blank" className="LinkText" rel="noopener noreferrer">hmu</a>
