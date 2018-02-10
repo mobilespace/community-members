@@ -6,7 +6,9 @@ import App from './App';
 import NotFound from './NotFound';
 
 // Community Members pages
-import Monte from './members/MonteThakkar';
+import MonteDashboard from './members/MonteThakkar/Dashboard';
+import MontePortfolio from './members/MonteThakkar/Portfolio';
+import MonteProfile from './members/MonteThakkar/Profile';
 import MonteLocked from './portals/MonteThakkar'
 
 import William from './members/WilliamHua';
@@ -29,8 +31,13 @@ const Routes = (props) => {
     <Router {...props}>
       <Switch>
         <Route exact path="/" component={App} />
-        <Route exact path="/monte" component={Monte} />
+
+        <Route exact path="/monte" component={MonteDashboard} />
+        <Route path="/monte/dashboard" component={MonteDashboard} />
+        <Route path="/monte/portfolio" component={MontePortfolio} />
+        <Route path="/monte/profile" component={MonteProfile} />
         <Route path="/monte/locked" component={MonteLocked} />
+
         <Route path="/william" component={William} />
         <Route path="/teodora" component={Teodora} />
         <Route path="/prakash" component={Prakash} />
