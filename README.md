@@ -49,6 +49,7 @@ Someone will review (and merge) it.
   - [ ] Profile Page
   - [ ] :star: **Bonus:** Logout feature (update `unlocked = false` on browser's cache)
   - [ ] :star: **Bonus:** Allow users to change secret phrase/password (update `secret = 'new_secret'` on browser's cache)
+  - [ ] :star: **Bonus:** Use [ReactDnd Library](https://github.com/react-dnd/react-dnd) to allow the user to move the dock around (top, left, right, bottom (default))
 
 - [ ] :star: **Bonus:** Change the secret phrase to a password & change locked screen UI
 

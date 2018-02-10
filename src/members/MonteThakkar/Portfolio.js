@@ -15,7 +15,7 @@ export default class Portfolio extends Component {
         <div className="portfolio-container">
           <div className="link-row">
             <img className="link-icon" src={LinkIcon}></img>
-            <a className="link-title" href="https://montethakkar.now.sh/">montethakkar.com</a>
+            <a className="link-title" href="https://montethakkar.now.sh/" target="_blank">montethakkar.com</a>
           </div>
           <div className="link-row">
             <img className="link-icon" src={ResumeIcon}></img>
