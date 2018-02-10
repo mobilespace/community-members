@@ -275,3 +275,49 @@ a {
   font-family: 'Proxima-Nova-Regular';
   text-decoration: none;
 }
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  margin-bottom: 100px;
+}
+
+.chart-row-container {
+  display: flex;
+  flex: 1;
+}
+
+.chart-container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-1 {
+  background: linear-gradient(to bottom right, #00c6ff, #0072ff);
+}
+
+.container-2 {
+  flex: 2;
+  background: linear-gradient(to bottom right, #FFAFBD, #ffc3a0);
+}
+
+.container-3 {
+  flex: 2;
+  flex-direction: column;
+  background: linear-gradient(to bottom right, #fd746c, #ff9068);
+}
+
+.container-heading {
+  font-size: 22px;
+  position: relative;
+  top: 50px;
+  left: 0;
+}
+
+.container-4 {
+  background: linear-gradient(to bottom right, #AAFFA9, #11FFBD);
+}
