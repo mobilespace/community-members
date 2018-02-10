@@ -22,7 +22,7 @@ export default class Portfolio extends Component {
             <Link to="/MonteThakkar_Resume.pdf" className="link-title" target="_blank">resume</Link>
           </div>
         </div>
-        <Dock />
+        <Dock active={'portfolio'} />
       </div>
     );
   }

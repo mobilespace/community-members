@@ -66,7 +66,7 @@ export default class Profile extends Component {
             </p>
           </div>
         </div>
-        <Dock />
+        <Dock active={'profile'} />
       </div>
     );
   }

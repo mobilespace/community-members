@@ -94,6 +94,11 @@ footer img:hover {
 	transform: scale(1.2);
 }
 
+.active {
+	margin: 0 10px;
+	transform: scale(1.2);
+}
+
 @-webkit-keyframes JUMP {
 	0% {
 		bottom: 0;
