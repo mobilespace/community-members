@@ -48,7 +48,7 @@ export default class GirishRawatPortal extends Component {
     const { phrase, redirect, error } = this.state
 
     if (redirect) {
-      return <Redirect to='/girish' />
+      return <Redirect to='/girish/dashboard' />
     }
 
     return (
