@@ -48,7 +48,7 @@ export default class MonteThakkarPortal extends Component {
     const { phrase, redirect, error } = this.state
 
     if (redirect) {
-      return <Redirect to='/monte' />
+      return <Redirect to='/monte/dashboard' />
     }
 
     return (
