@@ -256,11 +256,12 @@ font-size:20px;
 .main-menu:hover,nav.main-menu.expanded {
 width:250px;
 overflow:visible;
+opacity: 1.0;
 }
 
 .main-menu {
 background:#212121;
-border-right:1px solid #e5e5e5;
+opacity: 0.65;
 position:absolute;
 top:0;
 bottom:0;
@@ -364,4 +365,8 @@ height: 100%;
   font-style: normal;
   font-weight: 300;
   src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
+}
+
+.titleh1 {
+  font-family: 'Proxima-Nova-Regular';
 }

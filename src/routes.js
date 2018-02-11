@@ -11,8 +11,11 @@ import MontePortfolio from './members/MonteThakkar/Portfolio';
 import MonteProfile from './members/MonteThakkar/Profile';
 import MonteLocked from './portals/MonteThakkar'
 
-import GirishLocked from './portals/GirishRawat'
 import GirishDashboard from './members/GirishRawat/Dashboard';
+import GirishPortfolio from './members/GirishRawat/Portfolio';
+import GirishGraphs from './members/GirishRawat/Graphs';
+import GirishProfile from './members/GirishRawat/Profile';
+import GirishLocked from './portals/GirishRawat'
 
 import William from './members/WilliamHua';
 import Teodora from './members/TeodoraCaneva';
@@ -40,8 +43,13 @@ const Routes = (props) => {
         <Route path="/monte/portfolio" component={MontePortfolio} />
         <Route path="/monte/profile" component={MonteProfile} />
         <Route path="/monte/locked" component={MonteLocked} />
-        <Route path="/girish/locked" component={GirishLocked} />
+
+        <Route exact path="/girish" component={GirishProfile} />        
         <Route path="/girish/dashboard" component={GirishDashboard} />
+        <Route path="/girish/portfolio" component={GirishPortfolio} />
+        <Route path="/girish/graphs" component={GirishGraphs} />
+        <Route path="/girish/profile" component={GirishProfile} />        
+        <Route path="/girish/locked" component={GirishLocked} />
 
         <Route path="/william" component={William} />
         <Route path="/teodora" component={Teodora} />
