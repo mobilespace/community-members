@@ -70,6 +70,13 @@
     font-weight: 200;
 }
 
+.title-dashboard {
+    font-family: 'Montserrat';
+    color: #FCFCFC;
+    font-size: 25px;
+    text-align: center;
+}
+
 
 .link {
     text-decoration: none;
@@ -89,11 +96,37 @@
 }
 .links-container {
     display: flex;
+    flex-direction: column;
+    width: 200px;
+    justify-content: space-between;
+}
+
+.links-container-dashboard {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    width: 200px;
+    align-items: center;
+    justify-content: space-between;
+}
+.links-dashboard {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    width: 200px; 
+    margin:10px;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+.links-container2 {
+    display: flex;
     flex-direction: row;
     margin-top: 40px;
     width: 200px;
     justify-content: space-between;
 }
+
 
 .links-icon {
     width: 40px;
@@ -499,4 +532,91 @@
     color: #F61666;
     margin-top: 10px;
     font-size: 154x;
+}
+
+.main-container-b {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    /* background: #B02C4A; */
+}
+.dashboard-container-b {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  height: 100vh;
+}
+.chart-row-container-b {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.chart-row-container-b-left {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.chart-row-container-b-right {
+  display: flex;
+  flex: 3;
+  flex-direction: column;
+}
+.chart-column-container-b {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+}
+.chart-container-b {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-1-b{
+    flex: 1;
+    background: linear-gradient(to bottom, #778AD6, #5162AF);
+}
+
+.container-2-b{
+  flex: 1;
+  flex-direction: column;
+  background: #FCFCFC;
+}
+
+.container-3-b {
+  flex: 1;
+  flex-direction: column;
+  background: #FCFCFC;
+}
+.container-4-b {
+  flex: 1;
+  flex-direction: column;
+  background: #FCFCFC;
+}
+
+.links-subtitle{
+    font-weight: 300;
+    font-family: 'Montserrat';
+    color: #FCFCFC;
+}
+.links-subtitle:hover{
+    opacity: 0.5;
+}
+
+.avatar-container-dashboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.avatar-dashboard {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    border: 5px solid #7285D2;
 }
