@@ -19,6 +19,7 @@ import Nicholas from './members/NicholasSzeto';
 import Jahon from './members/JakhongirKhusanov';
 import Sukhjit from './members/SukhjitSingh';
 
+import MitulDashboard from './members/MitulSavani/Dashboard';
 import Mitul from './members/MitulSavani';
 import MitulLocked from './portals/MitulSavani'
 
@@ -51,8 +52,11 @@ const Routes = (props) => {
         <Route path="/nicholas" component={Nicholas} />
         <Route path="/jahon" component={Jahon} />
         <Route path="/sukhjit" component={Sukhjit} />
+
         <Route exact path="/mitul" component={Mitul} />
         <Route path="/mitul/locked" component={MitulLocked} />
+        <Route path="/mitul/dashboard" component={MitulDashboard}/>
+
         <Route path="/ryan" component={Ryan} />
         <Route path="/thomas" component={Thomas} />
         <Route path="/bhavesh" component={Bhavesh} />
