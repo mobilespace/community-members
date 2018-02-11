@@ -52,7 +52,6 @@ const Routes = (props) => {
         <Route path="/bhavesh" component={Bhavesh} />
         <Route path="/girish" component={Girish} />
         <Route path="/karan" component={Karan} />
-        <Route component={NotFound} />
       </Switch>
     </Router>
   )
