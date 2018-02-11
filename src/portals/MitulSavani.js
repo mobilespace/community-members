@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link, Redirect } from 'react-router-dom';
+import PasswordMask from 'react-password-mask';
 
 import '../styles/MitulSavani.css'
 
@@ -22,7 +23,6 @@ export default class MitulSavaniPortal extends Component {
 
   handleChange(event) {
     event.preventDefault();
-
     this.setState({ phrase: event.target.value, error: null })
   }
 
@@ -74,3 +74,4 @@ export default class MitulSavaniPortal extends Component {
     );
   }
 }
+
