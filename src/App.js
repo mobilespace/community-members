@@ -29,6 +29,9 @@ export default class App extends Component {
           <Link to="/monte/locked">
             <img className="landing-page-avatar" src={MONTE_AVATAR} />
           </Link>
+          <Link to="/girish/locked">
+            <img className="landing-page-avatar" src={GIRISH_AVATAR} />
+          </Link>
           <Link to="/william">
             <img className="landing-page-avatar" src={WILLIAM_AVATAR} />
           </Link>
@@ -64,9 +67,6 @@ export default class App extends Component {
           </Link>
           <Link to="/bhavesh">
             <img className="landing-page-avatar" src={BHAVESH_AVATAR}/>
-          </Link>
-          <Link to="/girish">
-            <img className="landing-page-avatar" src={GIRISH_AVATAR} />
           </Link>
           <Link to="/karan">
             <img className="landing-page-avatar" src={KARAN_AVATAR} />
