@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'Kleymissky';
+  src: url('../assets/Kleymissky.otf');
+}
+
+.title-nicholas, .subtitle-nicholas{
+  font-family: 'Kleymissky';
+  color: whitesmoke;
+}
+
+.main-container-nicholas {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, #029ffa, rgb(0, 0, 0));
+}
+
+.back-arrow-container {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+.back-arrow-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.avatar-container-nicholas {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+}
+
+.title-nicholas {
+  margin-top: 20px;
+  font-size: 80px;
+  text-align: center;
+}
+
+.link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.subtitle-nicholas {
+  font-size: 30px;
+  margin-top: 20px;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  width: 200px;
+  justify-content: space-between;
+}
+
+.links-icon {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+}

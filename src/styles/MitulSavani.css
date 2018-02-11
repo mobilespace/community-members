@@ -1,0 +1,176 @@
+@font-face{
+    font-family: 'Kaya_Medium';
+    src: url('../assets/Kaya_Medium.otf');
+}
+
+@font-face{
+  font-family: 'Futura';
+  src: url('../assets/Futura-Book-Regular.otf')
+}
+
+* .title-mitul, .subtitle-mitul, .thirdheading{
+    font-family: 'Kaya_Medium';
+    color: wheat;
+}
+
+.main-container-mitul
+{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #175257, rgb(24, 28, 54));
+}
+
+.portal-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(239,239,239,1);
+}
+
+  .back-arrow-container {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+  }
+  
+  .back-arrow-icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .avatar-container-mitul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .avatar-mitul {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+  }
+  
+  .title-mitul{
+    font-size: 65px;
+    text-align: center;
+    letter-spacing: 20px;
+  }
+  
+  .link {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .subtitle-mitul {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+
+  .thirdheading {
+    font-size: 25px;
+    margin-top: 20px;
+  }
+  
+  .links-container-mitul {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    width: 300px;
+    justify-content: space-between;
+  }
+  
+  .links-icon {
+    width: 40px;
+    height: 40px;
+    background: transparent;
+  }
+  
+  .lock-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 450px;
+    height: 220px;
+  }
+  
+  .lock-icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .lock-input-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 25px;
+  }
+  
+  .phrase-input {
+    width: 200px;
+    height: 45px;
+    color: black;
+    background-color: white;
+    border:1px solid rgb(220, 213, 213);
+    border-radius: 3px;
+    font-size: 18px;
+    font-family: 'Futura';
+    padding-left: 20px;
+    outline: none;
+  }
+  
+  .error {
+    border-color: #F61666;
+    border-width: 2px;
+  }
+  
+  .lock-error-message {
+    color: #F61666;
+    margin-top: 10px;
+    font-size: 154x;
+  }
+
+  .main-container-dashboard{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background: #181F31
+  }
+
+  .chart-row-container-mitul{
+    display: flex;
+    flex: 1;
+  }
+
+  .chart-container{
+
+    display: flex;
+    flex:1;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-1-mitul{
+    flex: 2;
+    background: lightpink;
+  }
+  
+  .container-2-mitul{
+    background: wheat;
+  }
+
+  .container-3-mitul{
+    background: mediumaquamarine;
+  }
+  .container-4-mitul{
+    background: lightseagreen;
+  }
