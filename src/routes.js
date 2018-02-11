@@ -9,6 +9,8 @@ import NotFound from './NotFound';
 import Monte from './members/MonteThakkar';
 import MonteLocked from './portals/MonteThakkar'
 
+import BhaveshLocked from './portals/BhaveshChowdhury'
+
 import William from './members/WilliamHua';
 import Teodora from './members/TeodoraCaneva';
 import Prakash from './members/PrakashGurung';
@@ -31,6 +33,7 @@ const Routes = (props) => {
         <Route exact path="/" component={App} />
         <Route exact path="/monte" component={Monte} />
         <Route path="/monte/locked" component={MonteLocked} />
+        <Route path="/bhavesh/locked" component={BhaveshLocked} />
         <Route path="/william" component={William} />
         <Route path="/teodora" component={Teodora} />
         <Route path="/prakash" component={Prakash} />

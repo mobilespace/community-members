@@ -447,3 +447,56 @@
         stroke-width: 44px;
     }
 }
+
+.close-icon {
+    width: 32px;
+    height: 32px;
+}
+.portal-container{
+    background: white;
+}
+.lock-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 450px;
+    height: 220px;
+    
+}
+
+.lock-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.lock-input-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 25px;
+}
+
+.phrase-input {
+    width: 200px;
+    height: 45px;
+    color: black;
+    background-color: white;
+    /* border: 1px solid rgb(220, 213, 213); */
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: 'Futura';
+    padding-left: 20px;
+    outline: none;
+}
+
+.error {
+    border-color: #F61666;
+    border-width: 2px;
+}
+
+.lock-error-message {
+    color: #F61666;
+    margin-top: 10px;
+    font-size: 154x;
+}
