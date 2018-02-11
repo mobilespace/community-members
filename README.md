@@ -52,6 +52,10 @@ Someone will review (and merge) it.
 
 - [ ] :star: **Bonus:** Change the secret phrase to a password & change locked screen UI
 
+- [ ] :star: **Bonus:** Use [ReactDnd Library](https://github.com/react-dnd/react-dnd) to allow the user to change the dock's position (top, left, right, bottom (default))
+
+- [ ] :star: **Bonus:** Dig deeper into [Victory docs](http://formidable.com/open-source/victory/docs/) & create customized charts. Also update the layout on the dashbord. Look [here](https://dribbble.com/tags/dashboard_ui) for inspiration (dribble).
+
 - [ ] :star: **Bonus:** Cache whether the user entered the right secret phrase/password on the browser (update `unlocked = true` on browser's cache)
 
 ## Problems?

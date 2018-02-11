@@ -8,7 +8,8 @@
     "react-password-mask": "^3.3.0",
     "react-router-dom": "^4.2.2",
     "react-scripts": "^1.1.0",
-    "zxcvbn": "^4.4.2"
+    "zxcvbn": "^4.4.2",
+    "victory": "^0.25.4"
   },
   "scripts": {
     "start": "react-scripts start",

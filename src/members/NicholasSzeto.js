@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import '../styles/MonteThakkar.css'
+import '../styles/NicholasSzeto.css'
 
 import LeftArrow from '../assets/left-arrow.png';
 
@@ -10,15 +10,15 @@ const NICHOLAS_AVATAR = 'https://avatars1.githubusercontent.com/u/23561635?s=460
 export default class NicholasSzeto extends Component {
   render() {
     return (
-      <div className="main-container">
+      <div className="main-container-nicholas">
         <Link to="/" className="back-arrow-container">
           <img className="back-arrow-icon" src={LeftArrow} />
         </Link>
-        <div className="avatar-container">
+        <div className="avatar-container-nicholas">
           <img className="avatar" src={NICHOLAS_AVATAR} />
         </div>
-        <div className="title">Nicholas Szeto</div>
-        <div className="subtitle">Aspiring Programmer</div>
+        <div className="title-nicholas">Nicholas Szeto</div>
+        <div className="subtitle-nicholas">Aspiring Programmer</div>
         <div className="links-container">
           <a href="https://github.com/niszeto" className="link">
             <img className="links-icon" src="http://bogas04.github.io/img/github.svg" />
