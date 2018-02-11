@@ -6,7 +6,9 @@ import App from './App';
 import NotFound from './NotFound';
 
 // Community Members pages
-import Monte from './members/MonteThakkar';
+import MonteDashboard from './members/MonteThakkar/Dashboard';
+import MontePortfolio from './members/MonteThakkar/Portfolio';
+import MonteProfile from './members/MonteThakkar/Profile';
 import MonteLocked from './portals/MonteThakkar'
 
 import BhaveshLocked from './portals/BhaveshChowdhury'
@@ -31,9 +33,17 @@ const Routes = (props) => {
     <Router {...props}>
       <Switch>
         <Route exact path="/" component={App} />
-        <Route exact path="/monte" component={Monte} />
+
+        <Route exact path="/monte" component={MonteDashboard} />
+        <Route path="/monte/dashboard" component={MonteDashboard} />
+        <Route path="/monte/portfolio" component={MontePortfolio} />
+        <Route path="/monte/profile" component={MonteProfile} />
         <Route path="/monte/locked" component={MonteLocked} />
+<<<<<<< HEAD
         <Route path="/bhavesh/locked" component={BhaveshLocked} />
+=======
+
+>>>>>>> 94f6051ddce1a21bed0dd99091ff89d1e697db8d
         <Route path="/william" component={William} />
         <Route path="/teodora" component={Teodora} />
         <Route path="/prakash" component={Prakash} />
@@ -48,7 +58,6 @@ const Routes = (props) => {
         <Route path="/bhavesh" component={Bhavesh} />
         <Route path="/girish" component={Girish} />
         <Route path="/karan" component={Karan} />
-        <Route component={NotFound} />
       </Switch>
     </Router>
   )
