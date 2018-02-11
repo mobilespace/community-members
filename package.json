@@ -12,7 +12,6 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "postbuild": "cp -a public/resumes/. build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }

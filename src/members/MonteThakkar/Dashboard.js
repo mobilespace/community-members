@@ -73,7 +73,7 @@ export default class Dashboard extends Component {
           </div>
           <div className="chart-row-container">
             <div className="chart-container container-3">
-              <h3 class="container-heading">Click Me</h3>
+              <h3 className="container-heading">Click Me</h3>
               <VictoryVoronoi
                 style={{ data: { stroke: "#0072ff", strokeWidth: 2 } }}
                 events={[{
