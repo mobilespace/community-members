@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import '../styles/MonteThakkar.css'
+import '../../styles/TeodoraCaneva.css';
 
-import LeftArrow from '../assets/left-arrow.png';
+import LeftArrow from '../../assets/left-arrow.png'
 
 
 const TEODORA_AVATAR ='https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-1/c44.0.320.320/p320x320/20914645_1579156895438534_1027285013181250707_n.jpg?oh=0ff1b3c4c8bc8e00edb84cecd660d0fe&oe=5B1C897A'
 export default class TeodoraCaneva extends Component {
   render() {
     return (
-      <div className="main-container">
+      <div className="main-container-teodora">
         <Link to="/" className="back-arrow-container">
           <img className="back-arrow-icon" src={LeftArrow} />
         </Link>

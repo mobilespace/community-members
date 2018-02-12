@@ -12,7 +12,12 @@ import MonteProfile from './members/MonteThakkar/Profile';
 import MonteLocked from './portals/MonteThakkar'
 
 import William from './members/WilliamHua';
-import Teodora from './members/TeodoraCaneva';
+
+import TeodoraDashboard from './members/TeodoraCaneva/Dashboard';
+import TeodoraPortfolio from './members/TeodoraCaneva/Portfolio';
+import TeodoraProfile from './members/TeodoraCaneva/Profile';
+import TeodoraLocked from './portals/TeodoraCaneva'
+
 import Prakash from './members/PrakashGurung';
 import Emanuel from './members/EmanuelSaunders';
 import Nicholas from './members/NicholasSzeto';
@@ -45,7 +50,13 @@ const Routes = (props) => {
         <Route path="/monte/locked" component={MonteLocked} />
 
         <Route path="/william" component={William} />
-        <Route path="/teodora" component={Teodora} />
+
+        <Route exact path="/teodora" component={TeodoraDashboard} />
+        <Route path="/teodora/dashboard" component={TeodoraDashboard} />
+        <Route path="/teodora/profile" component={TeodoraProfile} />
+        <Route path="/teodora/portfolio" component={TeodoraPortfolio} />
+        <Route path="/teodra/locked" component={TeodoraLocked} />
+
         <Route path="/prakash" component={Prakash} />
         <Route path="/emanuel" component={Emanuel} />
         <Route path="/affaan" component={Affaan} />
