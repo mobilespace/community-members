@@ -161,16 +161,20 @@
 
   .container-1-mitul{
     flex: 2;
-    background: lightpink;
+    background: #181F31;
   }
   
   .container-2-mitul{
-    background: wheat;
+    background: #181F31;
   }
 
   .container-3-mitul{
-    background: mediumaquamarine;
+    background: #181F31;
   }
   .container-4-mitul{
-    background: lightseagreen;
+    background: #181F31;
+  }
+
+  .axes{
+    font-size: 30px;
   }

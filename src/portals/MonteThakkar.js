@@ -34,7 +34,6 @@ export default class MonteThakkarPortal extends Component {
     } else {
       this.setState({ error: 'Access Denied' })
     }
-
     event.preventDefault();
   }
 

@@ -47,7 +47,7 @@ export default class MitulSavaniPortal extends Component {
     const { phrase, redirect, error } = this.state
 
     if (redirect) {
-      return <Redirect to='/mitul' />
+      return <Redirect to='/mitul/dashboard' />
     }
 
     return (
