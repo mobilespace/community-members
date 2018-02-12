@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import '../styles/MonteThakkar.css'
+import '../../styles/MonteThakkar.css'
 
-import LeftArrow from '../assets/left-arrow.png';
+import LeftArrow from '../../assets/left-arrow.png';
 
-const JAHON_AVATAR = 'https://avatars0.githubusercontent.com/u/25942541?s=460&v=4'
+const JAKHONGIR_AVATAR = 'https://avatars0.githubusercontent.com/u/25942541?s=460&v=4'
 
-export default class JakhongirKhusanov extends Component {
+export default class Profile extends Component {
   render() {
     return (
       <div className="main-container">
@@ -15,7 +15,7 @@ export default class JakhongirKhusanov extends Component {
           <img className="back-arrow-icon" src={LeftArrow} />
         </Link>
         <div className="avatar-container">
-          <img className="avatar" src={JAHON_AVATAR} />
+          <img className="avatar" src={JAKHONGIR_AVATAR} />
         </div>
         <div className="title">Jakhongir Khusanov</div>
         <div className="subtitle">Innovate</div>

@@ -16,7 +16,12 @@ import Teodora from './members/TeodoraCaneva';
 import Prakash from './members/PrakashGurung';
 import Emanuel from './members/EmanuelSaunders';
 import Nicholas from './members/NicholasSzeto';
-import Jahon from './members/JakhongirKhusanov';
+
+import JakhongirDashboard from './members/JakhongirKhusanov/Dashboard';
+import JakhongirPortfolio from './members/JakhongirKhusanov/Portfolio';
+import JakhongirProfile from './members/JakhongirKhusanov/Profile';
+import JakhongirLocked from './portals/JakhongirKhusanov'
+
 import Sukhjit from './members/SukhjitSingh';
 
 import MitulDashboard from './members/MitulSavani/Dashboard';
@@ -50,7 +55,13 @@ const Routes = (props) => {
         <Route path="/emanuel" component={Emanuel} />
         <Route path="/affaan" component={Affaan} />
         <Route path="/nicholas" component={Nicholas} />
-        <Route path="/jahon" component={Jahon} />
+
+        <Route exact path="/Jakhongir" component={JakhongirDashboard} />
+        <Route path="/Jakhongir/dashboard" component={JakhongirDashboard} />
+        <Route path="/Jakhongir/portfolio" component={JakhongirPortfolio} />
+        <Route path="/Jakhongir/profile" component={JakhongirProfile} />
+        <Route path="/Jakhongir/locked" component={JakhongirLocked} />
+
         <Route path="/sukhjit" component={Sukhjit} />
 
         <Route exact path="/mitul" component={Mitul} />
