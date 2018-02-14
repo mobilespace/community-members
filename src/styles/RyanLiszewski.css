@@ -7,7 +7,6 @@
   width: 100vw;
   height: 100vh; 
   display: flex; 
-
 }
 
 .data-container-ryan {
@@ -26,7 +25,38 @@
   order: 3;
   flex-basis: 64%;
   background-color: #FEFEFE;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
+.chart-row-container-1 {
+  display: flex;
+  flex-basis: 60%;
+}
+
+.chart-container-1 {
+  flex: 1;
+}
+
+.chart-container-2 {
+  flex: 1;
+}
+.chart-container-3 {
+  flex: 1;
+}
+.chart-container-4 {
+  flex: 1;
+}
+
+.chart-row-container-2 {
+  display: flex;
+  flex-basis: 40%;
+  background: linear-gradient( to left top,#DED2CE,#EAAA8C); 
+}
+
+
+
 
 .lock-container {
   display: flex;
