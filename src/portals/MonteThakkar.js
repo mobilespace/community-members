@@ -13,7 +13,9 @@ export default class MonteThakkarPortal extends Component {
     this.state = {
       phrase: '',
       redirect: false,
-      error: null
+      error: null,
+      tries: 0,
+      show_hint: false
     }
 
     this.handleChange = this.handleChange.bind(this);
@@ -27,12 +29,12 @@ export default class MonteThakkarPortal extends Component {
   }
 
   handleSubmit(event) {
-    const { phrase } = this.state
+    const { phrase, tries } = this.state
 
     if (phrase === 'mars' || phrase === 'MARS') {
-      this.setState({ redirect: true })
+      this.setState({ redirect: true, tries: tries + 1 })
     } else {
-      this.setState({ error: 'Access Denied' })
+      this.setState({ error: 'Access Denied', tries: tries + 1 })
     }
     event.preventDefault();
   }
@@ -44,10 +46,10 @@ export default class MonteThakkarPortal extends Component {
   }
 
   render() {
-    const { phrase, redirect, error } = this.state
+    const { phrase, redirect, error, tries } = this.state
 
     if (redirect) {
-      return <Redirect to='/monte' />
+      return <Redirect to='/monte/dashboard' />
     }
 
     return (
@@ -67,6 +69,7 @@ export default class MonteThakkarPortal extends Component {
               />
             </form>
             {error != null && <div className="lock-error-message">ACCESS DENIED</div>}
+            {tries >= 1 && <div className="tries-message"><b>hint:</b> try "Mars" 😉</div>}
           </div>
         </div>
       </div>

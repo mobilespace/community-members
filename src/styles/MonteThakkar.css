@@ -13,6 +13,12 @@
   src: url('../assets/Futura-PT-Medium.otf');
 }
 
+b {
+  font-family: 'Proxima-Nova-Regular';
+  font-weight: bold;
+  color: black;
+}
+
 * {
   font-family: 'Proxima-Nova-Regular';
   color: whitesmoke;
@@ -162,7 +168,14 @@ a {
 .lock-error-message {
   color: #F61666;
   margin-top: 10px;
-  font-size: 154x;
+  font-size: 15px;
+}
+
+.tries-message {
+  color: black;
+  margin-top: 10px;
+  font-size: 15px;
+  font-family: 'Proxima-Nova-Regular';
 }
 
 .dock-avatar {
