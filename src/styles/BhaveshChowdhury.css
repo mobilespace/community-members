@@ -15,6 +15,7 @@
 }
 
 .main-container {
+    
     display: flex;
     flex-direction: column;
     height: 100vh;
@@ -510,18 +511,25 @@
     margin-top: 25px;
 }
 
+.lock-input-container-b{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 25px;
+}
+/*
 .phrase-input {
     width: 200px;
     height: 45px;
     color: black;
     background-color: white;
-    /* border: 1px solid rgb(220, 213, 213); */
+    border: 1px solid rgb(220, 213, 213);
     border-radius: 5px;
     font-size: 18px;
     font-family: 'Futura';
     padding-left: 20px;
     outline: none;
-}
+} */
 
 .error {
     border-color: #F61666;
@@ -584,7 +592,7 @@
 .container-2-b{
   flex: 1;
   flex-direction: column;
-  background: #FCFCFC;
+  background: #FCFCFC
 }
 
 .container-3-b {
@@ -619,4 +627,41 @@
     height: 120px;
     border-radius: 60px;
     border: 5px solid #7285D2;
+}
+.container-padding{
+    border-radius: 10px;
+    margin:60px;
+    background: white;
+}
+
+.main-container-portfolio{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #778AD6, #5162AF);   
+}
+.link-title {
+    color: #FCFCFC;
+}
+.ReactPasswordStrength {
+    border: none !important;
+    box-sizing: border-box;
+    color: #090809;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 6px;
+    line-height: 1;
+    position: relative;
+}
+
+.ReactPasswordStrength-input{
+    color: black !important;
+    width: 100% !important;
+}
+
+.ReactPasswordStrength-strength-desc{
+    text-align: center;
+    right: -40px !important;
 }

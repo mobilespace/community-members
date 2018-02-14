@@ -33,15 +33,15 @@ export default class Dashboard extends Component {
                                 </div>
                                 <div className="title-dashboard">Bhavesh Chowdhury</div>
                                 <div className="links-dashboard">
-                                    <a href="https://github.com/affaanghazzali" className="link">
+                                    <Link to="/bhavesh/dashboard" className="link">
                                         <h3 className="links-subtitle">Dashboard</h3>
-                                    </a>
-                                    <a href="https://www.instagram.com/affaanghazzali/" className="link">
+                                    </Link>
+                                    <Link to="/bhavesh/portfolio" className="link">
                                         <h3 className="links-subtitle">Portfolio</h3>
-                                    </a>
-                                    <a href="mailto:ghazzaliaffaan@gmail.com?Subject=I%20would%20like%20to%20know%20more%20about%20MobileSpace!" target="_top" className="link">
+                                    </Link>
+                                    <Link to="/bhavesh/portfolio" className="link">
                                         <h3 className="links-subtitle">Profile</h3>
-                                    </a>
+                                    </Link>
                                 </div>
                             </div>
                         </div>
@@ -49,31 +49,34 @@ export default class Dashboard extends Component {
                     <div className="chart-row-container-b-right">
                         <div className="chart-column-container-b">
                             <div className="chart-container-b container-2-b">
-                                <VictoryChart
-                                    theme={VictoryTheme.material}
-                                    width={600}
-                                >
-                                    <VictoryLine
-                                        interpolation="natural"
-                                        data={data}
+                                <div className="container-padding">
+                                    <VictoryChart
+                                        theme={VictoryTheme.material}
+                                        width={600}
+                                    >
+                                        <VictoryLine
+                                            interpolation="natural"
+                                            data={data}
 
-                                        animate={{
-                                            duration: 2000,
-                                            onLoad: { duration: 2000 }
-                                        }}
-                                        style={{
-                                            data: {
-                                                stroke: "#5164BE", strokeWidth: 5
-                                            },
-                                        }}
-                                        labels={(datum) => datum.name}
-                                        labelComponent={<VictoryLabel renderInPortal dy={0} />}
-                                    />
-                                </VictoryChart>
+                                            animate={{
+                                                duration: 2000,
+                                                onLoad: { duration: 2000 }
+                                            }}
+                                            style={{
+                                                data: {
+                                                    stroke: "#5164BE", strokeWidth: 5
+                                                },
+                                            }}
+                                            labels={(datum) => datum.name}
+                                            labelComponent={<VictoryLabel renderInPortal dy={0} />}
+                                        />
+                                    </VictoryChart>
+                                </div>
                             </div>
                         </div>
                         <div className="chart-column-container-b">
                             <div className="chart-container-b container-3-b">
+                            <div className="container-padding">
                                 <VictoryPie
                                     // padAngle={3}
                                     innerRadius={100}
@@ -84,8 +87,10 @@ export default class Dashboard extends Component {
                                     data={data}
 
                                 />
+                                </div>
                             </div>
                             <div className="chart-container-b container-4-b">
+                            <div className="container-padding">
                                 <VictoryChart
                                     theme={VictoryTheme.material}
                                     domainPadding={10}
@@ -99,6 +104,7 @@ export default class Dashboard extends Component {
                                         data={data}
                                     />
                                 </VictoryChart>
+                                </div>
                             </div>
                         </div>
                     </div>

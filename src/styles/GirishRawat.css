@@ -35,13 +35,13 @@
     font-family: 'VT323';    
 }
 
-.main-container-girish a,
+/* .main-container-girish a,
 a:visited {
   border-bottom: 0.2rem solid #14fdce;
   color: #14fdce;
   text-decoration: none;
   font-family: 'VT323';  
-}
+} */
 .main-container-girish a:hover {
   background-color: #14fdce;
   color: #031e11;

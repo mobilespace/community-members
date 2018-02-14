@@ -12,6 +12,7 @@ import MonteProfile from './members/MonteThakkar/Profile';
 import MonteLocked from './portals/MonteThakkar'
 import BhaveshDashboard from './members/BhaveshChowdhury/Dashboard';
 import BhaveshLocked from './portals/BhaveshChowdhury'
+import BhaveshPortfolio from './members/BhaveshChowdhury/Portfolio';
 
 import William from './members/WilliamHua';
 import Teodora from './members/TeodoraCaneva';
@@ -40,6 +41,7 @@ const Routes = (props) => {
         <Route path="/monte/profile" component={MonteProfile} />
         <Route path="/monte/locked" component={MonteLocked} />
         <Route path="/bhavesh/dashboard" component={BhaveshDashboard} />
+        <Route path="/bhavesh/portfolio" component={BhaveshPortfolio} />
         <Route path="/bhavesh/locked" component={BhaveshLocked} />
         <Route path="/william" component={William} />
         <Route path="/teodora" component={Teodora} />

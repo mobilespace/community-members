@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Link, Redirect} from 'react-router-dom';
+import ReactPasswordStrength from 'react-password-strength';
 
 import '../styles/BhaveshChowdhury.css'
 
@@ -7,56 +8,22 @@ import CloseArrow from '../assets/close.png';
 import LockIcon from '../assets/lock.png'
 
 export default class BhaveshChowdhuryPortal extends Component {
-    constructor(props) {
-        super(props);
 
-        this.state = {
-            unlocked: false, 
-            phrase: '',
-            redirect: false,
-            error: null
-        }
+    state = {passLength: 0}
+    changeCallback = state => this.setState({passLength: state.password.length})
 
-        this.handleChange = this
-            .handleChange
-            .bind(this);
-        this.handleSubmit = this
-            .handleSubmit
-            .bind(this);
-    }
-
-    handleChange(event) {
-        event.preventDefault();
-
-        this.setState({phrase: event.target.value, error: null})
-    }
-
-    handleSubmit(event) {
-        const {phrase} = this.state
-
-        if (phrase === 'bro' || phrase === 'BRO') {
-            this.setState({redirect: true})
-        } else {
-            this.setState({error: 'Access Denied'})
-        }
-
-        event.preventDefault();
-    }
-
-    errorClass() {
-        const {error} = this.state
-
-        return error != null
-            ? 'error'
-            : ''
-    }
+    clear = () => this.ReactPasswordStrength.clear()
 
     render() {
-        const {phrase, redirect, error} = this.state
+        // const {phrase, redirect, error} = this.state
 
-        if (redirect) {
-            return <Redirect to='/bhavesh'/>
-        }
+        // if (redirect) {
+        //     return <Redirect to='/bhavesh'/>
+        const inputProps = {
+            placeholder: "Enter password",
+            autoFocus: true,
+            // className: 'another-input-prop-class-name',
+        };
 
         return (
             <div className="portal-container">
@@ -65,8 +32,8 @@ export default class BhaveshChowdhuryPortal extends Component {
                 </Link>
                 <div className="lock-container">
                     <img className="lock-icon" src={LockIcon}/>
-                    <div className="lock-input-container">
-                        <form onSubmit={this.handleSubmit}>
+                    <div className="lock-input-container-b">
+                        {/* <form onSubmit={this.handleSubmit}>
                             <input
                                 type="text"
                                 className={`phrase-input ${this.errorClass()}`}
@@ -76,11 +43,16 @@ export default class BhaveshChowdhuryPortal extends Component {
                                 onChange={this
                                 .handleChange
                                 .bind(this)}/>
-                        </form>
-                        {error != null && <div className="lock-error-message">ACCESS DENIED</div>}
+                        </form> */}
+                        <ReactPasswordStrength
+                            minLength={6}
+                            inputProps={{ ...inputProps, id: 'inputPassword2' }}
+                            // defaultValue="defaultValue"
+                        />
+                    </div>
+                        {/* {error != null && <div className="lock-error-message">ACCESS DENIED</div>} */}
                     </div>
                 </div>
-            </div>
         );
     }
 }
