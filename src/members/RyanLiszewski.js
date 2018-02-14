@@ -12,35 +12,19 @@ export default class RyanLiszewski extends Component {
   render() {
     return (
 
-      <div className="main-container-ryan">
-        <div className="arrow-avatar-container">
-            <Link to="/" className="back-arrow-container-ryan">
-              <img className="back-arrow-icon" src={LeftArrow} />
-            </Link>
-            <div className="title-ryan">Ryan Liszewski</div>
-            <div className="subtitle-ryan">Coffee. Learning. React.</div>
-            <div className="avatar-container-ryan">
-              <img className="avatar-ryan" src={RYAN_AVATAR} />
-          </div>
+      <div className="main-container">
+        <div className="dashboard-container">
+        
+              {/* <div className="title-ryan">Ryan Liszewski</div>
+              <div className="subtitle-ryan">Coffee. Learning. React.</div>
+              <div className="avatar-container-ryan">
+                <img className="avatar-ryan" src={RYAN_AVATAR} />
+            </div> */}
         </div>
 
       <div className="home-container"> 
-        <div className="row"> 
-          
-          <div className="column">
-            <img className="ryan-grid" src={RYAN_AVATAR}/>
-          </div>
-          <div className="column">
-            <img className="ryan-grid" src={RYAN_AVATAR}/>
-          </div>
 
-          <div className="column">
-              <img className="ryan-grid" src={RYAN_AVATAR}/>
-          </div>
-          <div className="column">
-              <img className="ryan-grid" src={RYAN_AVATAR}/>
-          </div>
-        </div>
+
       </div>
         
         

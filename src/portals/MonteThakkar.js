@@ -22,7 +22,7 @@ export default class MonteThakkarPortal extends Component {
 
   handleChange(event) {
     event.preventDefault();
-
+    console.log(event.target.value)
     this.setState({ phrase: event.target.value, error: null })
   }
 

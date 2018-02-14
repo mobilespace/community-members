@@ -3,109 +3,29 @@
   src: url('../assets/Futura-Book-Regular.otf');
 }
 
-.title-ryan, .subtitle-ryan {
-  font-family: 'Futura Book';
-  color: whitesmoke;
-  margin: 0 50px; 
-}
-
 .main-container-ryan {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
   width: 100vw;
-  background: linear-gradient(to bottom right, #ee9ca7, #ffdde1);
-}
-
-.home-container {
-  height:80vh;
-  width: 100%;
-  flex: 1;
-  
-}
-
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  height: 100vh; 
+  display: flex; 
 
 }
 
-/* Create two equal columns that sits next to each other */
-.column {
-  width: 50%;
+.data-container-ryan {
+  order: 2;
+  flex-basis: 30%;
+  background:linear-gradient(#C77863,#A55759);
 }
 
-.ryan-grid {
-  display:flex;
-  max-width: 100%;
+.dock-container-ryan {
+  order: 1;
+  flex-basis: 6%;
+  background: linear-gradient(#A55759, #724056);
 }
 
-.arrow-avatar-container {
-  display: flex;
-  flex-direction: row;
-  width: 100vw;
-  height: 80px;
-  background: linear-gradient(to bottom right, #f6cdd3, #9ceee3);
-  align-items: center;
-  justify-content: center space-between;
-}
-
-.back-arrow-container-ryan {
-  align-self: flex-start;
-  margin: auto; 
-  margin-left: 50px;
-}
-
-.back-arrow-icon {
-  width: 50px;
-  height: 50px;
-}
-
-.avatar-container-ryan {
-  align-self: flex-end;
-  margin: auto; 
-  margin-right: 50px; 
-}
-
-.avatar-ryan {
-  width: 60px;
-  height: 60px;
-  border-radius: 30px;
-}
-
-.title-ryan {
-  font-size: 65px;
-  text-align: left;
-  margin-left: 50px;
-  margin-top: 25px;
-  
-}
-
-.link {
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.subtitle-ryan {
-  font-size: 22px;
-  margin-top: 10px;
-}
-
-.links-container-ryan {
-  display: flex;
-  flex-direction: row;
-  margin: 0 50px 20px;
-  margin-top: auto;
-  width: 200px;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.links-icon {
-  width: 40px;
-  height: 40px;
-  background: transparent;
+.dashboard-container-ryan {
+  order: 3;
+  flex-basis: 64%;
+  background-color: #FEFEFE;
 }
 
 .lock-container {
