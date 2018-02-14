@@ -17,13 +17,13 @@
 
 .dock-container-ryan {
   order: 1;
-  flex-basis: 6%;
+  flex-basis: 5%;
   background: linear-gradient(#A55759, #724056);
 }
 
 .dashboard-container-ryan {
   order: 3;
-  flex-basis: 64%;
+  flex-basis: 65%;
   background-color: #FEFEFE;
   display: flex;
   flex-direction: column;
@@ -49,13 +49,38 @@
   flex: 1;
 }
 
+
+
 .chart-row-container-2 {
   display: flex;
   flex-basis: 40%;
   background: linear-gradient( to left top,#DED2CE,#EAAA8C); 
 }
 
+.navbar-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
 
+}
+
+.navbar {
+  padding: 5px; 
+  margin: auto;
+  list-style: none;
+  display: inline;
+}
+
+.navbar-item {
+  padding-top: 10px;
+  flex: 1;
+}
+
+.navbar-icon {
+  width: 40px;
+  height: 40px;
+}
 
 
 .lock-container {
