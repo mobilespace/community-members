@@ -17,7 +17,9 @@ import Prakash from './members/PrakashGurung';
 import Emanuel from './members/EmanuelSaunders';
 import Nicholas from './members/NicholasSzeto';
 import Jahon from './members/JakhongirKhusanov';
+
 import Sukhjit from './members/SukhjitSingh';
+import SukhjitLocked from './portals/SukhjitSingh';
 
 import MitulDashboard from './members/MitulSavani/Dashboard';
 import Mitul from './members/MitulSavani';
@@ -51,7 +53,9 @@ const Routes = (props) => {
         <Route path="/affaan" component={Affaan} />
         <Route path="/nicholas" component={Nicholas} />
         <Route path="/jahon" component={Jahon} />
-        <Route path="/sukhjit" component={Sukhjit} />
+
+        <Route exact path="/sukhjit" component={Sukhjit} />
+        <Route path="/sukhjit/locked" component={SukhjitLocked} />
 
         <Route exact path="/mitul" component={Mitul} />
         <Route path="/mitul/locked" component={MitulLocked} />
