@@ -70,3 +70,31 @@
   height: 40px;
   background: transparent;
 }
+
+.dashboard-container-nicholas{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+.chart-row-container-nicholas{
+  display: flex;
+  flex: 1;
+}
+
+.chart-container-nicholas{
+  display: flex;
+  flex: 1;
+}
+
+.container-1-nicholas{
+  background: red;
+
+  flex: 2;
+}
+
+.container-2-nicholas{
+  background: pink;
+  flex: 6;
+}
