@@ -9,7 +9,11 @@ import NotFound from './NotFound';
 import MonteDashboard from './members/MonteThakkar/Dashboard';
 import MontePortfolio from './members/MonteThakkar/Portfolio';
 import MonteProfile from './members/MonteThakkar/Profile';
-import MonteLocked from './portals/MonteThakkar'
+import MonteLocked from './portals/MonteThakkar';
+
+import MitulDashboard from './members/MitulSavani/Dashboard'; 
+import MitulLocked from './portals/MitulSavani';
+
 
 import William from './members/WilliamHua';
 import Teodora from './members/TeodoraCaneva';
@@ -19,17 +23,11 @@ import Nicholas from './members/NicholasSzeto';
 import Jahon from './members/JakhongirKhusanov';
 import Sukhjit from './members/SukhjitSingh';
 
-import MitulDashboard from './members/MitulSavani/Dashboard';
-import Mitul from './members/MitulSavani';
-import MitulLocked from './portals/MitulSavani'
-
 import Ryan from './members/RyanLiszewski';
 import Thomas from './members/ThomasZhu';
 import Bhavesh from './members/BhaveshChowdhury';
 import Girish from './members/GirishRawat';
 import Affaan from './members/AffaanGhazzali';
-import MitulSavani from './members/MitulSavani';
-
 import Karan from './members/KaranGupta';
 
 const Routes = (props) => {
@@ -53,9 +51,9 @@ const Routes = (props) => {
         <Route path="/jahon" component={Jahon} />
         <Route path="/sukhjit" component={Sukhjit} />
 
-        <Route exact path="/mitul" component={Mitul} />
-        <Route path="/mitul/locked" component={MitulLocked} />
+        <Route exact path="/mitul" component={MitulDashboard} />
         <Route path="/mitul/dashboard" component={MitulDashboard}/>
+        <Route path="/mitul/locked" component={MitulLocked} />
 
         <Route path="/ryan" component={Ryan} />
         <Route path="/thomas" component={Thomas} />
@@ -66,5 +64,4 @@ const Routes = (props) => {
     </Router>
   )
 }
-
 export default Routes;

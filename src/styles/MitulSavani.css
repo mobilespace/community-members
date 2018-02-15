@@ -13,6 +13,30 @@
     color: wheat;
 }
 
+::selection {
+  background: #16F5C4;
+  color: white;
+  /* WebKit/Blink Browsers */
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: rgba(255, 255, 255, 0);
+}
+
+a {
+  font-family: 'Proxima-Nova-Regular';
+}
+
+.NoSelection {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 .main-container-mitul
 {
     display: flex;
@@ -92,7 +116,12 @@
     height: 40px;
     background: transparent;
   }
-  
+
+  .close-icon {
+    width: 32px;
+    height: 32px;
+  }
+
   .lock-container {
     display: flex;
     justify-content: center;
@@ -107,7 +136,7 @@
     height: 50px;
   }
   
-  .lock-input-container {
+  .lock-input-container{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -137,7 +166,124 @@
     margin-top: 10px;
     font-size: 154x;
   }
-
+  .tries-message {
+    color: black;
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: 'Proxima-Nova-Regular';
+  }
+  
+  .dock-avatar {
+    border-radius: 2em;
+  }
+  
+  .About {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .AboutLeftContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .AboutRightContainer {
+    flex: 2;
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 50px;
+  }
+  
+  .ProfileImageContainer {
+    flex: 1;
+    margin-top: 50px;
+  }
+  
+  .ProfileImage {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+  }
+  
+  .LogosImageContainer {
+    flex: 2;
+    flex-direction: column;
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  .LogosImageRow {
+    flex: 1;
+    flex-direction: row;
+  }
+  
+  .Logo {
+    height: 35px;
+    width: 35px;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-top: 20px;
+  }
+  
+  .AboutText {
+    font-size: 18px;
+    color: #CBDBD7;
+    font-family: 'Proxima-Nova-Regular';
+  }
+  
+  .IntroHello {
+    font-family: 'Futura-PT-Medium';
+    font-size: 22px;
+    font-weight: bold;
+    color: #16F5C4;
+    letter-spacing: 0px;
+  }
+  
+  .Inline {
+    display: inline;
+  }
+  
+  .Bold {
+    font-weight: bold;
+    color: #16F5C4;
+  }
+  
+  .portfolio-container {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 300px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .link-row {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .link-icon {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+  }
+  
+  .link-title {
+    font-size: 38px;
+    color: #CBDBD7;
+    font-family: 'Proxima-Nova-Regular';
+    text-decoration: none;
+  }
+  
   .main-container-dashboard{
     display: flex;
     flex-direction: column;
@@ -173,8 +319,4 @@
   }
   .container-4-mitul{
     background: #181F31;
-  }
-
-  .axes{
-    font-size: 30px;
   }

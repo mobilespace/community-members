@@ -4,17 +4,9 @@ import { VictoryPie } from 'victory';
 import { Line, Circle } from 'rc-progress';
 import {AreaChart} from 'react-easy-chart';
 
+
+
 import '../../styles/MitulSavani.css'
-
-const data = [
-    {quarter: 1, earnings: 13000},
-    {quarter: 2, earnings: 16500},
-    {quarter: 3, earnings: 14250},
-    {quarter: 4, earnings: 19000},
-    {quarter: 5, earnings: 15000},
-  ];
-
-  
 
   export default class Dashboard extends Component {
     constructor() {
@@ -90,7 +82,6 @@ const data = [
                         yTicks={3}
                         noAreaGradient
                         margin={{top: 30, right: 30, bottom: 30, left: 30}}
-                        //DATA given by Mr. Manik Mehra
                         width={1350}
                         height={300}
                         areaColors={['#7E4068', '#7BA8A6']}
@@ -99,8 +90,8 @@ const data = [
                             [
                                 { x: 'Mon', y: 20 },
                                 { x: 'Tue', y: 14 },
-                                { x: 'Wed', y: 33 },
-                                { x: 'Thu', y: 25 },
+                                { x: 'Wed', y: 29 },
+                                { x: 'Thu', y: 18 },
                                 { x: 'Fri', y: 32 }
                             ], [
                                 { x: 'Mon', y: 10 },
