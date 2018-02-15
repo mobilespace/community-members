@@ -24,7 +24,12 @@ import Mitul from './members/MitulSavani';
 import MitulLocked from './portals/MitulSavani'
 
 import Ryan from './members/RyanLiszewski';
-import Thomas from './members/ThomasZhu';
+
+import ThomasDashboard from './members/ThomasZhu/Dashboard';
+import ThomasPortfolio from './members/ThomasZhu/Portfolio';
+import ThomasProfile from './members/ThomasZhu/Profile';
+import ThomasLocked from './portals/ThomasZhu'
+
 import Bhavesh from './members/BhaveshChowdhury';
 import Girish from './members/GirishRawat';
 import Affaan from './members/AffaanGhazzali';
@@ -58,7 +63,13 @@ const Routes = (props) => {
         <Route path="/mitul/dashboard" component={MitulDashboard}/>
 
         <Route path="/ryan" component={Ryan} />
-        <Route path="/thomas" component={Thomas} />
+
+        <Route exact path="/thomas" component={ThomasDashboard} />
+        <Route path="/thomas/dashboard" component={ThomasDashboard} />
+        <Route path="/thomas/portfolio" component={ThomasPortfolio} />
+        <Route path="/thomas/profile" component={ThomasProfile} />
+        <Route path="/thomas/locked" component={ThomasLocked} />
+        
         <Route path="/bhavesh" component={Bhavesh} />
         <Route path="/girish" component={Girish} />
         <Route path="/karan" component={Karan} />
