@@ -21,7 +21,7 @@ export default class Portfolio extends Component {
           </div>
           <div className="link-row">
             <img className="link-icon" src={ResumeIcon}></img>
-            <a href={`${ENV}/MonteThakkar_Resume.pdf`} className="link-title" target="_blank">resume</a>
+            <a href={`https://www.linkedin.com/in/thomashzhu`} className="link-title" target="_blank">resume</a>
           </div>
         </div>
         <Dock active={'portfolio'} />

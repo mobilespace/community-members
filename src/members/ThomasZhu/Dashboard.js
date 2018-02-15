@@ -16,7 +16,7 @@ const data = [
   { skill: 4, skill_level: 8 },
   { skill: 5, skill_level: 7 },
   { skill: 6, skill_level: 2 },
-  { skill: 7, skill_level: 8 }, 
+  { skill: 7, skill_level: 10 }, 
   { skill: 8, skill_level: 8 }
 ];
 
