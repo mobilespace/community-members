@@ -22,15 +22,14 @@ export default class RyanLiszewskiPortal extends Component {
 
   handleChange(event) {
     event.preventDefault();
-
     this.setState({ phrase: event.target.value, error: null })
   }
 
   handleSubmit(event) {
     const { phrase } = this.state
 
-
     if (phrase === 'cortado' || phrase === 'cortado') {
+      sessionStorage.setItem('password', true );
       this.setState({ redirect: true })
     } else {
       this.setState({ error: 'Access Denied' })

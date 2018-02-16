@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 import { VictoryTheme, VictoryChart, VictoryPie, VictoryBar, VictoryArea } from 'victory';
 
 import '../../styles/RyanLiszewski.css'; 
@@ -7,8 +7,9 @@ import '../../styles/RyanLiszewski.css';
 import Dock from './Dock';
 import { VictoryScatter } from 'victory';
 
+
 const rapData = [
-  {name: "Aesop Rock", unique_words: 7392},
+  {name: "Aesop Rock", unique_words: 7392},  
   {name: "GZA", unique_words: 6426},
   {name: "Kool Kieth", unique_words: 6238},
   {name: "CunninLynguists", unique_words: 7392},
@@ -16,7 +17,17 @@ const rapData = [
 
 export default class Dashboard extends Component {
 
+  constructor(props){
+    super(props)
+    
+  }
+
   render () {
+
+    if(sessionStorage.getItem('password') === false){
+      return <Redirect to='/ryan/locked'/>
+    }
+
     return (
       <div className="main-container-ryan"> 
        <div className="data-container-ryan">
@@ -30,14 +41,11 @@ export default class Dashboard extends Component {
             >
             <VictoryScatter
               style={{ data: { fill: "#c43a31" }}}
-              size={4}
+              size={10}
               data = {rapData}
-              y="name"
-              x="unique_words"
-              animate = {{
-                duration: 2000,
-                onLoad: {duration: 1000}
-              }}
+              x="name"
+              y="unique_words"
+              
             />
             </VictoryChart>
           </div> 
@@ -47,8 +55,8 @@ export default class Dashboard extends Component {
             <VictoryPie 
               theme={VictoryTheme.material}
               animate = {{
-                duration: 2000,
-                onLoad: {duration: 1000}
+                 easing: "bounce",
+                 onLoad: {duration: 1000}
               }}
             />
           </div>
@@ -58,8 +66,8 @@ export default class Dashboard extends Component {
             >
               <VictoryBar
                 animate = {{
-                  duration: 1000,
-                  onLoad: {duration: 2000}
+                  easing: "bounce",
+                  onLoad: {duration: 1000}
                 }}
               />
             </VictoryChart>
@@ -68,11 +76,7 @@ export default class Dashboard extends Component {
               <VictoryChart
                 theme={VictoryTheme.material}
               >
-                <VictoryArea
-                  animate = {{
-                    duration: 1000,
-                    onLoad: {duration: 2000}
-                  }}
+                 <VictoryArea
                 />
               </VictoryChart>
 
