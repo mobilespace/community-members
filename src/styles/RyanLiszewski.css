@@ -37,7 +37,9 @@
 .settings-container-ryan {
   order: 2;
   flex:13;
-  background: linear-gradient(to left top, #FEFEFE,#E58860);
+  background: linear-gradient(to left top, #724056,#E58860);
+  display: flex;
+  
 }
 
 .chart-row-container-1 {
@@ -84,10 +86,15 @@
 
 .navbar-item {
   padding-top: 15px;
-  flex: 1;
+  flex: .25;
 }
 
 .navbar-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.navbar-item-container img{
   width: 40px;
   height: 40px;
 }
@@ -155,4 +162,152 @@ img:hover {
     transform: translateX(0);
     opacity: 1;
   }
+}
+
+.password-container {
+  margin: auto;
+  flex: .4;
+}
+
+.password-field-container {
+  padding-top: 30px;
+}
+
+
+
+/* Material Design Text Field */
+.field{
+  --uiFieldPaddingTop: var(--fieldPaddingTop, 0px);
+  --uiFieldPaddingRight: var(--fieldPaddingRight, 0px);
+  --uiFieldPaddingBottom: var(--fieldPaddingBottom, 0px);
+  --uiFieldPaddingLeft: var(--fieldPaddingLeft, 0px);
+
+  --uiFieldBorderColor: var(--fieldBorderColor, transpatent);
+  --uiFieldBorderTop: var(--fieldBorderTop, 0px);
+  --uiFieldBorderRight: var(--fieldBorderRight, 0px);
+  --uiFieldBorderBottom: var(--fieldBorderBottom, 0px);
+  --uiFieldBorderLeft: var(--fieldBorderLeft, 0px);
+
+  --uiFieldBgColor: var(--fieldBgColor, transpatent);
+  --uiFieldPlaceholderColor: var(--fieldPlaceholderColor, #724056);
+  --uiFieldAnimationDuration: var(--fieldAnimationDuration, .3s);
+  --uiFieldFonstSize: var(--fieldFontSize, 16px);
+
+  position: relative;  
+  display: block;
+}
+
+.field__input{
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: var(--uiFieldBgColor);
+
+  /* for iOS */
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border-radius: 0;
+
+  border-style: solid;
+  border-color: var(--uiFieldBorderColor);
+
+  border-top-width: var(--uiFieldBorderTop);
+  border-right-width: var(--uiFieldBorderRight);
+  border-bottom-width: var(--uiFieldBorderBottom);
+  border-left-width: var(--uiFieldBorderLeft);
+
+  padding-top: var(--uiFieldPaddingTop);
+  padding-right: var(--uiFieldPaddingRight);
+  padding-bottom: var(--uiFieldPaddingBottom);
+  padding-left: var(--uiFieldPaddingLeft);
+
+  font-family: inherit;
+  font-size: 100%;
+  color: #DED2CE;
+}
+
+.field__input::-webkit-input-placeholder{ 
+  color: var(--uiFieldPlaceholderColor);
+  opacity: 0;
+}
+
+.field__input::-moz-placeholder{ 
+  color: var(--uiFieldPlaceholderColor);
+  opacity: 0;
+}
+
+.field__input:focus{
+  outline: none;  
+}
+
+.field__input:focus::-webkit-input-placeholder{ 
+  -webkit-transition: opacity var(--uiFieldAnimationDuration) ease-out var(--uiFieldAnimationDuration); 
+  transition: opacity var(--uiFieldAnimationDuration) ease-out var(--uiFieldAnimationDuration);
+  opacity: 1;
+}
+
+.field__input:focus::-moz-placeholder{ 
+  -webkit-transition: opacity var(--uiFieldAnimationDuration) ease-out var(--uiFieldAnimationDuration); 
+  transition: opacity var(--uiFieldAnimationDuration) ease-out var(--uiFieldAnimationDuration);
+  opacity: 1;
+}
+
+.field__label-wrap{
+  height: 100%;
+  display: block;
+}
+
+.field__label{
+  position: absolute;
+  top: calc(0px + var(--uiFieldPaddingTop) + var(--uiFieldBorderTop));
+  left: calc(0px + var(--uiFieldPaddingLeft) + var(--uiFieldBorderLeft));
+
+  pointer-events: none;
+  font-size: .9em;
+
+  -webkit-transition: top var(--uiFieldAnimationDuration) cubic-bezier(0.9,-0.15, 0.1, 1.15), opacity var(--uiFieldAnimationDuration) ease-out;
+
+  transition: top var(--uiFieldAnimationDuration) cubic-bezier(0.9,-0.15, 0.1, 1.15), opacity var(--uiFieldAnimationDuration) ease-out;
+  will-change: top, opacity;
+}
+
+.field__input:not(:placeholder-shown) ~ .field__label-wrap .field__label{
+  opacity: 0;
+  top: calc(0px + var(--uiFieldPaddingTop) + var(--uiFieldBorderTop));
+}
+
+.field__input:focus ~ .field__label-wrap .field__label{
+  opacity: 1;
+  top: calc(-1 * calc(var(--uiFieldPaddingTop) + var(--uiFieldBorderTop) + 15px));
+}
+
+.field_type2{
+  --uiFieldBorderBottom: var(--fieldBorderBottom, 2px);
+  --uiFieldPaddingTop: var(--fieldPaddingTop, 5px);
+  --uiFieldPaddingRight: var(--fieldPaddingRight, 15px);
+  --uiFieldPaddingBottom: var(--fieldPaddingBottom, 10px);
+  --uiFieldPaddingLeft: var(--fieldPaddingLeft, 15px);  
+  
+}
+
+.field_type2 .field__label-wrap:after{
+  content: "";
+  width: 0;
+  height: var(--uiFieldBorderBottom);
+  background-color: var(--fieldBorderColorActive);
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  
+
+  will-change: width;
+  -webkit-transition: width var(--uiFieldAnimationDuration) ease-out;
+  transition: width var(--uiFieldAnimationDuration) ease-out;
+}
+
+.field_type2 .field__input:focus ~ .field__label-wrap:after{
+  width: 100%;
 }
