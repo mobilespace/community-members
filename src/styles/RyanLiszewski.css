@@ -15,8 +15,7 @@
   order: 2;
   flex: 0;
   background:linear-gradient(#C77863,#A55759);
-  -webkit-transition: width 30s;
-  transition: width 4s;
+  animation: 1s ease-out 0s 1 slideInFromLeft;
   flex:3;
 }
 
@@ -38,6 +37,7 @@
 .settings-container-ryan {
   order: 2;
   flex:13;
+  background: linear-gradient(to left top, #FEFEFE,#E58860);
 }
 
 .chart-row-container-1 {
@@ -144,4 +144,15 @@ img:hover {
   -webkit-background-clip: padding-box; /* for Safari */
   background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
   border-radius: 75%; 
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
