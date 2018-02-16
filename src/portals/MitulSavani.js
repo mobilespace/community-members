@@ -22,8 +22,9 @@ export default class MitulSavaniPortal extends Component {
   }
 
   handleChange(event) {
-    event.preventDefault();
-    this.setState({ phrase: event.target.value, error: null })
+    console.log(event)
+
+    this.setState({ phrase: event.password, error: null })
   }
 
   handleSubmit(event) {
@@ -60,12 +61,16 @@ export default class MitulSavaniPortal extends Component {
           <img className="lock-icon" src={LockIcon} />
           <div className="lock-input-container">
             <form onSubmit={this.handleSubmit}>
-              <input type="text"
-                className={`phrase-input ${this.errorClass()}`}
-                name="phrase" value={phrase}
-                placeholder="Enter secret phrase"
-                onChange={this.handleChange.bind(this)}
-              />
+            <ReactPasswordStrength
+              className="input-password-input"
+              minLength={5}
+              minScore={2}
+              scoreWords={['weak', 'okay', 'good', 'strong', 'stronger']}
+              changeCallback={this.handleChange}
+              inputProps={{ 
+                name: "password_input", autoComplete: "off", className: "form-control"
+              }}
+            />
             </form>
             {error != null && <div className="lock-error-message">ACCESS DENIED</div>}
           </div>
