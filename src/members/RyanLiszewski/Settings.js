@@ -8,7 +8,42 @@ import Dock from './Dock';
 
 export default class Settings extends Component {
 
+  constructor(props){
+    super(props)
+    
+    this.state = {
+      originalPassword: '',
+      newPassword: '', 
+      passwordCheck: '',
+      error: null
+    }
+
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+    
+  }
+
+  handleChange(event){
+
+    //Learn JSX Syntax and States
+    if( event.target.name === "originalPassword"){
+      this.setState({ originalPassword: event.target.value })
+    } else {
+      this.setState({ newPassword: event.target.value })
+    }
+    
+  }
+
+  handleSubmit(event) {
+    
+  }
+
   render(){
+
+    const {originalPassword, 
+      newPassword, 
+      passwordCheck, 
+      error} = this.state
 
     return(
       <div className="main-container-ryan">
@@ -16,7 +51,12 @@ export default class Settings extends Component {
         <div className="password-container">
             <div className="password-field-container">
             <label className="field field_type2">
-              <input className="field__input" placeholder="You know this."/>
+              <input className="field__input" 
+              placeholder="You know this."
+              name="originalPassword" value={originalPassword}
+              onChange={this.handleChange.bind(this)}
+
+            />
               <span className="field__label-wrap">
                 <span className="field__label">Enter your old password</span>
               </span>
@@ -25,21 +65,28 @@ export default class Settings extends Component {
 
           <div className="password-field-container">
             <label className="field field_type2">
-              <input className="field__input" placeholder="Not password, please."/>
+              <input className="field__input" 
+              placeholder="Not password, please."
+              name="newPassword" value={newPassword}
+              onChange={this.handleChange.bind(this)}
+            />
               <span className="field__label-wrap">
                 <span className="field__label">Enter your new password</span>
               </span>
             </label>
           </div>
 
-          <div className="password-field-container">
+          {/* <div className="password-field-container">
             <label className="field field_type2">
               <input className="field__input" placeholder="No Mistakes."/>
               <span className="field__label-wrap">
                 <span className="field__label">Renter your new password</span>
               </span>
             </label>
-          </div>
+          </div> */}
+
+            <button className="submit-button"> 
+            </button>
         </div>
       </div>
       <Dock active='settings'/>

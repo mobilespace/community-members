@@ -86,7 +86,7 @@
 
 .navbar-item {
   padding-top: 15px;
-  flex: .25;
+  flex: 1;
 }
 
 .navbar-icon {
@@ -94,7 +94,7 @@
   height: 40px;
 }
 
-.navbar-item-container img{
+.navbar-item-container {
   width: 40px;
   height: 40px;
 }
@@ -166,11 +166,26 @@ img:hover {
 
 .password-container {
   margin: auto;
-  flex: .4;
+  align-items: center;
+  flex: 1;
+  display: flex;  
+  flex-direction: column;
 }
 
-.password-field-container {
-  padding-top: 30px;
+/* TODO */
+/* Make only child */
+.password-field-container{
+  display: flex;
+  padding-top: 50px;
+}
+
+.submit-button {
+  flex: 1;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 50%;
+  border-color: rgb(240, 200,	115);
+  background: transparent;
 }
 
 
@@ -182,16 +197,17 @@ img:hover {
   --uiFieldPaddingBottom: var(--fieldPaddingBottom, 0px);
   --uiFieldPaddingLeft: var(--fieldPaddingLeft, 0px);
 
-  --uiFieldBorderColor: var(--fieldBorderColor, transpatent);
+  --uiFieldBorderColor: var(--fieldBorderColor, rgb(240, 200,	115));
   --uiFieldBorderTop: var(--fieldBorderTop, 0px);
   --uiFieldBorderRight: var(--fieldBorderRight, 0px);
   --uiFieldBorderBottom: var(--fieldBorderBottom, 0px);
   --uiFieldBorderLeft: var(--fieldBorderLeft, 0px);
 
-  --uiFieldBgColor: var(--fieldBgColor, transpatent);
+  --uiFieldBgColor: var(--fieldBgColor, transparent);
   --uiFieldPlaceholderColor: var(--fieldPlaceholderColor, #724056);
   --uiFieldAnimationDuration: var(--fieldAnimationDuration, .3s);
   --uiFieldFonstSize: var(--fieldFontSize, 16px);
+  --uiFieldBorderColorActive: var(--fieldBorderColorActive,#DED2CE); 
 
   position: relative;  
   display: block;
@@ -224,7 +240,7 @@ img:hover {
 
   font-family: inherit;
   font-size: 100%;
-  color: #DED2CE;
+  color: rgb(240, 200,	115);
 }
 
 .field__input::-webkit-input-placeholder{ 
@@ -296,12 +312,11 @@ img:hover {
   width: 0;
   height: var(--uiFieldBorderBottom);
   background-color: var(--fieldBorderColorActive);
+  border-color: #DED2CE;
 
   position: absolute;
   bottom: 0;
   left: 0;
-
-  
 
   will-change: width;
   -webkit-transition: width var(--uiFieldAnimationDuration) ease-out;

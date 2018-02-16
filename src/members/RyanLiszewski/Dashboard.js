@@ -17,14 +17,9 @@ const rapData = [
 
 export default class Dashboard extends Component {
 
-  constructor(props){
-    super(props)
-    
-  }
-
   render () {
 
-    if(sessionStorage.getItem('password') === false){
+    if(sessionStorage.getItem('authenticated') === false){
       return <Redirect to='/ryan/locked'/>
     }
 

@@ -11,8 +11,6 @@ export default class Dock extends Component {
 
   render() {
 
-
-
     return (
       <div className = "dock-container-ryan">
         <div className = "navbar-container">

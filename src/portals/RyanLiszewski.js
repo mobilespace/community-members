@@ -16,6 +16,8 @@ export default class RyanLiszewskiPortal extends Component {
       error: null
     }
 
+    
+
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
@@ -27,9 +29,10 @@ export default class RyanLiszewskiPortal extends Component {
 
   handleSubmit(event) {
     const { phrase } = this.state
-
-    if (phrase === 'cortado' || phrase === 'cortado') {
-      sessionStorage.setItem('password', true );
+    const password = sessionStorage.getItem('password');
+    
+    if (phrase === 'cortado' || (phrase === password && phrase !== '')) {
+      sessionStorage.setItem('authenticated', true );
       this.setState({ redirect: true })
     } else {
       this.setState({ error: 'Access Denied' })
