@@ -13,8 +13,8 @@ import MonteLocked from './portals/MonteThakkar'
 
 // add new routes
 import NicholasDashboard from './members/NicholasSzeto/Dashboard';
-// import NicholasPortfolio from './members/NicholasSzeto/Portfolio';
-// import NicholasProfile from './members/NicholasSzeto/Profile';
+import NicholasPortfolio from './members/NicholasSzeto/Portfolio';
+import NicholasProfile from './members/NicholasSzeto/Profile';
 import NicholasLocked from './portals/NicholasSzeto'
         
 import William from './members/WilliamHua';
@@ -54,14 +54,14 @@ const Routes = (props) => {
 
         <Route path="/nicholas/locked" component={NicholasLocked} />
         <Route exact path="/nicholas/dashboard" component={NicholasDashboard} />
-
+        <Route path="/nicholas/portfolio" component={NicholasPortfolio} />
+        <Route path="/nicholas/profile" component={NicholasProfile} /> 
 
         {/* add new routes */}
 
         {/* 
-        <Route path="/nicholas/dashboard" component={NicholasDashboard} />
-        <Route path="/nicholas/portfolio" component={NicholasPortfolio} />
-        <Route path="/nicholas/profile" component={NicholasProfile} /> */}
+       
+        */}
 
         <Route path="/william" component={William} />
         <Route path="/teodora" component={Teodora} />

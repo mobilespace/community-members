@@ -70,9 +70,8 @@ export default class Dashboard extends Component{
 
             </div>
           </div>
-
-
         </div>
+        <Dock active={'dashboard'}/>
       </div>
     );
   }

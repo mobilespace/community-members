@@ -48,11 +48,11 @@ export default class NicholasSzetoPortal extends Component {
     const { phrase, redirect, error } = this.state
 
     if (redirect) {
-      return <Redirect to='/nicholas' />
+      return <Redirect to='/nicholas/dashboard' />
     }
 
     return (
-      <div className="portal-container">
+      <div className="portal-container-nicholas">
         <Link to="/" className="back-arrow-container">
           <img className="close-icon" src={CloseArrow} />
         </Link>
