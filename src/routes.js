@@ -55,7 +55,7 @@ const Routes = (props) => {
         <Route path="/teodora/dashboard" component={TeodoraDashboard} />
         <Route path="/teodora/profile" component={TeodoraProfile} />
         <Route path="/teodora/portfolio" component={TeodoraPortfolio} />
-        <Route path="/teodra/locked" component={TeodoraLocked} />
+        <Route path="/teodora/locked" component={TeodoraLocked} />
 
         <Route path="/prakash" component={Prakash} />
         <Route path="/emanuel" component={Emanuel} />

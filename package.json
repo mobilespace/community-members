@@ -6,6 +6,7 @@
     "rc-progress": "^2.2.5",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-native-swiper": "^1.5.13",
     "react-password-mask": "^3.3.0",
     "react-password-strength": "^2.3.1",
     "react-password-strength-meter": "^1.0.5",
