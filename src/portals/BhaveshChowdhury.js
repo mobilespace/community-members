@@ -1,6 +1,5 @@
-import React, {Component} from 'react';
-import {Link, Redirect} from 'react-router-dom';
-import ReactPasswordStrength from 'react-password-strength';
+import React, { Component } from 'react';
+import { Link, Redirect } from 'react-router-dom';
 
 import '../styles/BhaveshChowdhury.css'
 
@@ -8,51 +7,70 @@ import CloseArrow from '../assets/close.png';
 import LockIcon from '../assets/lock.png'
 
 export default class BhaveshChowdhuryPortal extends Component {
+    constructor(props) {
+        super(props);
 
-    state = {passLength: 0}
-    changeCallback = state => this.setState({passLength: state.password.length})
+        this.state = {
+            phrase: '',
+            redirect: false,
+            error: null
+        }
 
-    clear = () => this.ReactPasswordStrength.clear()
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+    }
+
+    handleChange(event) {
+        event.preventDefault();
+
+        this.setState({ phrase: event.target.value, error: null })
+    }
+
+    handleSubmit(event) {
+        const { phrase } = this.state
+
+        if (phrase === 'bro' || phrase === 'BRO') {
+            this.setState({ redirect: true })
+        } else {
+            this.setState({ error: 'Access Denied' })
+        }
+
+        event.preventDefault();
+    }
+
+    errorClass() {
+        const { error } = this.state
+
+        return error != null ? 'error' : ''
+    }
 
     render() {
-        // const {phrase, redirect, error} = this.state
+        const { phrase, redirect, error } = this.state
 
-        // if (redirect) {
-        //     return <Redirect to='/bhavesh'/>
-        const inputProps = {
-            placeholder: "Enter password",
-            autoFocus: true,
-            // className: 'another-input-prop-class-name',
-        };
+        if (redirect) {
+            return <Redirect to='/bhavesh/dashboard' />
+        }
 
         return (
             <div className="portal-container">
                 <Link to="/" className="back-arrow-container">
-                    <img className="close-icon" src={CloseArrow}/>
+                    <img className="close-icon" src={CloseArrow} />
                 </Link>
                 <div className="lock-container">
-                    <img className="lock-icon" src={LockIcon}/>
-                    <div className="lock-input-container-b">
-                        {/* <form onSubmit={this.handleSubmit}>
-                            <input
-                                type="text"
+                    <img className="lock-icon" src={LockIcon} />
+                    <div className="lock-input-container">
+                        <form onSubmit={this.handleSubmit}>
+                            <input type="password"
                                 className={`phrase-input ${this.errorClass()}`}
-                                name="phrase"
-                                value={phrase}
+                                name="phrase" value={phrase}
                                 placeholder="Enter secret phrase"
-                                onChange={this
-                                .handleChange
-                                .bind(this)}/>
-                        </form> */}
-                        <ReactPasswordStrength
-                            minLength={6}
-                            inputProps={{ ...inputProps, id: 'inputPassword2' }}
-                            // defaultValue="defaultValue"
-                        />
-                    </div>
-                        {/* {error != null && <div className="lock-error-message">ACCESS DENIED</div>} */}
+                                onChange={this.handleChange.bind(this)}
+                            />
+                        </form>
+                        {error != null && <div className="lock-error-message">ACCESS DENIED</div>}
                     </div>
                 </div>
+            </div>
         );
     }
 }

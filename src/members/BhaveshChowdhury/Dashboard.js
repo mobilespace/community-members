@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 import {
     VictoryBar, VictoryChart, VictoryAxis, VictoryTheme,
-    VictoryStack, VictoryArea, VictoryLabel, VictoryPie, VictoryVoronoi, VictoryLine
+    VictoryStack, VictoryArea, VictoryLabel, VictoryPie, VictoryVoronoi, VictoryLine, VictoryPolarAxis
 } from 'victory';
 
 import "../../styles/BhaveshChowdhury.css"
@@ -33,13 +33,13 @@ export default class Dashboard extends Component {
                                 </div>
                                 <div className="title-dashboard">Bhavesh Chowdhury</div>
                                 <div className="links-dashboard">
-                                    <Link to="/bhavesh/dashboard" className="link">
-                                        <h3 className="links-subtitle">Dashboard</h3>
+                                    <Link to="/" className="link">
+                                        <h3 className="links-subtitle">Home</h3>
                                     </Link>
                                     <Link to="/bhavesh/portfolio" className="link">
                                         <h3 className="links-subtitle">Portfolio</h3>
                                     </Link>
-                                    <Link to="/bhavesh/portfolio" className="link">
+                                    <Link to="/bhavesh/profile" className="link">
                                         <h3 className="links-subtitle">Profile</h3>
                                     </Link>
                                 </div>
@@ -49,48 +49,82 @@ export default class Dashboard extends Component {
                     <div className="chart-row-container-b-right">
                         <div className="chart-column-container-b">
                             <div className="chart-container-b container-2-b">
-                                <div className="container-padding">
-                                    <VictoryChart
-                                        theme={VictoryTheme.material}
-                                        width={600}
-                                    >
-                                        <VictoryLine
-                                            interpolation="natural"
-                                            data={data}
 
-                                            animate={{
-                                                duration: 2000,
-                                                onLoad: { duration: 2000 }
-                                            }}
-                                            style={{
-                                                data: {
-                                                    stroke: "#5164BE", strokeWidth: 5
-                                                },
-                                            }}
-                                            labels={(datum) => datum.name}
-                                            labelComponent={<VictoryLabel renderInPortal dy={0} />}
-                                        />
-                                    </VictoryChart>
-                                </div>
+                                <VictoryChart
+                                    theme={VictoryTheme.material}
+                                    width={600}
+                                >
+                                    <VictoryLine
+                                        interpolation="natural"
+                                        data={data}
+
+                                        animate={{
+                                            duration: 2000,
+                                            onLoad: { duration: 2000 }
+                                        }}
+                                        style={{
+                                            data: {
+                                                stroke: "#5164BE", strokeWidth: 5
+                                            },
+                                        }}
+                                        labels={(datum) => datum.name}
+                                        labelComponent={<VictoryLabel renderInPortal dy={0} />}
+                                    />
+                                </VictoryChart>
+
+                            </div>
+                            <div className="chart-container-b container-3-b">
+                                <VictoryChart polar
+                                    theme={VictoryTheme.material}
+                                >
+                                    {
+                                        ["intelligence", "strength", "speed", "stealth", "charisma"].map((d, i) => {
+                                            return (
+                                                <VictoryPolarAxis dependentAxis
+                                                    key={i}
+                                                    label={d}
+                                                    labelPlacement="perpendicular"
+                                                    style={{ tickLabels: { fill: "none" } }}
+                                                    axisValue={i}
+                                                />
+                                            );
+                                        })
+                                    }
+                                    <VictoryBar
+                                        animate={{
+                                            duration: 2000,
+                                            // easing: "bounce"
+                                        }}
+                                        style={{ data: { fill: "#5266BC", width: 25 } }}
+                                        data={[
+                                            { x: 0, y: 40 },
+                                            { x: 1, y: 25 },
+                                            { x: 2, y: 40 },
+                                            { x: 3, y: 50 },
+                                            { x: 4, y: 50 }
+                                        ]}
+                                    />
+                                </VictoryChart>
                             </div>
                         </div>
                         <div className="chart-column-container-b">
-                            <div className="chart-container-b container-3-b">
-                            <div className="container-padding">
+                            <div className="chart-container-b container-4-b">
+
                                 <VictoryPie
                                     // padAngle={3}
+                                    animate={{
+                                        duration: 2000
+                                    }}
                                     innerRadius={100}
                                     colorScale={["tomato", "orange", "gold", "cyan", "navy"]}
-                                    animate={{
-                                        duration: 2000,
-                                    }}
+                                    
                                     data={data}
 
                                 />
-                                </div>
+
                             </div>
-                            <div className="chart-container-b container-4-b">
-                            <div className="container-padding">
+                            <div className="chart-container-b container-5-b">
+
                                 <VictoryChart
                                     theme={VictoryTheme.material}
                                     domainPadding={10}
@@ -104,7 +138,7 @@ export default class Dashboard extends Component {
                                         data={data}
                                     />
                                 </VictoryChart>
-                                </div>
+
                             </div>
                         </div>
                     </div>

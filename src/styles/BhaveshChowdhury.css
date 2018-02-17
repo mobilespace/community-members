@@ -605,7 +605,11 @@
   flex-direction: column;
   background: #FCFCFC;
 }
-
+.container-5-b {
+  flex: 1;
+  flex-direction: column;
+  background: #FCFCFC;
+}
 .links-subtitle{
     font-weight: 300;
     font-family: 'Montserrat';
@@ -646,22 +650,10 @@
 .link-title {
     color: #FCFCFC;
 }
-.ReactPasswordStrength {
-    border: none !important;
-    box-sizing: border-box;
-    color: #090809;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 6px;
-    line-height: 1;
-    position: relative;
-}
 
-.ReactPasswordStrength-input{
-    color: black !important;
-    width: 100% !important;
-}
-
-.ReactPasswordStrength-strength-desc{
-    text-align: center;
-    right: -40px !important;
+.avatar-profile{
+    width:200px;
+    height: 200px;
+    border-radius: 100%;
+    border: 5px solid #7285D2;
 }

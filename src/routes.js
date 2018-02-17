@@ -10,6 +10,8 @@ import MonteDashboard from './members/MonteThakkar/Dashboard';
 import MontePortfolio from './members/MonteThakkar/Portfolio';
 import MonteProfile from './members/MonteThakkar/Profile';
 import MonteLocked from './portals/MonteThakkar'
+
+import BhaveshProfile from './members/BhaveshChowdhury/Profile';
 import BhaveshDashboard from './members/BhaveshChowdhury/Dashboard';
 import BhaveshLocked from './portals/BhaveshChowdhury'
 import BhaveshPortfolio from './members/BhaveshChowdhury/Portfolio';
@@ -40,6 +42,7 @@ const Routes = (props) => {
         <Route path="/monte/portfolio" component={MontePortfolio} />
         <Route path="/monte/profile" component={MonteProfile} />
         <Route path="/monte/locked" component={MonteLocked} />
+        <Route path="/bhavesh/profile" component={BhaveshProfile} />
         <Route path="/bhavesh/dashboard" component={BhaveshDashboard} />
         <Route path="/bhavesh/portfolio" component={BhaveshPortfolio} />
         <Route path="/bhavesh/locked" component={BhaveshLocked} />
