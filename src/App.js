@@ -23,9 +23,9 @@ const KARAN_AVATAR = 'https://avatars1.githubusercontent.com/u/19352928?s=460&v=
 export default class App extends Component {
   render() {
     return (
-      
+
       <div className="main-container">
-        <div className="title"><a href="http://mobilespace.xyz/" className="link">MobileSpace</a> Community Members</div>
+        <div className="title"><a href="http://mobilespace.xyz/" className="main-link">MobileSpace</a> Community Members</div>
         <div className="landing-page-avatar-container">
           <Link to="/monte/locked">
             <img className="landing-page-avatar" src={MONTE_AVATAR} />

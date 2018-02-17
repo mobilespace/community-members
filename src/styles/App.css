@@ -18,6 +18,11 @@
   background: linear-gradient(to bottom right, #536976, #292E49);
 }
 
+.main-link {
+  font-family: 'Ailerons';
+  text-decoration: none;
+}
+
 .back-arrow-container {
   position: absolute;
   top: 50px;
