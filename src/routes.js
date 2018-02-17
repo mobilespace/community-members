@@ -17,6 +17,8 @@ import Teodora from './members/TeodoraCaneva';
 import PrakashDashboard from './members/PrakashGurung/Dashboard';
 import Prakash from './members/PrakashGurung';
 import PrakashLocked from './portals/PrakashGurung'
+import PrakashProfile from './members/PrakashGurung/Profile';
+import PrakashPortfolio from './members/PrakashGurung/Portfolio';
 
 import Emanuel from './members/EmanuelSaunders';
 import Nicholas from './members/NicholasSzeto';
@@ -54,6 +56,9 @@ const Routes = (props) => {
         <Route exact path="/prakash" component={PrakashDashboard} />
         <Route path="/prakash/locked" component={PrakashLocked} />
         <Route path="/prakash/dashboard" component={PrakashDashboard}/>
+        <Route path="/prakash/profile" component={PrakashProfile} />
+        <Route path="/prakash/portfolio" component={PrakashPortfolio} />
+
 
 
 
