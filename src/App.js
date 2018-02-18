@@ -23,9 +23,13 @@ const KARAN_AVATAR = 'https://avatars1.githubusercontent.com/u/19352928?s=460&v=
 export default class App extends Component {
   render() {
     return (
+
       <div className="main-container">
-        <div className="title"><a href="http://mobilespace.xyz/" className="link">MobileSpace</a> Community Members</div>
+        <div className="title"><a href="http://mobilespace.xyz/" className="main-link">MobileSpace</a> Community Members</div>
         <div className="landing-page-avatar-container">
+          <Link to="/bhavesh/locked">
+            <img className="landing-page-avatar" src={BHAVESH_AVATAR} />
+          </Link>
           <Link to="/monte/locked">
             <img className="landing-page-avatar" src={MONTE_AVATAR} />
           </Link>
@@ -35,7 +39,7 @@ export default class App extends Component {
           <Link to="/teodora">
             <img className="landing-page-avatar" src={TEODORA_AVATAR} />
           </Link>
-          <Link to="/prakash">
+          <Link to="/prakash/locked">
             <img className="landing-page-avatar" src={PRAKASH_AVATAR} />
           </Link>
           <Link to="/emanuel">
@@ -59,11 +63,8 @@ export default class App extends Component {
           <Link to="/ryan">
             <img className="landing-page-avatar" src={RYAN_AVATAR} />
           </Link>
-          <Link to="/thomas">
+          <Link to="/thomas/locked">
             <img className="landing-page-avatar" src={THOMAS_AVATAR} />
-          </Link>
-          <Link to="/bhavesh">
-            <img className="landing-page-avatar" src={BHAVESH_AVATAR}/>
           </Link>
           <Link to="/girish">
             <img className="landing-page-avatar" src={GIRISH_AVATAR} />

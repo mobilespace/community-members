@@ -16,10 +16,21 @@ import NicholasDashboard from './members/NicholasSzeto/Dashboard';
 import NicholasPortfolio from './members/NicholasSzeto/Portfolio';
 import NicholasProfile from './members/NicholasSzeto/Profile';
 import NicholasLocked from './portals/NicholasSzeto'
-        
+
+import BhaveshProfile from './members/BhaveshChowdhury/Profile';
+import BhaveshDashboard from './members/BhaveshChowdhury/Dashboard';
+import BhaveshLocked from './portals/BhaveshChowdhury'
+import BhaveshPortfolio from './members/BhaveshChowdhury/Portfolio';
+
 import William from './members/WilliamHua';
 import Teodora from './members/TeodoraCaneva';
+
+import PrakashDashboard from './members/PrakashGurung/Dashboard';
 import Prakash from './members/PrakashGurung';
+import PrakashLocked from './portals/PrakashGurung'
+import PrakashProfile from './members/PrakashGurung/Profile';
+import PrakashPortfolio from './members/PrakashGurung/Portfolio';
+
 import Emanuel from './members/EmanuelSaunders';
 import Nicholas from './members/NicholasSzeto';
 import Jahon from './members/JakhongirKhusanov';
@@ -30,7 +41,12 @@ import Mitul from './members/MitulSavani';
 import MitulLocked from './portals/MitulSavani'
 
 import Ryan from './members/RyanLiszewski';
-import Thomas from './members/ThomasZhu';
+
+import ThomasDashboard from './members/ThomasZhu/Dashboard';
+import ThomasPortfolio from './members/ThomasZhu/Portfolio';
+import ThomasProfile from './members/ThomasZhu/Profile';
+import ThomasLocked from './portals/ThomasZhu'
+
 import Bhavesh from './members/BhaveshChowdhury';
 import Girish from './members/GirishRawat';
 import Affaan from './members/AffaanGhazzali';
@@ -50,22 +66,29 @@ const Routes = (props) => {
         <Route path="/monte/profile" component={MonteProfile} />
         <Route path="/monte/locked" component={MonteLocked} />
 
-
-
         <Route path="/nicholas/locked" component={NicholasLocked} />
         <Route exact path="/nicholas/dashboard" component={NicholasDashboard} />
         <Route path="/nicholas/portfolio" component={NicholasPortfolio} />
         <Route path="/nicholas/profile" component={NicholasProfile} /> 
 
-        {/* add new routes */}
-
-        {/* 
-       
-        */}
-
+        <Route path="/bhavesh/profile" component={BhaveshProfile} />
+        <Route path="/bhavesh/dashboard" component={BhaveshDashboard} />
+        <Route path="/bhavesh/portfolio" component={BhaveshPortfolio} />
+        <Route path="/bhavesh/locked" component={BhaveshLocked} />
+    
         <Route path="/william" component={William} />
         <Route path="/teodora" component={Teodora} />
-        <Route path="/prakash" component={Prakash} />
+        
+        <Route exact path="/prakash" component={PrakashDashboard} />
+        <Route path="/prakash/locked" component={PrakashLocked} />
+        <Route path="/prakash/dashboard" component={PrakashDashboard}/>
+        <Route path="/prakash/profile" component={PrakashProfile} />
+        <Route path="/prakash/portfolio" component={PrakashPortfolio} />
+
+
+
+
+
         <Route path="/emanuel" component={Emanuel} />
         <Route path="/affaan" component={Affaan} />
         <Route path="/nicholas" component={Nicholas} />
@@ -77,7 +100,13 @@ const Routes = (props) => {
         <Route path="/mitul/dashboard" component={MitulDashboard}/>
 
         <Route path="/ryan" component={Ryan} />
-        <Route path="/thomas" component={Thomas} />
+
+        <Route exact path="/thomas" component={ThomasDashboard} />
+        <Route path="/thomas/dashboard" component={ThomasDashboard} />
+        <Route path="/thomas/portfolio" component={ThomasPortfolio} />
+        <Route path="/thomas/profile" component={ThomasProfile} />
+        <Route path="/thomas/locked" component={ThomasLocked} />
+        
         <Route path="/bhavesh" component={Bhavesh} />
         <Route path="/girish" component={Girish} />
         <Route path="/karan" component={Karan} />
