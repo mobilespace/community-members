@@ -51,7 +51,10 @@ import '../../styles/MitulSavani.css'
                         </div>
                     </div>
                     <div className="chart-container container-2-mitul">
-                        <h3> Hours Completed {this.state.circlepercent}%</h3>
+                    <div className="inbetween">
+                        <h1>   21.3</h1>
+                        <h3>Hours Completed </h3>
+                    </div>
                         <div style={circleContainerStyle}>
                         <Circle
                             percent={this.state.circlepercent}
@@ -62,6 +65,10 @@ import '../../styles/MitulSavani.css'
                         </div>
                     </div>
                     <div className="chart-container container-3-mitul">
+                    <div className="inbetween">
+                        <h1>   71%</h1>
+                        <h3>of total hours</h3>
+                    </div>
                     <div style={circleContainerStyle}>
                         <Circle
                             percent={this.state.circlepercent}

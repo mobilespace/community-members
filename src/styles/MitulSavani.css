@@ -8,10 +8,11 @@
   src: url('../assets/Futura-Book-Regular.otf')
 }
 
-* .title-mitul, .subtitle-mitul, .thirdheading{
+* .inbetween, .title-mitul, .subtitle-mitul, .thirdheading{
     font-family: 'Kaya_Medium';
     color: wheat;
 }
+
 
 ::selection {
   background: #16F5C4;
@@ -323,4 +324,11 @@ a {
 
   .input-password-input {
     color: black;
+  }
+
+  .inbetween{
+  position: absolute;
+  margin-bottom: 20px;
+  margin-top: 0px;
+  font-size: 15px;
   }
