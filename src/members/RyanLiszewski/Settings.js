@@ -5,6 +5,7 @@ import { Link, Redirect } from 'react-router-dom';
 import '../../styles/RyanLiszewski.css';
 
 import Dock from './Dock';
+import Page from './Page';
 
 export default class Settings extends Component {
 

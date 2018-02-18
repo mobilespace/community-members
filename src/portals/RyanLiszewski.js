@@ -30,7 +30,7 @@ export default class RyanLiszewskiPortal extends Component {
     const password = sessionStorage.getItem('password');
     
     if (phrase === 'cortado' || (phrase === password && phrase !== '')) {
-      sessionStorage.setItem('s', true );
+      sessionStorage.setItem('authenticated', true );
       this.setState({ redirect: true })
     } else {
       this.setState({ error: 'Access Denied' })

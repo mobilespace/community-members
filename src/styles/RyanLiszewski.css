@@ -94,14 +94,22 @@
   width: 40px;
   height: 40px;
   transform: rotate(180deg);
-  align-self: flex-end;
+
 }
 
+.logout-a {   
+  padding-left: 2px;
+}
+
+
 .logout-container {
+  display: flex;
   padding-top: 10px;
   margin: auto;
-  align-self: flex-end;
   flex-direction: column;
+  padding: 5px;
+  bottom: 0;
+
 }
 
 .navbar-item-container {

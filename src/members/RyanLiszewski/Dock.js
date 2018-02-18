@@ -31,14 +31,13 @@ export default class Dock extends Component {
               </Link>  
             </li>
           </ul>
-        
+        </div>
+
         <div className="logout-container">
-          <Link to="/">
+          <Link className= "logout-a" to="/">
             {sessionStorage.setItem('authenticated', false)}
             <img className='logout-icon' src={LOGOUT_ICON}/>
           </Link>
-        </div>
-
         </div>
       </div> 
     );
