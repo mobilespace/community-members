@@ -15,7 +15,7 @@
     "react-router-dom": "^4.2.2",
     "react-scripts": "^1.1.0",
     "react-textgradient": "0.0.2",
-    "victory": "^0.25.4",
+    "victory": "^0.25.5",
     "zxcvbn": "^4.4.2"
   },
   "scripts": {
