@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-
-import '../styles/MitulSavani.css'
+import '../../styles/MitulSavani.css'
 
 import LeftArrow from '../assets/left-arrow.png';
 
 const MITUL_AVATAR = 'https://scontent.fsnc1-1.fna.fbcdn.net/v/t31.0-8/18556546_1553987881278489_849408995015005895_o.jpg?oh=bb65219475a9cbac85ca7090e7ee877b&oe=5ADE398B'
 
 export default class MitulSavani extends Component {
+
+  
   render() {
     return (
       <div className="main-container-mitul">
@@ -23,7 +24,7 @@ export default class MitulSavani extends Component {
         <div className="links-container">
           <a href="https://github.com/mitulsavani" className="link">
             <img className="links-icon" src="http://bogas04.github.io/img/github.svg" />
-          </a>
+          </a> 
           <a href="https://twitter.com/mitul_savani" className="link">
             <img className="links-icon" src="http://www.freeiconspng.com/uploads/twitter-icon-download-18.png" />
           </a>

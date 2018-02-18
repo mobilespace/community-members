@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Link, Redirect } from 'react-router-dom';
+import ReactPasswordStrength from 'react-password-strength';
 
 import '../styles/MitulSavani.css'
 
@@ -13,7 +14,7 @@ export default class MitulSavaniPortal extends Component {
     this.state = {
       phrase: '',
       redirect: false,
-      error: null
+      error: null,
     }
 
     this.handleChange = this.handleChange.bind(this);
@@ -22,6 +23,7 @@ export default class MitulSavaniPortal extends Component {
 
   handleChange(event) {
     event.preventDefault();
+
     this.setState({ phrase: event.target.value, error: null })
   }
 
@@ -44,10 +46,10 @@ export default class MitulSavaniPortal extends Component {
   }
 
   render() {
-    const { phrase, redirect, error } = this.state
+     const { phrase, redirect, error } = this.state
 
     if (redirect) {
-      return <Redirect to='/mitul' />
+      return <Redirect to='/mitul/dashboard' />
     }
 
     return (
@@ -59,7 +61,7 @@ export default class MitulSavaniPortal extends Component {
           <img className="lock-icon" src={LockIcon} />
           <div className="lock-input-container">
             <form onSubmit={this.handleSubmit}>
-              <input type="text"
+            <input type="password"
                 className={`phrase-input ${this.errorClass()}`}
                 name="phrase" value={phrase}
                 placeholder="Enter secret phrase"
@@ -73,4 +75,3 @@ export default class MitulSavaniPortal extends Component {
     );
   }
 }
-

@@ -33,6 +33,9 @@ export default class App extends Component {
           <Link to="/monte/locked">
             <img className="landing-page-avatar" src={MONTE_AVATAR} />
           </Link>
+          <Link to="/mitul/locked">
+            <img className="landing-page-avatar" src={MITUL_AVATAR} />
+          </Link>
           <Link to="/william">
             <img className="landing-page-avatar" src={WILLIAM_AVATAR} />
           </Link>
@@ -56,9 +59,6 @@ export default class App extends Component {
           </Link>
           <Link to="/sukhjit">
             <img className="landing-page-avatar" src={SUKHJIT_AVATAR} />
-          </Link>
-          <Link to="/mitul/locked">
-            <img className="landing-page-avatar" src={MITUL_AVATAR} />
           </Link>
           <Link to="/ryan">
             <img className="landing-page-avatar" src={RYAN_AVATAR} />
