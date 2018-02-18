@@ -1,21 +1,19 @@
 import React, { Component } from 'react';
 import { Link, Redirect } from 'react-router-dom';
 
-import '../styles/MonteThakkar.css'
+import '../styles/ThomasZhu.css'
 
 import CloseArrow from '../assets/close.png';
 import LockIcon from '../assets/lock.png'
 
-export default class MonteThakkarPortal extends Component {
+export default class ThomasPortal extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
       phrase: '',
       redirect: false,
-      error: null,
-      tries: 0,
-      show_hint: false
+      error: null
     }
 
     this.handleChange = this.handleChange.bind(this);
@@ -29,12 +27,12 @@ export default class MonteThakkarPortal extends Component {
   }
 
   handleSubmit(event) {
-    const { phrase, tries } = this.state
+    const { phrase } = this.state
 
-    if (phrase === 'mars' || phrase === 'MARS') {
-      this.setState({ redirect: true, tries: tries + 1 })
+    if (phrase === 'tommyboy' || phrase === 'TOMMYBOY') {
+      this.setState({ redirect: true })
     } else {
-      this.setState({ error: 'Access Denied', tries: tries + 1 })
+      this.setState({ error: 'Access Denied' })
     }
 
     event.preventDefault();
@@ -47,10 +45,10 @@ export default class MonteThakkarPortal extends Component {
   }
 
   render() {
-    const { phrase, redirect, error, tries } = this.state
+    const { phrase, redirect, error } = this.state
 
     if (redirect) {
-      return <Redirect to='/monte/dashboard' />
+      return <Redirect to='/thomas' />
     }
 
     return (
@@ -70,7 +68,6 @@ export default class MonteThakkarPortal extends Component {
               />
             </form>
             {error != null && <div className="lock-error-message">ACCESS DENIED</div>}
-            {tries >= 1 && <div className="tries-message"><b>hint:</b> try "Mars" 😉</div>}
           </div>
         </div>
       </div>

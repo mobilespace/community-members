@@ -44,7 +44,7 @@ Someone will review (and merge) it.
 - [ ] [Create a locked screen with a secret phrase](https://i.redd.it/qes864onsgc01.png)
 
 - [ ] [Create a protected dashboard with the following 3 pages:](https://dribbble.com/tags/dashboard_ui)
-  - [ ] [Victory Charts Page](http://formidable.com/open-source/victory/)
+  - [ ] [Victory Charts Page](http://formidable.com/open-source/victory/) - Create 4 total charts - 1 of them has to be a custom chart made specifically for your dashboard
   - [ ] Resume Viewer/ Portfolio Page
   - [ ] Profile Page
 
@@ -56,7 +56,7 @@ Someone will review (and merge) it.
 
 - [ ] :star: **Bonus:** Dig deeper into [Victory docs](http://formidable.com/open-source/victory/docs/) & create customized charts. Also update the layout on the dashbord. Look [here](https://dribbble.com/tags/dashboard_ui) for inspiration (dribble).
 
-- [ ] :star: **Bonus:** Use [ReactDnd Library](https://github.com/react-dnd/react-dnd) to allow the user to change the dock's position (top, left, right, bottom (default))
+- [ ] :star: **Bonus:** Create a custom dashboard or use [ReactDnd Library](https://github.com/react-dnd/react-dnd) to allow the user to change the dock's position (top, left, right, bottom (default))
 
 ## Problems?
 
