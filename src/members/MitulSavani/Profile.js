@@ -57,7 +57,7 @@ export default class Profile extends Component {
               Currently, I am a member of <a href="https://github.com/mobilespace/Season2#season-2---looking-ahead" target="_Blank" className="LinkText" rel="noopener noreferrer">MobileSpace Season 2</a> in React Native. My current goal is to master RN.
             </p>
             <p className="AboutText">
-              Lastly, I really enjoy meeting new people and having a casual convo over <span role="img" aria-label="Coffee" className="Inline">☕.</span> <a href="https://twitter.com/MThakkar_" target="_Blank" className="LinkText" rel="noopener noreferrer">hmu</a>
+              Lastly, I really enjoy meeting new people and having a casual convo over <span role="img" aria-label="Coffee" className="Inline">☕.</span> 
             </p>
           </div>
         </div>
