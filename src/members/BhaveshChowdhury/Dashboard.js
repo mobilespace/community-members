@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-
 import {
     VictoryBar, VictoryChart, VictoryAxis, VictoryTheme,
     VictoryStack, VictoryArea, VictoryLabel, VictoryPie, VictoryVoronoi, VictoryLine, VictoryPolarAxis
 } from 'victory';
-
 import "../../styles/BhaveshChowdhury.css"
 import "../../styles/fontawesome.css"
-
+import Dock from './Dock'
 const data = [
     { x: 0, y: 0 },
     { x: 1, y: 2 },
@@ -17,39 +15,18 @@ const data = [
     { x: 4, y: 1 },
     { x: 5, y: 5 }
 ];
-
 const BHAVESH_AVATAR = 'https://avatars3.githubusercontent.com/u/13439148?s=460&v=4'
-
 export default class Dashboard extends Component {
     render() {
         return (
             <div className="main-container-b">
                 <div className="dashboard-container-b">
-                    <div className="chart-row-container-b-left">
-                        <div className="chart-container-b container-1-b">
-                            <div className="links-container-dashboard">
-                                <div className="avatar-container-dashboard">
-                                    <img className="avatar-dashboard" src={BHAVESH_AVATAR} />
-                                </div>
-                                <div className="title-dashboard">Bhavesh Chowdhury</div>
-                                <div className="links-dashboard">
-                                    <Link to="/" className="link">
-                                        <h3 className="links-subtitle">Home</h3>
-                                    </Link>
-                                    <Link to="/bhavesh/portfolio" className="link">
-                                        <h3 className="links-subtitle">Portfolio</h3>
-                                    </Link>
-                                    <Link to="/bhavesh/profile" className="link">
-                                        <h3 className="links-subtitle">Profile</h3>
-                                    </Link>
-                                </div>
-                            </div>
-                        </div>
+                    <div className="row-container-b-left">
+                        <Dock active="dashboard" />
                     </div>
-                    <div className="chart-row-container-b-right">
-                        <div className="chart-column-container-b">
+                    <div className="row-container-b-right">
+                        <div className="column-container-b">
                             <div className="chart-container-b container-2-b">
-
                                 <VictoryChart
                                     theme={VictoryTheme.material}
                                     width={600}
@@ -71,7 +48,6 @@ export default class Dashboard extends Component {
                                         labelComponent={<VictoryLabel renderInPortal dy={0} />}
                                     />
                                 </VictoryChart>
-
                             </div>
                             <div className="chart-container-b container-3-b">
                                 <VictoryChart polar
@@ -107,7 +83,7 @@ export default class Dashboard extends Component {
                                 </VictoryChart>
                             </div>
                         </div>
-                        <div className="chart-column-container-b">
+                        <div className="column-container-b">
                             <div className="chart-container-b container-4-b">
 
                                 <VictoryPie
@@ -117,7 +93,7 @@ export default class Dashboard extends Component {
                                     }}
                                     innerRadius={100}
                                     colorScale={["tomato", "orange", "gold", "cyan", "navy"]}
-                                    
+
                                     data={data}
 
                                 />
@@ -138,15 +114,11 @@ export default class Dashboard extends Component {
                                         data={data}
                                     />
                                 </VictoryChart>
-
                             </div>
                         </div>
                     </div>
-
-
                 </div>
             </div>
-
         );
     }
 }
