@@ -33,7 +33,7 @@
   justify-content: center;
 }
 
-.settings-container-ryan {
+.settings-container-ryan, .profile-container-ryan{
   order: 2;
   flex:13;
   background: linear-gradient(to left top, #724056,#E58860);
@@ -190,6 +190,7 @@ img:hover {
   flex: 1;
   display: flex;  
   flex-direction: column;
+  width: 100%;
 }
 
 .password-field-container {
@@ -210,8 +211,6 @@ img:hover {
   border-color: rgb(240, 200,	115);
   background: transparent;
 }
-
-
 
 /* Material Design Text Field */
 .field{

@@ -18,13 +18,11 @@ const rapData = [
 export default class Dashboard extends Component {
 
   render () {
-    const authenticated = sessionStorage.getItem('authenticated');
-
-    console.log(authenticated);
+    const {authenticated} = sessionStorage.getItem('authenticated');
+    console.log(authenticated); 
     
-    if(!authenticated){
-      console.log("test");
-      <Redirect to='/ryan/locked'/>
+    if(authenticated){
+      return <Redirect to='/ryan/locked'/>
     }
   
     return (

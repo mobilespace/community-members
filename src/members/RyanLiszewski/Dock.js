@@ -21,7 +21,7 @@ export default class Dock extends Component {
               </Link>  
             </li>
             <li className="navbar-item">
-              <Link to="/ryan">
+              <Link to="/ryan/profile">
                 <img className="navbar-icon" src={PROFILE_ICON}/>
               </Link>
             </li>

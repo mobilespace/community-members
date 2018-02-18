@@ -14,7 +14,7 @@ import MonteLocked from './portals/MonteThakkar'
 import RyanLocked from './portals/RyanLiszewski';
 import RyanDashboard from './members/RyanLiszewski/Dashboard';
 import RyanSettings from './members/RyanLiszewski/Settings';
-
+import RyanProfile from './members/RyanLiszewski/Profile';
 
 import William from './members/WilliamHua';
 import Teodora from './members/TeodoraCaneva';
@@ -55,7 +55,7 @@ const Routes = (props) => {
         <Route exact path="/ryan" component={RyanDashboard} />
         <Route path="/ryan/locked" component={RyanLocked} />
         <Route path="/ryan/settings" component={RyanSettings} />
-
+        <Route path="/ryan/profile" component={RyanProfile} />
         <Route path="/thomas" component={Thomas} />
         <Route path="/bhavesh" component={Bhavesh} />
         <Route path="/girish" component={Girish} />

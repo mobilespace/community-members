@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Redirect } from 'react-router-dom';
 
 
 import '../../styles/RyanLiszewski.css';
@@ -30,7 +30,6 @@ export default class Settings extends Component {
     } else {
       this.setState({ newPassword: event.target.value })
     }
-    
   }
 
   handleSubmit(event) {
@@ -42,6 +41,11 @@ export default class Settings extends Component {
   }
 
   render(){
+    const {authenticated} = sessionStorage.getItem('authenticated');
+
+    if(authenticated){
+      return <Redirect to='/ryan/locked'/>
+    }
 
     const {originalPassword, 
       newPassword, 
