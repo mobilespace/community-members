@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { Link, Redirect } from 'react-router-dom';
 
-import '../styles/RyanLiszewski.css'
+import '../styles/MonteThakkar.css'
 
 import CloseArrow from '../assets/close.png';
 import LockIcon from '../assets/lock.png'
 
-export default class RyanLiszewskiPortal extends Component {
+export default class PrakashGurungPortal extends Component {
   constructor(props) {
     super(props);
 
@@ -27,10 +27,8 @@ export default class RyanLiszewskiPortal extends Component {
 
   handleSubmit(event) {
     const { phrase } = this.state
-    const password = sessionStorage.getItem('password');
-    
-    if (phrase === 'cortado' || (phrase === password && phrase !== '')) {
-      sessionStorage.setItem('s', true );
+
+    if (phrase === 'hello') {
       this.setState({ redirect: true })
     } else {
       this.setState({ error: 'Access Denied' })
@@ -49,7 +47,7 @@ export default class RyanLiszewskiPortal extends Component {
     const { phrase, redirect, error } = this.state
 
     if (redirect) {
-      return <Redirect to='/ryan' />
+      return <Redirect to='/prakash' />
     }
 
     return (
@@ -75,3 +73,4 @@ export default class RyanLiszewskiPortal extends Component {
     );
   }
 }
+

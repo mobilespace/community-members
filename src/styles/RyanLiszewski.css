@@ -66,15 +66,14 @@
   background: linear-gradient( to left top,#DED2CE,#EAAA8C); 
 }
 
-.navbar-container {
+.navbar-container-ryan {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: auto;
-  flex: 1;
 }
 
-.navbar {
+.navbar-ryan {
   padding: 5px; 
   margin: auto;
   list-style: none;
@@ -84,10 +83,9 @@
 
 .navbar-item {
   padding-top: 15px;
-  flex: 1;
 }
 
-.navbar-icon {
+.navbar-icon-ryan {
   width: 40px;
   height: 40px;
 }
@@ -101,11 +99,9 @@
 
 .logout-container {
   padding-top: 10px;
-  display:flex;
   margin: auto;
   align-self: flex-end;
   flex-direction: column;
-  flex: 1;
 }
 
 .navbar-item-container {

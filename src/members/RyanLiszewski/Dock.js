@@ -13,21 +13,21 @@ export default class Dock extends Component {
   render() {
     return (
       <div className="dock-container-ryan">
-        <div className="navbar-container">
-          <ul className="navbar">
+        <div className="navbar-container-ryan">
+          <ul className="navbar-ryan">
             <li className="navbar-item">
               <Link to="/ryan">
-                <img className="navbar-icon" src={HOME_ICON}/>
+                <img className="navbar-icon-ryan" src={HOME_ICON}/>
               </Link>  
             </li>
             <li className="navbar-item">
               <Link to="/ryan/profile">
-                <img className="navbar-icon" src={PROFILE_ICON}/>
+                <img className="navbar-icon-ryan" src={PROFILE_ICON}/>
               </Link>
             </li>
             <li className="navbar-item">
               <Link to="/ryan/settings">
-                <img className="navbar-icon" src={SETTINGS_ICON}/>
+                <img className="navbar-icon-ryan" src={SETTINGS_ICON}/>
               </Link>  
             </li>
           </ul>

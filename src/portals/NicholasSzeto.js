@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { Link, Redirect } from 'react-router-dom';
 
-import '../styles/RyanLiszewski.css'
+import '../styles/NicholasSzeto.css'
 
 import CloseArrow from '../assets/close.png';
 import LockIcon from '../assets/lock.png'
 
-export default class RyanLiszewskiPortal extends Component {
+export default class NicholasSzetoPortal extends Component {
   constructor(props) {
     super(props);
 
@@ -22,15 +22,14 @@ export default class RyanLiszewskiPortal extends Component {
 
   handleChange(event) {
     event.preventDefault();
+
     this.setState({ phrase: event.target.value, error: null })
   }
 
   handleSubmit(event) {
     const { phrase } = this.state
-    const password = sessionStorage.getItem('password');
-    
-    if (phrase === 'cortado' || (phrase === password && phrase !== '')) {
-      sessionStorage.setItem('s', true );
+
+    if (phrase === 'reddit' || phrase === 'REDDIT') {
       this.setState({ redirect: true })
     } else {
       this.setState({ error: 'Access Denied' })
@@ -49,11 +48,11 @@ export default class RyanLiszewskiPortal extends Component {
     const { phrase, redirect, error } = this.state
 
     if (redirect) {
-      return <Redirect to='/ryan' />
+      return <Redirect to='/nicholas/dashboard' />
     }
 
     return (
-      <div className="portal-container">
+      <div className="portal-container-nicholas">
         <Link to="/" className="back-arrow-container">
           <img className="close-icon" src={CloseArrow} />
         </Link>
