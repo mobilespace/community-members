@@ -16,7 +16,7 @@ export default class Dock extends Component {
             <footer className = "NoSelection" >
                 <ul>
                     <li data-title="Dashboard">
-                        <Link to="mitul/dashboard">
+                        <Link to="/mitul/dashboard">
                         <img data-title="Dashboard" src={DASHBOARD_ICON} className={active === 'dashboard' ? 'active' : ''} />
                         </Link>
                     </li>
