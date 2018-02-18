@@ -3,7 +3,7 @@
   src: url('../assets/Kleymissky.otf');
 }
 
-.title-nicholas, .subtitle-nicholas{
+.title-nicholas, .subtitle-nicholas, .container-heading-nicholas{
   font-family: 'Kleymissky';
   color: whitesmoke;
 }
@@ -92,7 +92,7 @@
 
 .chart-row-container-nicholas{
   display: flex;
-  flex: 1;
+  flex: 5;
 }
 
 .chart-container-nicholas{
@@ -100,13 +100,34 @@
   flex: 1;
 }
 
-.container-1-nicholas{
-  background: red;
-
+.dock-row-container-nicholas{
+  display: flex;
   flex: 2;
 }
 
+.container-1-nicholas{
+  background: lightskyblue;
+  flex: 3;
+}
+
 .container-2-nicholas{
-  background: pink;
-  flex: 6;
+  background: lightseagreen;
+  flex: 2;
+}
+
+.container-3-nicholas{
+  background: rgb(81, 241, 220);
+  flex: 5;
+}
+
+.container-4-nicholas{
+  background: lightblue;
+  flex: 4;
+}
+
+.container-heading-nicholas {
+  font-size: 30px;
+  position: relative;
+  top: 30px;
+  left: 60px;
 }
