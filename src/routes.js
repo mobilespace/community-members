@@ -13,6 +13,8 @@ import MonteLocked from './portals/MonteThakkar';
 
 import MitulDashboard from './members/MitulSavani/Dashboard'; 
 import MitulLocked from './portals/MitulSavani';
+import MitulPortfolio from './members/MitulSavani/Portfolio';
+import MitulProfile from './members/MitulSavani/Profile';
 
 
 import William from './members/WilliamHua';
@@ -54,6 +56,8 @@ const Routes = (props) => {
         <Route exact path="/mitul" component={MitulDashboard} />
         <Route path="/mitul/dashboard" component={MitulDashboard}/>
         <Route path="/mitul/locked" component={MitulLocked} />
+        <Route path="/mitul/portfolio" component={MitulPortfolio} />
+        <Route path="/mitul/profile" component={MitulProfile} />
 
         <Route path="/ryan" component={Ryan} />
         <Route path="/thomas" component={Thomas} />

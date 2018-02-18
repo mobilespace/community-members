@@ -4,7 +4,7 @@ import { VictoryPie } from 'victory';
 import { Line, Circle } from 'rc-progress';
 import {AreaChart} from 'react-easy-chart';
 
-
+import Dock from './Dock';
 
 import '../../styles/MitulSavani.css'
 
@@ -43,6 +43,8 @@ import '../../styles/MitulSavani.css'
         return (
 
             <div className="main-container-dashboard">
+              <div className="dashboard-container">
+                <h1> WORK HOURS LOG</h1>
                 <div className="chart-row-container-mitul">
                     <div className="chart-container container-1-mitul">
                         <div style={containerStyle}>
@@ -71,7 +73,7 @@ import '../../styles/MitulSavani.css'
                     </div>
                     <div style={circleContainerStyle}>
                         <Circle
-                            percent={this.state.circlepercent}
+                            percent={45}
                             strokeWidth="6"
                             strokeLinecap="round"
                             strokeColor={this.state.circlecolor}
@@ -90,7 +92,7 @@ import '../../styles/MitulSavani.css'
                         noAreaGradient
                         margin={{top: 30, right: 30, bottom: 30, left: 30}}
                         width={1350}
-                        height={300}
+                        height={400}
                         areaColors={['#7E4068', '#7BA8A6']}
                         interpolate={'cardinal'}
                         data={[
@@ -111,6 +113,8 @@ import '../../styles/MitulSavani.css'
                     />
                      </div>
                 </div>
+              </div>
+              <Dock active={'dashboard'} />
             </div>
         );
     }
