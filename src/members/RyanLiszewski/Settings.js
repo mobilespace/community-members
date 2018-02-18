@@ -20,7 +20,6 @@ export default class Settings extends Component {
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-    
   }
 
   handleChange(event){
@@ -35,7 +34,11 @@ export default class Settings extends Component {
   }
 
   handleSubmit(event) {
-    
+    const { originalPassword, newPassword } = this.state;
+
+    if(originalPassword === newPassword && originalPassword !== '') {
+      sessionStorage.setItem('password', newPassword);
+    }
   }
 
   render(){
@@ -85,7 +88,9 @@ export default class Settings extends Component {
             </label>
           </div> */}
 
-            <button className="submit-button"> 
+            <button className="submit-button"
+              onClick={this.handleSubmit}
+            > 
             </button>
         </div>
       </div>

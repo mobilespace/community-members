@@ -1,5 +1,5 @@
 @font-face {
-  font-family: 'Futura Book';
+  font-family: 'Futura Book' !important;
   src: url('../assets/Futura-Book-Regular.otf');
 }
 
@@ -11,7 +11,6 @@
 }
 
 .data-container-ryan {
-
   order: 2;
   flex: 0;
   background:linear-gradient(#C77863,#A55759);
@@ -63,7 +62,6 @@
 
 .chart-row-container-2 {
   display: flex;
-  
   flex: 2;
   background: linear-gradient( to left top,#DED2CE,#EAAA8C); 
 }
@@ -73,7 +71,7 @@
   flex-direction: column;
   justify-content: center;
   margin: auto;
-  
+  flex: 1;
 }
 
 .navbar {
@@ -94,11 +92,26 @@
   height: 40px;
 }
 
+.logout-icon {
+  width: 40px;
+  height: 40px;
+  transform: rotate(180deg);
+  align-self: flex-end;
+}
+
+.logout-container {
+  padding-top: 10px;
+  display:flex;
+  margin: auto;
+  align-self: flex-end;
+  flex-direction: column;
+  flex: 1;
+}
+
 .navbar-item-container {
   width: 40px;
   height: 40px;
 }
-
 
 .lock-container {
   display: flex;
@@ -147,9 +160,16 @@
 
 img:hover {
   border: 1px solid rgb(240, 200,	115);
-  border: 3px solid rgba(	240, 200,	115, 0.5);
+  /* border: 3px solid rgba(	240, 200,	115, 0.5); */
   -webkit-background-clip: padding-box; /* for Safari */
   background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+  border-radius: 75%; 
+}
+
+.active{
+  border-right: 1px solid rgb(240, 200,	115);
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
   border-radius: 75%; 
 }
 
@@ -172,10 +192,13 @@ img:hover {
   flex-direction: column;
 }
 
+.password-field-container {
+
+}
+
 /* TODO */
 /* Make only child */
 .password-field-container{
-  display: flex;
   padding-top: 50px;
 }
 
@@ -214,7 +237,6 @@ img:hover {
 }
 
 .field__input{
-  width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: var(--uiFieldBgColor);

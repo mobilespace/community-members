@@ -6,7 +6,7 @@ import '../../styles/RyanLiszewski.css';
 
 import Dock from './Dock';
 import { VictoryScatter } from 'victory';
-
+import Authenticated from './Authenticated';
 
 const rapData = [
   {name: "Aesop Rock", unique_words: 7392},  
@@ -18,11 +18,15 @@ const rapData = [
 export default class Dashboard extends Component {
 
   render () {
+    const authenticated = sessionStorage.getItem('authenticated');
 
-    if(sessionStorage.getItem('authenticated') === false){
-      return <Redirect to='/ryan/locked'/>
+    console.log(authenticated);
+    
+    if(!authenticated){
+      console.log("test");
+      <Redirect to='/ryan/locked'/>
     }
-
+  
     return (
       <div className="main-container-ryan"> 
        <div className="data-container-ryan">
@@ -40,7 +44,6 @@ export default class Dashboard extends Component {
               data = {rapData}
               x="name"
               y="unique_words"
-              
             />
             </VictoryChart>
           </div> 
@@ -74,7 +77,6 @@ export default class Dashboard extends Component {
                  <VictoryArea
                 />
               </VictoryChart>
-
           </div> 
         </div>
       </div>  
