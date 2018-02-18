@@ -10,7 +10,7 @@ const WILLIAM_AVATAR = 'https://avatars3.githubusercontent.com/u/36139326?s=460&
 const TEODORA_AVATAR ='https://scontent-lax3-1.xx.fbcdn.net/v/t1.0-1/c44.0.320.320/p320x320/20914645_1579156895438534_1027285013181250707_n.jpg?oh=0ff1b3c4c8bc8e00edb84cecd660d0fe&oe=5B1C897A'
 const PRAKASH_AVATAR = 'https://avatars.githubusercontent.com/makkhay'
 const EMANUEL_AVATAR = 'https://scontent-lax3-2.cdninstagram.com/vp/1ee634d2bdf29d5a327858a15ccfdf42/5B26F2E8/t51.2885-19/s150x150/18160691_1198139890329419_5383374010954285056_a.jpg'
-const JAHON_AVATAR = 'https://avatars0.githubusercontent.com/u/25942541?s=460&v=4'
+const JAKHONGIR_AVATAR = 'https://avatars0.githubusercontent.com/u/25942541?s=460&v=4'
 const SUKHJIT_AVATAR = 'https://avatars1.githubusercontent.com/u/18251293?s=400&u=1ee2922f2dd90d94bb4efbec7cc815ef510a0ad7&v=4'
 const RYAN_AVATAR = 'https://avatars3.githubusercontent.com/u/5275250?s=460&v=4'
 const THOMAS_AVATAR = 'http://thomaszhu.com/resources/thomas_avatar.jpeg'
@@ -54,8 +54,8 @@ export default class App extends Component {
           <Link to="/nicholas/locked">
             <img className="landing-page-avatar" src={NICHOLAS_AVATAR} />
           </Link>
-          <Link to="/jahon">
-            <img className="landing-page-avatar" src={JAHON_AVATAR} />
+          <Link to="/jakhongir/locked">
+            <img className="landing-page-avatar" src={JAKHONGIR_AVATAR} />
           </Link>
           <Link to="/sukhjit">
             <img className="landing-page-avatar" src={SUKHJIT_AVATAR} />
