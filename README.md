@@ -41,12 +41,12 @@ Someone will review (and merge) it.
 
 ### TODO
 
-- [x] [Create a locked screen with a secret phrase](https://i.redd.it/qes864onsgc01.png)
+- [ ] [Create a locked screen with a secret phrase](https://i.redd.it/qes864onsgc01.png)
 
-- [x] [Create a protected dashboard with the following 3 pages:](https://dribbble.com/tags/dashboard_ui)
-  - [x] [Victory Charts Page](http://formidable.com/open-source/victory/) - Create 4 total charts - 1 of them has to be a custom chart made specifically for your dashboard
-  - [x] Resume Viewer/ Portfolio Page
-  - [x] Profile Page
+- [ ] [Create a protected dashboard with the following 3 pages:](https://dribbble.com/tags/dashboard_ui)
+  - [ ] [Victory Charts Page](http://formidable.com/open-source/victory/) - Create 4 total charts - 1 of them has to be a custom chart made specifically for your dashboard
+  - [ ] Resume Viewer/ Portfolio Page
+  - [ ] Profile Page
 
 - [ ] :star: **Bonus:** Change the secret phrase to a password & change locked screen UI
   - [ ] :star: **Bonus:** Allow users to change secret phrase/password (update `secret = 'new_secret'` on browser's cache)
