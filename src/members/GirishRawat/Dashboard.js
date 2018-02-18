@@ -55,7 +55,7 @@ export default class Dashboard extends Component {
                   <i class="fa fa-power-off fa-2x"></i>
                   <span class="nav-text">
                   
-                    Exit
+                    Logout
                     
                         </span>
                 </a>

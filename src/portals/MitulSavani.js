@@ -1,19 +1,20 @@
 import React, { Component } from 'react';
 import { Link, Redirect } from 'react-router-dom';
+import ReactPasswordStrength from 'react-password-strength';
 
-import '../styles/GirishRawat.css'
+import '../styles/MitulSavani.css'
 
 import CloseArrow from '../assets/close.png';
 import LockIcon from '../assets/lock.png'
 
-export default class GirishRawatPortal extends Component {
+export default class MitulSavaniPortal extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
       phrase: '',
       redirect: false,
-      error: null
+      error: null,
     }
 
     this.handleChange = this.handleChange.bind(this);
@@ -29,7 +30,7 @@ export default class GirishRawatPortal extends Component {
   handleSubmit(event) {
     const { phrase } = this.state
 
-    if (phrase === 'iseeyou' || phrase === 'ISEEYOU') {
+    if (phrase === 'curious' || phrase === 'passionate') {
       this.setState({ redirect: true })
     } else {
       this.setState({ error: 'Access Denied' })
@@ -45,10 +46,10 @@ export default class GirishRawatPortal extends Component {
   }
 
   render() {
-    const { phrase, redirect, error } = this.state
+     const { phrase, redirect, error } = this.state
 
     if (redirect) {
-      return <Redirect to='/girish/profile' />
+      return <Redirect to='/mitul/dashboard' />
     }
 
     return (
@@ -60,7 +61,7 @@ export default class GirishRawatPortal extends Component {
           <img className="lock-icon" src={LockIcon} />
           <div className="lock-input-container">
             <form onSubmit={this.handleSubmit}>
-              <input type="text"
+            <input type="password"
                 className={`phrase-input ${this.errorClass()}`}
                 name="phrase" value={phrase}
                 placeholder="Enter secret phrase"

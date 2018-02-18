@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { Link, Redirect } from 'react-router-dom';
 
-import '../styles/GirishRawat.css'
+import '../styles/ThomasZhu.css'
 
 import CloseArrow from '../assets/close.png';
 import LockIcon from '../assets/lock.png'
 
-export default class GirishRawatPortal extends Component {
+export default class ThomasPortal extends Component {
   constructor(props) {
     super(props);
 
@@ -29,7 +29,7 @@ export default class GirishRawatPortal extends Component {
   handleSubmit(event) {
     const { phrase } = this.state
 
-    if (phrase === 'iseeyou' || phrase === 'ISEEYOU') {
+    if (phrase === 'tommyboy' || phrase === 'TOMMYBOY') {
       this.setState({ redirect: true })
     } else {
       this.setState({ error: 'Access Denied' })
@@ -48,7 +48,7 @@ export default class GirishRawatPortal extends Component {
     const { phrase, redirect, error } = this.state
 
     if (redirect) {
-      return <Redirect to='/girish/profile' />
+      return <Redirect to='/thomas' />
     }
 
     return (

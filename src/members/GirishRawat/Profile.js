@@ -53,7 +53,7 @@ export default class Profile extends Component {
                 <a href="/">
                   <i class="fa fa-power-off fa-2x"></i>
                   <span class="nav-text">
-                    Exit
+                    Logout
                         </span>
                 </a>
               </li>

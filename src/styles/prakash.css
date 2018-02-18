@@ -1,0 +1,124 @@
+.main-container-prakash{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.dashboard-container-prakash {
+  background:black;
+  flex: 1;
+}
+
+.chart-container-prakash { 
+    background:#0288D1;
+    flex: 12;
+    display: flex;
+    flex-direction: column;
+}
+
+.row1-container-prakash{
+    display:flex;
+    flex-direction: row;    
+    background: blueviolet;
+    flex:1;
+
+}
+
+.row2-container-prakash{
+    display:flex;
+    flex-direction: row;    
+    background: chartreuse;
+    flex:1;
+}
+
+.col1-container-prakash{
+    flex: 1;
+    background: #1E88E5;
+    padding: 1%;
+
+}
+.col2-container-prakash{
+    flex: 1;
+    background: #FDD835;
+}
+.col3-container-prakash{
+    flex: 1;
+    background: #F48FB1;
+    padding: 1%;
+}
+.col4-container-prakash{
+    flex: 1;
+    background: #E53935;
+}
+
+.navbar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+  
+  }
+  
+  .navbar {
+    padding: 5px; 
+    margin: auto;
+    list-style: none;
+    display: inline;
+  }
+  
+  .navbar-item {
+    padding-top: 10px;
+    flex: 1;
+  }
+  
+  .navbar-icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  
+  .lock-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 450px;
+    height: 220px;
+  }
+  
+  .lock-icon {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .lock-input-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 25px;
+  }
+  
+  .phrase-input {
+    width: 200px;
+    height: 45px;
+    color: black;
+    background-color: white;
+    border:1px solid rgb(220, 213, 213);
+    border-radius: 3px;
+    font-size: 18px;
+    font-family: 'Futura';
+    padding-left: 20px;
+    outline: none;
+  }
+  
+  .error {
+    border-color: #F61666;
+    border-width: 2px;
+  }
+  
+  .lock-error-message {
+    color: #F61666;
+    margin-top: 10px;
+    font-size: 154x;
+  }
