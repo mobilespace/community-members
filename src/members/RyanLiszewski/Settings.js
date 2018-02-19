@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link, Redirect } from 'react-router-dom';
 
-
 import '../../styles/RyanLiszewski.css';
 
 import Dock from './Dock';
@@ -15,7 +14,6 @@ export default class Settings extends Component {
     this.state = {
       originalPassword: '',
       newPassword: '', 
-      passwordCheck: '',
       error: null
     }
 
@@ -24,8 +22,6 @@ export default class Settings extends Component {
   }
 
   handleChange(event){
-
-    //Learn JSX Syntax and States
     if( event.target.name === "originalPassword"){
       this.setState({ originalPassword: event.target.value })
     } else {
@@ -37,14 +33,14 @@ export default class Settings extends Component {
     const { originalPassword, newPassword } = this.state;
 
     if(originalPassword === newPassword && originalPassword !== '') {
-      sessionStorage.setItem('password', newPassword);
+     localStorage.setItem('password', newPassword);
     }
   }
 
   render(){
-    const {authenticated} = sessionStorage.getItem('authenticated');
+    const authenticated = localStorage.getItem('authenticated');
 
-    if(authenticated){
+    if(authenticated === "false" || authenticated === null){
       return <Redirect to='/ryan/locked'/>
     }
 
@@ -83,16 +79,6 @@ export default class Settings extends Component {
               </span>
             </label>
           </div>
-
-          {/* <div className="password-field-container">
-            <label className="field field_type2">
-              <input className="field__input" placeholder="No Mistakes."/>
-              <span className="field__label-wrap">
-                <span className="field__label">Renter your new password</span>
-              </span>
-            </label>
-          </div> */}
-
             <button className="submit-button"
               onClick={this.handleSubmit}
             > 

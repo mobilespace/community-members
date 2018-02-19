@@ -11,9 +11,9 @@ import Dock from './Dock'
 export default class Profile extends Component {
 
   render() {
-    const authenticated = sessionStorage.getItem('authenticated');
+    const authenticated = localStorage.getItem('authenticated');
 
-    if(!authenticated){
+    if(authenticated === "false" || authenticated === null){
       return <Redirect to='/ryan/locked'/>
     }
 
@@ -37,7 +37,7 @@ export default class Profile extends Component {
                     alt="Twitter Logo"
                   />
                 </a>
-                <a href="https://github.com/Monte9" target="_Blank" rel="noopener noreferrer">
+                <a href="https://github.com/ryanliszewski" target="_Blank" rel="noopener noreferrer">
                   <img className="Logo"
                     src={GithubLogo}
                     alt="Github Logo"

@@ -27,10 +27,10 @@ export default class RyanLiszewskiPortal extends Component {
 
   handleSubmit(event) {
     const { phrase } = this.state
-    const password = sessionStorage.getItem('password');
+    const password = localStorage.getItem('password');
     
     if (phrase === 'cortado' || (phrase === password && phrase !== '')) {
-      sessionStorage.setItem('authenticated', true );
+      localStorage.setItem('authenticated', true );
       this.setState({ redirect: true })
     } else {
       this.setState({ error: 'Access Denied' })

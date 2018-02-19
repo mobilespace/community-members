@@ -33,7 +33,7 @@
   justify-content: center;
 }
 
-.settings-container-ryan, .profile-container-ryan{
+.settings-container-ryan, .profile-container-ryan, .portfolio-container-ryan{
   order: 2;
   flex:13;
   background: linear-gradient(to left top, #724056,#E58860);

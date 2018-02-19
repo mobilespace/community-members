@@ -16,7 +16,6 @@ import MitulLocked from './portals/MitulSavani';
 import MitulPortfolio from './members/MitulSavani/Portfolio';
 import MitulProfile from './members/MitulSavani/Profile';
 
-// add new routes
 import NicholasDashboard from './members/NicholasSzeto/Dashboard';
 import NicholasPortfolio from './members/NicholasSzeto/Portfolio';
 import NicholasProfile from './members/NicholasSzeto/Profile';
@@ -31,6 +30,7 @@ import RyanLocked from './portals/RyanLiszewski';
 import RyanDashboard from './members/RyanLiszewski/Dashboard';
 import RyanSettings from './members/RyanLiszewski/Settings';
 import RyanProfile from './members/RyanLiszewski/Profile';
+import RyanPortfolio from './members/RyanLiszewski/Portfolio';
 
 import William from './members/WilliamHua';
 import Teodora from './members/TeodoraCaneva';
@@ -98,6 +98,7 @@ const Routes = (props) => {
         <Route path="/ryan/locked" component={RyanLocked} />
         <Route path="/ryan/settings" component={RyanSettings} />
         <Route path="/ryan/profile" component={RyanProfile} />
+        <Route path="/ryan/portfolio" component={RyanPortfolio} /> 
 
         <Route exact path="/mitul" component={MitulDashboard} />
         <Route path="/mitul/dashboard" component={MitulDashboard}/>
