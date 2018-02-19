@@ -12,9 +12,9 @@ export default class Dashboard extends Component{
     return (
       <div className="Emanuel-main-container">
     <div className="Emanuel-dashboard-container">
+    <h1>DASHBOARD</h1>  
        <div className="Emanuel-chart-row-container">
        <div className="Emanuel-chart-container-1">
-    
        <VictoryPie
                 theme={VictoryTheme.material} 
                              
@@ -24,10 +24,9 @@ export default class Dashboard extends Component{
                 ]}
               />
               </div> 
-              <div className="Emanuel-chart-container-2">
+              <div className="Emanuel-chart-div-1">
            </div> 
-           <div className="Emanuel-chart-container-3">
-           <h3>My JSX knowledge</h3>
+           <div className="Emanuel-chart-container-2">
            <VictoryChart domainPadding={25}> 
            <VictoryBar 
            theme={VictoryTheme.material}
@@ -40,7 +39,34 @@ export default class Dashboard extends Component{
          </VictoryChart>
          
                        </div>
-              
+                       <div className="Emanuel-chart-div-2"> 
+                       </div> 
+                       <div className="Emanuel-chart-container-3">
+           <VictoryChart domainPadding={25}> 
+           <VictoryBar 
+              categories={{x: ["A Bar", "Bar Raised", "Even Higher"]}}
+                data={[
+                  {x:"A Bar", y: 5},
+                  {x: "Bar Raised", y: 10},
+                  {x: "Even Higher", y: 20}
+                    ]}
+         />
+         </VictoryChart>
+         </div>
+         <div className="Emanuel-chart-div-3">
+         </div>
+         <div className="Emanuel-chart-container-4">
+           <VictoryChart domainPadding={25}> 
+           <VictoryBar 
+           theme={VictoryTheme.material}
+              categories={{x: ["Amount of Free Time", "Time Needed to function"]}}
+                data={[
+                  {x:"Amount of Free time", y: 1},
+                  {x: "Time Needed to function", y: 40}
+                    ]}
+         />
+         </VictoryChart>
+         </div>
        </div>  
           </div>
         <Dock active={'dashboard'} />

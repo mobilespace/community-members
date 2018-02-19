@@ -295,13 +295,29 @@
   .Emanuel-chart-container-1 {
     flex: 9; 
   }
-  .Emanuel-chart-container-2 {
+  .Emanuel-chart-div-1 {
     flex: 1; 
     background:black;
   }
-  .Emanuel-chart-container-3{
+  .Emanuel-chart-container-2{
     flex:9;
     background:white; 
+  }
+  .Emanuel-chart-div-2{
+    flex:1; 
+    background:red; 
+  }
+  Emanuel-chart-container-3{
+    flex:9; 
+    background: white; 
+  }
+  .Emanuel-chart-div-3{
+    flex:1; 
+    background: black;
+  }
+  .Emanuel-chart-container-4{
+    flex:9;
+    background: white; 
   }
   
   
