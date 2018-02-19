@@ -40,7 +40,6 @@ import PrakashPortfolio from './members/PrakashGurung/Portfolio';
 
 import Emanuel from './members/EmanuelSaunders';
 import Nicholas from './members/NicholasSzeto';
-import Jahon from './members/JakhongirKhusanov';
 
 import SukhjitDashboard from './members/SukhjitSingh/Dashboard';
 import SukhjitProfile from './members/SukhjitSingh/Profile';
@@ -51,8 +50,6 @@ import JakhongirDashboard from './members/JakhongirKhusanov/Dashboard';
 import JakhongirPortfolio from './members/JakhongirKhusanov/Portfolio';
 import JakhongirProfile from './members/JakhongirKhusanov/Profile';
 import JakhongirLocked from './portals/JakhongirKhusanov'
-
-import Sukhjit from './members/SukhjitSingh';
 
 import Ryan from './members/RyanLiszewski';
 
