@@ -43,13 +43,6 @@ import PrakashLocked from './portals/PrakashGurung'
 import PrakashProfile from './members/PrakashGurung/Profile';
 import PrakashPortfolio from './members/PrakashGurung/Portfolio';
 
-<<<<<<< HEAD
-import Emanuel from './members/EmanuelSaunders';
-import Nicholas from './members/NicholasSzeto';
-import Jahon from './members/JakhongirKhusanov';
-import Sukhjit from './members/SukhjitSingh';
-import Thomas from './members/ThomasZhu';
-=======
 import EmanuelDashboard from './members/EmanuelSaunders/Dashboard';
 import EmanuelPortfolio from './members/EmanuelSaunders/Portfolio';
 import EmanuelProfile from './members/EmanuelSaunders/Profile';
@@ -66,7 +59,6 @@ import JakhongirProfile from './members/JakhongirKhusanov/Profile';
 import JakhongirLocked from './portals/JakhongirKhusanov'
 
 import Ryan from './members/RyanLiszewski';
->>>>>>> ef013be53bc39f0ac39325afd925a0fbe1d39809
 
 import ThomasDashboard from './members/ThomasZhu/Dashboard';
 import ThomasPortfolio from './members/ThomasZhu/Portfolio';
@@ -99,8 +91,6 @@ const Routes = (props) => {
         <Route path="/bhavesh/dashboard" component={BhaveshDashboard} />
         <Route path="/bhavesh/portfolio" component={BhaveshPortfolio} />
         <Route path="/bhavesh/locked" component={BhaveshLocked} />
-    
-        <Route path="/william" component={William} />
         
         <Route exact path="/emanuel" component={EmanuelDashboard} />
         <Route path="/emanuel/profile" component={EmanuelProfile} />
@@ -120,13 +110,6 @@ const Routes = (props) => {
         <Route path="/prakash/profile" component={PrakashProfile} />
         <Route path="/prakash/portfolio" component={PrakashPortfolio} />
 
-<<<<<<< HEAD
-        <Route path="/emanuel" component={Emanuel} />
-        <Route path="/affaan" component={Affaan} />
-        <Route path="/nicholas" component={Nicholas} />
-        <Route path="/jahon" component={Jahon} />
-        <Route path="/sukhjit" component={Sukhjit} />
-=======
         <Route path="/affaan" component={Affaan} />
 
         <Route exact path="/sukhjit" component={SukhjitDashboard} />
@@ -140,7 +123,6 @@ const Routes = (props) => {
         <Route path="/Jakhongir/portfolio" component={JakhongirPortfolio} />
         <Route path="/Jakhongir/profile" component={JakhongirProfile} />
         <Route path="/Jakhongir/locked" component={JakhongirLocked} />
->>>>>>> ef013be53bc39f0ac39325afd925a0fbe1d39809
 
         <Route exact path="/ryan" component={RyanDashboard} />
         <Route path="/ryan/locked" component={RyanLocked} />
@@ -162,6 +144,8 @@ const Routes = (props) => {
         
         <Route path="/girish" component={Girish} />
         <Route path="/karan" component={Karan} />
+        <Route path="/affaan" component={Affaan} />
+        <Route path="/william" component={William} />
       </Switch>
     </Router>
   )
