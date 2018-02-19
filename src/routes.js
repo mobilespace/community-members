@@ -42,8 +42,6 @@ import EmanuelPortfolio from './members/EmanuelSaunders/Portfolio';
 import EmanuelProfile from './members/EmanuelSaunders/Profile';
 import EmanuelLocked from './portals/EmanuelSaunders'
 
-import Nicholas from './members/NicholasSzeto';
-
 import SukhjitDashboard from './members/SukhjitSingh/Dashboard';
 import SukhjitProfile from './members/SukhjitSingh/Profile';
 import SukhjitPortfolio from './members/SukhjitSingh/Portfolio';
@@ -89,7 +87,6 @@ const Routes = (props) => {
         <Route path="/bhavesh/locked" component={BhaveshLocked} />
     
         <Route path="/william" component={William} />
-        <Route path="/teodora" component={Teodora} />
         
         <Route exact path="/emanuel" component={EmanuelDashboard} />
         <Route path="/emanuel/profile" component={EmanuelProfile} />
@@ -110,7 +107,6 @@ const Routes = (props) => {
         <Route path="/prakash/portfolio" component={PrakashPortfolio} />
 
         <Route path="/affaan" component={Affaan} />
-        <Route path="/nicholas" component={Nicholas} />
 
         <Route exact path="/sukhjit" component={SukhjitDashboard} />
         <Route path="/sukhjit/dashboard" component={SukhjitDashboard} />

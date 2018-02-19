@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 import '../../styles/MonteThakkar.css';
-import '../../styles/Mac-OS-X-DockBar.css';
+import '../MonteThakkar/Monte_Dock.css';
 
 import DASHBOARD_ICON from '../../assets/dashboard.png';
 import PORTFOLIO_ICON from '../../assets/portfolio.png';
