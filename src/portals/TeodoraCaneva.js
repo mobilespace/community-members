@@ -1,20 +1,20 @@
 import React, { Component } from 'react';
 import { Link, Redirect } from 'react-router-dom';
-import ReactPasswordStrength from 'react-password-strength';
+import PasswordMask from 'react-password-mask';
 
-import '../styles/MitulSavani.css'
+import '../styles/TeodoraCaneva.css'
 
 import CloseArrow from '../assets/close.png';
 import LockIcon from '../assets/lock.png'
 
-export default class MitulSavaniPortal extends Component {
+export default class TeodoraCanevaPortal extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
       phrase: '',
       redirect: false,
-      error: null,
+      error: null
     }
 
     this.handleChange = this.handleChange.bind(this);
@@ -30,7 +30,7 @@ export default class MitulSavaniPortal extends Component {
   handleSubmit(event) {
     const { phrase } = this.state
 
-    if (phrase === 'curious' || phrase === 'passionate') {
+    if (phrase === 'lion' || phrase === 'LION') {
       this.setState({ redirect: true })
     } else {
       this.setState({ error: 'Access Denied' })
@@ -46,26 +46,26 @@ export default class MitulSavaniPortal extends Component {
   }
 
   render() {
-     const { phrase, redirect, error } = this.state
+    const { phrase, redirect, error } = this.state
 
     if (redirect) {
-      return <Redirect to='/mitul/dashboard' />
+      return <Redirect to='/teodora/dashboard' />
     }
 
     return (
       <div className="portal-container">
         <Link to="/" className="back-arrow-container">
-          <img className="close-icon" src={CloseArrow} />
+          <img className="close-icon" src={CloseArrow} alt="Arrow"/>
         </Link>
         <div className="lock-container">
-          <img className="lock-icon" src={LockIcon} />
+          <img className="lock-icon" src={LockIcon} alt="Lock Icon" />
           <div className="lock-input-container">
             <form onSubmit={this.handleSubmit}>
-            <input type="password"
+              <input type="password" //masks user input
                 className={`phrase-input ${this.errorClass()}`}
                 name="phrase" value={phrase}
                 placeholder="Enter secret phrase"
-                onChange={this.handleChange.bind(this)}
+                onChange={this.handleChange.bind(this)} 
               />
             </form>
             {error != null && <div className="lock-error-message">ACCESS DENIED</div>}

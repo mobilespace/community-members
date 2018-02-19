@@ -12,12 +12,8 @@
   font-family: 'Futura-PT-Medium';
   src: url('../assets/Futura-PT-Medium.otf');
 }
+/* @import url('https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900'); */
 
-b {
-  font-family: 'Proxima-Nova-Regular';
-  font-weight: bold;
-  color: black;
-}
 
 * {
   font-family: 'Proxima-Nova-Regular';
@@ -65,7 +61,7 @@ a {
   width: 100vw;
   justify-content: center;
   align-items: center;
-  background-color: rgb(8, 1, 1);
+  background-color: rgba(239,239,239,1);
 }
 
 .back-arrow-container {
@@ -93,7 +89,7 @@ a {
 }
 
 .title {
-  font-size: 65px;
+  font-size: 40px;
   text-align: center;
 }
 
@@ -168,14 +164,7 @@ a {
 .lock-error-message {
   color: #F61666;
   margin-top: 10px;
-  font-size: 15px;
-}
-
-.tries-message {
-  color: black;
-  margin-top: 10px;
-  font-size: 15px;
-  font-family: 'Proxima-Nova-Regular';
+  font-size: 154x;
 }
 
 .dock-avatar {
@@ -327,10 +316,94 @@ a {
 .container-heading {
   font-size: 22px;
   position: relative;
-  top: 50px;
+  top: 20px;
   left: 0;
 }
 
 .container-4 {
   background: linear-gradient(to bottom right, #AAFFA9, #11FFBD);
+}
+
+
+.main-container-jk {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, #536976, #292E49);
+}
+.about-jk {
+  display: flex;
+  flex-direction: column;
+}
+.up-container-jk {
+    flex: 1;
+    
+}
+.down-container-jk {
+  display: flex;
+  justify-content: space-around;
+  flex: 2;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+/* .left-info {
+  flex: 1;
+}
+.right-info {
+  flex: 1;
+} */
+
+.card {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  
+}
+.card:hover {
+  border-color: #ff99ff;
+}
+.card-title {
+  text-align: center;
+  font-family: 'Proxima-Nova-Regular';
+  color: #222;
+
+
+}
+.about-text {
+  font-family: 'Proxima-Nova-Regular';
+  color: #222;
+}
+
+ul.skills {
+  padding: 0;
+  text-align: center;
+
+}
+
+.skills li {
+  border-radius: 6px;
+  display: inline-block;
+  background: #ff9904;
+  color: white;
+  padding: 5px 10px;
+  margin: 2px;
+  font-family: 'Proxima-Nova-Regular';
+}
+
+.skills li:nth-child(odd) {
+  background: #0399ff;
+}
+.footer-dock {
+  /* padding: 20px 0 40px 20px; */
+}
+
+.resume-link {
+  color: blue;
 }

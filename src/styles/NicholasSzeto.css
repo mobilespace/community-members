@@ -3,7 +3,7 @@
   src: url('../assets/Kleymissky.otf');
 }
 
-.title-nicholas, .subtitle-nicholas{
+.title-nicholas, .subtitle-nicholas, .container-heading-nicholas{
   font-family: 'Kleymissky';
   color: whitesmoke;
 }
@@ -16,6 +16,16 @@
   justify-content: center;
   align-items: center;
   background: linear-gradient(to bottom right, #029ffa, rgb(0, 0, 0));
+}
+
+.portal-container-nicholas {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(23, 173, 233);
 }
 
 .back-arrow-container {
@@ -69,4 +79,55 @@
   width: 40px;
   height: 40px;
   background: transparent;
+}
+
+/* Dashboard */
+
+.dashboard-container-nicholas{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+.chart-row-container-nicholas{
+  display: flex;
+  flex: 5;
+}
+
+.chart-container-nicholas{
+  display: flex;
+  flex: 1;
+}
+
+.dock-row-container-nicholas{
+  display: flex;
+  flex: 2;
+}
+
+.container-1-nicholas{
+  background: lightskyblue;
+  flex: 3;
+}
+
+.container-2-nicholas{
+  background: lightseagreen;
+  flex: 2;
+}
+
+.container-3-nicholas{
+  background: rgb(81, 241, 220);
+  flex: 5;
+}
+
+.container-4-nicholas{
+  background: lightblue;
+  flex: 4;
+}
+
+.container-heading-nicholas {
+  font-size: 30px;
+  position: relative;
+  top: 30px;
+  left: 60px;
 }
