@@ -33,12 +33,15 @@ import TeodoraProfile from './members/TeodoraCaneva/Profile';
 import TeodoraLocked from './portals/TeodoraCaneva'
 
 import PrakashDashboard from './members/PrakashGurung/Dashboard';
-import Prakash from './members/PrakashGurung';
 import PrakashLocked from './portals/PrakashGurung'
 import PrakashProfile from './members/PrakashGurung/Profile';
 import PrakashPortfolio from './members/PrakashGurung/Portfolio';
 
-import Emanuel from './members/EmanuelSaunders';
+import EmanuelDashboard from './members/EmanuelSaunders/Dashboard';
+import EmanuelPortfolio from './members/EmanuelSaunders/Portfolio';
+import EmanuelProfile from './members/EmanuelSaunders/Profile';
+import EmanuelLocked from './portals/EmanuelSaunders'
+
 import Nicholas from './members/NicholasSzeto';
 
 import SukhjitDashboard from './members/SukhjitSingh/Dashboard';
@@ -86,7 +89,14 @@ const Routes = (props) => {
         <Route path="/bhavesh/locked" component={BhaveshLocked} />
     
         <Route path="/william" component={William} />
-
+        <Route path="/teodora" component={Teodora} />
+        
+        <Route exact path="/emanuel" component={EmanuelDashboard} />
+        <Route path="/emanuel/profile" component={EmanuelProfile} />
+        <Route path="/emanuel/locked" component={EmanuelLocked} />
+        <Route path="/emanuel/dashboard" component={EmanuelDashboard} />
+        <Route path="/emanuel/portfolio" component={EmanuelPortfolio} />
+       
         <Route exact path="/teodora" component={TeodoraDashboard} />
         <Route path="/teodora/dashboard" component={TeodoraDashboard} />
         <Route path="/teodora/profile" component={TeodoraProfile} />
@@ -99,7 +109,6 @@ const Routes = (props) => {
         <Route path="/prakash/profile" component={PrakashProfile} />
         <Route path="/prakash/portfolio" component={PrakashPortfolio} />
 
-        <Route path="/emanuel" component={Emanuel} />
         <Route path="/affaan" component={Affaan} />
         <Route path="/nicholas" component={Nicholas} />
 

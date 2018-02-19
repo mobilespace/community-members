@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Proxima-Nova-Regular';
+  src: url('../assets/Proxima-Nova-Regular.ttf');
+}
+
+*{
+  font-family: 'Proxima-Nova-Regular';
+  color: white; 
+}
