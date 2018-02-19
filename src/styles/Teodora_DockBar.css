@@ -80,19 +80,21 @@ footer img {
 	align-items: center;
 	bottom: 0;
 	display: flex;
+	flex: 1;
 	justify-content: center;
 	margin: 0 5px;
 	position: relative;
 	transform: scale(1);
 	transform-origin: bottom center!important;
 	transition: all 0.2s;
-	width: 4em;
+	 
 }
 
 footer img:hover {
 	margin: 0 10px;
 	transform: scale(1.2);
 }
+
 
 .active {
 	margin: 0 10px;
@@ -111,3 +113,4 @@ footer img:hover {
 		bottom: 0;
 	};
 }
+
