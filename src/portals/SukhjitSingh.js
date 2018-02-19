@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import { Link, Redirect } from 'react-router-dom';
 
+import '../styles/SukhjitSingh.css'
+
 import CloseArrow from '../assets/close.png';
-import LockIcon from '../assets/lock.png';
+import LockIcon from '../assets/lock.png'
 
 export default class SukhjitSinghPortal extends Component {
   constructor(props) {
@@ -18,19 +20,17 @@ export default class SukhjitSinghPortal extends Component {
 
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
-
   }
 
   handleChange(event) {
     event.preventDefault();
-
     this.setState({ phrase: event.target.value, error: null })
   }
 
   handleSubmit(event) {
     const { phrase, tries } = this.state
 
-    if (phrase === 'mars' || 'MARS') {
+    if (phrase === 'awesome' || phrase === 'AWESOME' || phrase === 'moni') {
       this.setState({ redirect: true, tries: tries + 1 })
     } else {
       this.setState({ error: 'Access Denied', tries: tries + 1 })
@@ -40,7 +40,7 @@ export default class SukhjitSinghPortal extends Component {
   }
 
   errorClass() {
-    const { error } = this.state;
+    const { error } = this.state
     return error != null ? 'error' : ''
   }
 
@@ -52,14 +52,14 @@ export default class SukhjitSinghPortal extends Component {
     }
 
     return (
-      <div className='portal-container'>
+      <div className="portal-container">
         <Link to="/" className="back-arrow-container">
           <img className="close-icon" src={CloseArrow} />
         </Link>
         <div className="lock-container">
           <img className="lock-icon" src={LockIcon} />
           <div className="lock-input-container">
-            <form onSubmit={this.handleSubmit} >
+            <form onSubmit={this.handleSubmit}>
               <input type="text"
                 className={`phrase-input ${this.errorClass()}`}
                 name="phrase" value={phrase}
@@ -68,7 +68,7 @@ export default class SukhjitSinghPortal extends Component {
               />
             </form>
             {error != null && <div className="lock-error-message">ACCESS DENIED</div>}
-            {tries >= 1 && <div className="tries-message"><b>hint:</b> try "Mars"😉</div>}
+            {tries >= 1 && <div className="tries-message"><b>hint:</b> try "Awesome" 😉</div>}
           </div>
         </div>
       </div>
