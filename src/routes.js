@@ -16,8 +16,6 @@ import MitulLocked from './portals/MitulSavani';
 import MitulPortfolio from './members/MitulSavani/Portfolio';
 import MitulProfile from './members/MitulSavani/Profile';
 
-
-// add new routes
 import NicholasDashboard from './members/NicholasSzeto/Dashboard';
 import NicholasPortfolio from './members/NicholasSzeto/Portfolio';
 import NicholasProfile from './members/NicholasSzeto/Profile';
@@ -29,6 +27,11 @@ import BhaveshLocked from './portals/BhaveshChowdhury'
 import BhaveshPortfolio from './members/BhaveshChowdhury/Portfolio';
 
 import William from './members/WilliamHua';
+
+import TeodoraDashboard from './members/TeodoraCaneva/Dashboard';
+import TeodoraPortfolio from './members/TeodoraCaneva/Portfolio';
+import TeodoraProfile from './members/TeodoraCaneva/Profile';
+import TeodoraLocked from './portals/TeodoraCaneva'
 import Teodora from './members/TeodoraCaneva';
 
 import PrakashDashboard from './members/PrakashGurung/Dashboard';
@@ -82,17 +85,18 @@ const Routes = (props) => {
         <Route path="/bhavesh/locked" component={BhaveshLocked} />
     
         <Route path="/william" component={William} />
-        <Route path="/teodora" component={Teodora} />
+
+        <Route exact path="/teodora" component={TeodoraDashboard} />
+        <Route path="/teodora/dashboard" component={TeodoraDashboard} />
+        <Route path="/teodora/profile" component={TeodoraProfile} />
+        <Route path="/teodora/portfolio" component={TeodoraPortfolio} />
+        <Route path="/teodora/locked" component={TeodoraLocked} />
         
         <Route exact path="/prakash" component={PrakashDashboard} />
         <Route path="/prakash/locked" component={PrakashLocked} />
         <Route path="/prakash/dashboard" component={PrakashDashboard}/>
         <Route path="/prakash/profile" component={PrakashProfile} />
         <Route path="/prakash/portfolio" component={PrakashPortfolio} />
-
-
-
-
 
         <Route path="/emanuel" component={Emanuel} />
         <Route path="/affaan" component={Affaan} />
@@ -120,7 +124,6 @@ const Routes = (props) => {
         <Route path="/thomas/profile" component={ThomasProfile} />
         <Route path="/thomas/locked" component={ThomasLocked} />
         
-        <Route path="/bhavesh" component={Bhavesh} />
         <Route path="/girish" component={Girish} />
         <Route path="/karan" component={Karan} />
       </Switch>
