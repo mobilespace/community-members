@@ -1,7 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-// Community Members homepages
 import App from './App';
 import NotFound from './NotFound';
 
@@ -41,6 +40,12 @@ import PrakashPortfolio from './members/PrakashGurung/Portfolio';
 
 import Emanuel from './members/EmanuelSaunders';
 import Nicholas from './members/NicholasSzeto';
+import Jahon from './members/JakhongirKhusanov';
+
+import SukhjitDashboard from './members/SukhjitSingh/Dashboard';
+import SukhjitProfile from './members/SukhjitSingh/Profile';
+import SukhjitPortfolio from './members/SukhjitSingh/Portfolio';
+import SukhjitLocked from './portals/SukhjitSingh';
 
 import JakhongirDashboard from './members/JakhongirKhusanov/Dashboard';
 import JakhongirPortfolio from './members/JakhongirKhusanov/Portfolio';
@@ -101,13 +106,17 @@ const Routes = (props) => {
         <Route path="/affaan" component={Affaan} />
         <Route path="/nicholas" component={Nicholas} />
 
+        <Route exact path="/sukhjit" component={SukhjitDashboard} />
+        <Route path="/sukhjit/dashboard" component={SukhjitDashboard} />
+        <Route path="/sukhjit/portfolio" component={SukhjitPortfolio} />
+        <Route path="/sukhjit/profile" component={SukhjitProfile} />        
+        <Route path="/sukhjit/locked" component={SukhjitLocked} />
+
         <Route exact path="/Jakhongir" component={JakhongirDashboard} />
         <Route path="/Jakhongir/dashboard" component={JakhongirDashboard} />
         <Route path="/Jakhongir/portfolio" component={JakhongirPortfolio} />
         <Route path="/Jakhongir/profile" component={JakhongirProfile} />
         <Route path="/Jakhongir/locked" component={JakhongirLocked} />
-
-        <Route path="/sukhjit" component={Sukhjit} />
 
         <Route exact path="/mitul" component={MitulDashboard} />
         <Route path="/mitul/dashboard" component={MitulDashboard}/>
