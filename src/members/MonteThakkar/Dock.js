@@ -11,6 +11,7 @@ const MONTE_AVATAR = 'https://avatars2.githubusercontent.com/u/7840686?s=400&v=4
 export default class Dock extends Component {
   render() {
     const { active } = this.props
+    console.log(active);
 
     return (
       <footer className="NoSelection">
