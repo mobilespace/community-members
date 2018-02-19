@@ -32,7 +32,6 @@ import TeodoraDashboard from './members/TeodoraCaneva/Dashboard';
 import TeodoraPortfolio from './members/TeodoraCaneva/Portfolio';
 import TeodoraProfile from './members/TeodoraCaneva/Profile';
 import TeodoraLocked from './portals/TeodoraCaneva'
-import Teodora from './members/TeodoraCaneva';
 
 import PrakashDashboard from './members/PrakashGurung/Dashboard';
 import Prakash from './members/PrakashGurung';
