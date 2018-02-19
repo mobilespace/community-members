@@ -7,7 +7,7 @@ import LeftArrow from '../assets/left-arrow.png';
 
 const SUKHJIT_AVATAR = 'https://avatars1.githubusercontent.com/u/18251293?s=400&u=1ee2922f2dd90d94bb4efbec7cc815ef510a0ad7&v=4'
 
-export default class MonteThakkar extends Component {
+export default class SukhjitSingh extends Component {
   render() {
     return (
       <div className="main-container">
