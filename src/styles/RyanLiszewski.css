@@ -5,8 +5,8 @@
 
 .main-container-ryan {
   width: 100vw;
-  height: 100vh; 
-  display: flex; 
+  height: 100vh;
+  display: flex;
   flex: column;
 }
 
@@ -38,7 +38,7 @@
   flex:13;
   background: linear-gradient(to left top, #724056,#E58860);
   display: flex;
-  
+
 }
 
 .chart-row-container-1 {
@@ -63,7 +63,7 @@
 .chart-row-container-2 {
   display: flex;
   flex: 2;
-  background: linear-gradient( to left top,#DED2CE,#EAAA8C); 
+  background: linear-gradient( to left top,#DED2CE,#EAAA8C);
 }
 
 .navbar-container-ryan {
@@ -74,7 +74,7 @@
 }
 
 .navbar-ryan {
-  padding: 5px; 
+  padding: 5px;
   margin: auto;
   list-style: none;
   display: flex;
@@ -97,7 +97,7 @@
 
 }
 
-.logout-a {   
+.logout-a {
   padding-left: 2px;
 }
 
@@ -162,19 +162,19 @@
   font-size: 154x;
 }
 
-img:hover {
+.img:hover {
   border: 1px solid rgb(240, 200,	115);
   /* border: 3px solid rgba(	240, 200,	115, 0.5); */
   -webkit-background-clip: padding-box; /* for Safari */
   background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
-  border-radius: 75%; 
+  border-radius: 75%;
 }
 
 .active{
   border-right: 1px solid rgb(240, 200,	115);
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
-  border-radius: 75%; 
+  border-radius: 75%;
 }
 
 @keyframes slideInFromLeft {
@@ -192,7 +192,7 @@ img:hover {
   margin: auto;
   align-items: center;
   flex: 1;
-  display: flex;  
+  display: flex;
   flex-direction: column;
   width: 100%;
 }
@@ -233,9 +233,9 @@ img:hover {
   --uiFieldPlaceholderColor: var(--fieldPlaceholderColor, #724056);
   --uiFieldAnimationDuration: var(--fieldAnimationDuration, .3s);
   --uiFieldFonstSize: var(--fieldFontSize, 16px);
-  --uiFieldBorderColorActive: var(--fieldBorderColorActive,#DED2CE); 
+  --uiFieldBorderColorActive: var(--fieldBorderColorActive,#DED2CE);
 
-  position: relative;  
+  position: relative;
   display: block;
 }
 
@@ -268,28 +268,28 @@ img:hover {
   color: rgb(240, 200,	115);
 }
 
-.field__input::-webkit-input-placeholder{ 
+.field__input::-webkit-input-placeholder{
   color: var(--uiFieldPlaceholderColor);
   opacity: 0;
 }
 
-.field__input::-moz-placeholder{ 
+.field__input::-moz-placeholder{
   color: var(--uiFieldPlaceholderColor);
   opacity: 0;
 }
 
 .field__input:focus{
-  outline: none;  
+  outline: none;
 }
 
-.field__input:focus::-webkit-input-placeholder{ 
-  -webkit-transition: opacity var(--uiFieldAnimationDuration) ease-out var(--uiFieldAnimationDuration); 
+.field__input:focus::-webkit-input-placeholder{
+  -webkit-transition: opacity var(--uiFieldAnimationDuration) ease-out var(--uiFieldAnimationDuration);
   transition: opacity var(--uiFieldAnimationDuration) ease-out var(--uiFieldAnimationDuration);
   opacity: 1;
 }
 
-.field__input:focus::-moz-placeholder{ 
-  -webkit-transition: opacity var(--uiFieldAnimationDuration) ease-out var(--uiFieldAnimationDuration); 
+.field__input:focus::-moz-placeholder{
+  -webkit-transition: opacity var(--uiFieldAnimationDuration) ease-out var(--uiFieldAnimationDuration);
   transition: opacity var(--uiFieldAnimationDuration) ease-out var(--uiFieldAnimationDuration);
   opacity: 1;
 }
@@ -328,8 +328,8 @@ img:hover {
   --uiFieldPaddingTop: var(--fieldPaddingTop, 5px);
   --uiFieldPaddingRight: var(--fieldPaddingRight, 15px);
   --uiFieldPaddingBottom: var(--fieldPaddingBottom, 10px);
-  --uiFieldPaddingLeft: var(--fieldPaddingLeft, 15px);  
-  
+  --uiFieldPaddingLeft: var(--fieldPaddingLeft, 15px);
+
 }
 
 .field_type2 .field__label-wrap:after{
