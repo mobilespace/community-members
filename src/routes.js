@@ -68,7 +68,12 @@ import ThomasLocked from './portals/ThomasZhu'
 import Bhavesh from './members/BhaveshChowdhury';
 import Girish from './members/GirishRawat';
 import Affaan from './members/AffaanGhazzali';
-import Karan from './members/KaranGupta';
+
+// import Karan from './members/KaranGupta';
+import KaranDashboard from './members/KaranGupta/Dashboard';
+import KaranPortfolio from './members/KaranGupta/Portfolio';
+import KaranProfile from './members/KaranGupta/Profile';
+import KaranLocked from './portals/KaranGupta';
 
 const Routes = (props) => {
   return (
@@ -143,7 +148,14 @@ const Routes = (props) => {
         <Route path="/thomas/locked" component={ThomasLocked} />
         
         <Route path="/girish" component={Girish} />
-        <Route path="/karan" component={Karan} />
+        
+        {/* <Route path="/karan" component={Karan} /> */}
+        <Route exact path="/karan" component={KaranDashboard} />
+        <Route path="/karan/dashboard" component={KaranDashboard} />
+        <Route path="/karan/portfolio" component={KaranPortfolio} />
+        <Route path="/karan/profile" component={KaranProfile} />
+        <Route path="/karan/locked" component={KaranLocked} />
+        
         <Route path="/affaan" component={Affaan} />
         <Route path="/william" component={William} />
       </Switch>
