@@ -1,138 +1,336 @@
 @font-face {
-    font-family: 'Ailerons';
-    src: url('../assets/Ailerons-Typeface.otf');
-  }
-  
-  @font-face {
-    font-family: 'Futura';
-    src: url('../assets/Futura-Book-Regular.otf');
-  }
-  
-  * {
-    font-family: 'Ailerons';
-    color: whitesmoke;
-  }
-  
-  .main-container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to bottom right, #536976, #292E49);
-  }
-  
-  .portal-container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 100vw;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(239,239,239,1);
-  }
-  
-  .back-arrow-container {
-    position: absolute;
-    top: 50px;
-    left: 50px;
-  }
-  
-  .back-arrow-icon {
-    width: 50px;
-    height: 50px;
-  }
-  
-  .avatar-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;
-  }
-  
-  .avatar {
-    width: 120px;
-    height: 120px;
-    border-radius: 60px;
-  }
-  
-  .title {
-    font-size: 65px;
-    text-align: center;
-  }
-  
-  .link {
-    text-decoration: none;
-    cursor: pointer;
-  }
-  
-  .subtitle {
-    font-size: 22px;
-    margin-top: 20px;
-  }
-  
-  .links-container {
-    display: flex;
-    flex-direction: row;
-    margin-top: 40px;
-    width: 200px;
-    justify-content: space-between;
-  }
-  
-  .links-icon {
-    width: 40px;
-    height: 40px;
-    background: transparent;
-  }
-  
-  .close-icon {
-    width: 32px;
-    height: 32px;
-  }
-  
-  .lock-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    width: 450px;
-    height: 220px;
-  }
-  
-  .lock-icon {
-    width: 50px;
-    height: 50px;
-  }
-  
-  .lock-input-container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 25px;
-  }
-  
-  .phrase-input {
-    width: 200px;
-    height: 45px;
-    color: black;
-    background-color: white;
-    border:1px solid rgb(220, 213, 213);
-    border-radius: 3px;
-    font-size: 18px;
-    font-family: 'Futura';
-    padding-left: 20px;
-    outline: none;
-  }
-  
-  .error {
-    border-color: #F61666;
-    border-width: 2px;
-  }
-  
-  .lock-error-message {
-    color: #F61666;
-    margin-top: 10px;
-    font-size: 154x;
-  }
-  
+  font-family: 'Futura';
+  src: url('../assets/Futura-Book-Regular.otf');
+}
+
+@font-face {
+  font-family: 'Proxima-Nova-Regular';
+  src: url('../assets/Proxima-Nova-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Futura-PT-Medium';
+  src: url('../assets/Futura-PT-Medium.otf');
+}
+
+b {
+  font-family: 'Proxima-Nova-Regular';
+  font-weight: bold;
+  color: black;
+}
+
+* {
+  font-family: 'Proxima-Nova-Regular';
+  color: whitesmoke;
+}
+
+::selection {
+  background: #16F5C4;
+  color: white;
+  /* WebKit/Blink Browsers */
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: rgba(255, 255, 255, 0);
+}
+
+a {
+  font-family: 'Proxima-Nova-Regular';
+}
+
+.NoSelection {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, #536976, #292E49);
+}
+
+.portal-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(8, 1, 1);
+}
+
+.back-arrow-container {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+.back-arrow-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.avatar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+}
+
+.title {
+  font-size: 65px;
+  text-align: center;
+}
+
+.link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.subtitle {
+  font-size: 22px;
+  margin-top: 20px;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 40px;
+  width: 200px;
+  justify-content: space-between;
+}
+
+.links-icon {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+}
+
+.close-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.lock-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 450px;
+  height: 220px;
+}
+
+.lock-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.lock-input-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.phrase-input {
+  width: 200px;
+  height: 45px;
+  color: black;
+  background-color: white;
+  border:1px solid rgb(220, 213, 213);
+  border-radius: 3px;
+  font-size: 18px;
+  font-family: 'Futura';
+  padding-left: 20px;
+  outline: none;
+}
+
+.error {
+  border-color: #F61666;
+  border-width: 2px;
+}
+
+.lock-error-message {
+  color: #F61666;
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.tries-message {
+  color: black;
+  margin-top: 10px;
+  font-size: 15px;
+  font-family: 'Proxima-Nova-Regular';
+}
+
+.dock-avatar {
+  border-radius: 2em;
+}
+
+.About {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.AboutLeftContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.AboutRightContainer {
+  flex: 2;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-right: 50px;
+}
+
+.ProfileImageContainer {
+  flex: 1;
+  margin-top: 50px;
+}
+
+.ProfileImage {
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+}
+
+.LogosImageContainer {
+  flex: 2;
+  flex-direction: column;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.LogosImageRow {
+  flex: 1;
+  flex-direction: row;
+}
+
+.Logo {
+  height: 35px;
+  width: 35px;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-top: 20px;
+}
+
+.AboutText {
+  font-size: 18px;
+  color: #CBDBD7;
+  font-family: 'Proxima-Nova-Regular';
+}
+
+.IntroHello {
+  font-family: 'Futura-PT-Medium';
+  font-size: 22px;
+  font-weight: bold;
+  color: #16F5C4;
+  letter-spacing: 0px;
+}
+
+.Inline {
+  display: inline;
+}
+
+.Bold {
+  font-weight: bold;
+  color: #16F5C4;
+}
+
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-row {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.link-icon {
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+}
+
+.link-title {
+  font-size: 38px;
+  color: #CBDBD7;
+  font-family: 'Proxima-Nova-Regular';
+  text-decoration: none;
+}
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  margin-bottom: 100px;
+}
+
+.chart-row-container {
+  display: flex;
+  flex: 1;
+}
+
+.chart-container {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-1 {
+  background: linear-gradient(to bottom right, #00c6ff, #0072ff);
+}
+
+.container-2 {
+  flex: 2;
+  background: linear-gradient(to bottom right, #FFAFBD, #ffc3a0);
+}
+
+.container-3 {
+  flex: 2;
+  flex-direction: column;
+  background: linear-gradient(to bottom right, #fd746c, #ff9068);
+}
+
+.container-heading {
+  font-size: 22px;
+  position: relative;
+  top: 50px;
+  left: 0;
+}
+
+.container-4 {
+  background: linear-gradient(to bottom right, #AAFFA9, #11FFBD);
+}
