@@ -2,7 +2,7 @@
 
 This repo serves as an introduction to Github & web dev & React for MobileSpace Season 2 community members.
 
-### [Demo](https://mobilespace-members.netlify.com/)
+### [Demo - Website](https://mobilespace-members.netlify.com/)
 
 ## Getting started
 
@@ -18,9 +18,7 @@ Are you part of the MobileSpace Season 2 community? If so, please complete the f
 ### TODO
 
 - [x] Submit a PR adding yourself to this website
-
 - [x] :star: **Bonus:** Change the `background` & `font-family` on your own homepage
-
 - [x] :star: **Bonus:** Change the layout on your own homepage and add more relevant information to it
 
 ### Rockstars
@@ -28,8 +26,6 @@ Are you part of the MobileSpace Season 2 community? If so, please complete the f
 ![Girish Homepage](./screenshots/girish-homepage.gif)
 ![Ryan Homepage](./screenshots/ryan-homepage.gif)
 ![Bhavesh Homepage](./screenshots/bhavesh-homepage.gif)
-
-<br />
 
 ## Assignment #2
 
@@ -41,20 +37,15 @@ Are you part of the MobileSpace Season 2 community? If so, please complete the f
 ### TODO
 
 - [x] [Create a locked screen with a secret phrase](https://i.redd.it/qes864onsgc01.png)
-
 - [x] [Create a protected dashboard with the following 3 pages:](https://dribbble.com/tags/dashboard_ui)
   - [x] [Victory Charts Page](http://formidable.com/open-source/victory/) - Create 4 total charts - 1 of them has to be a custom chart made specifically for your dashboard
   - [x] Resume Viewer/ Portfolio Page
   - [x] Profile Page
-
+- [x] :star: **Bonus:** Dig deeper into [Victory docs](http://formidable.com/open-source/victory/docs/) & create customized charts. Also update the layout on the dashbord. Look [here](https://dribbble.com/tags/dashboard_ui) for inspiration (dribble)
 - [ ] :star: **Bonus:** Change the secret phrase to a password & change locked screen UI
   - [ ] :star: **Bonus:** Allow users to change secret phrase/password (update `secret = 'new_secret'` on SessionStorage)
-
 - [ ] :star: **Bonus:** Cache whether the user entered the right secret phrase/password on the browser (update `unlocked = true` on SessionStorage)
   - [ ] :star: **Bonus:** Logout feature on dashboard (update `unlocked = false` on SessionStorage)
-
-- [x] :star: **Bonus:** Dig deeper into [Victory docs](http://formidable.com/open-source/victory/docs/) & create customized charts. Also update the layout on the dashbord. Look [here](https://dribbble.com/tags/dashboard_ui) for inspiration (dribble).
-
 - [ ] :star: **Bonus:** Create a custom dashboard or use [ReactDnd Library](https://github.com/react-dnd/react-dnd) to allow the user to change the dock's position (top, left, right, bottom (default))
 
 ### Rockstars
@@ -62,8 +53,6 @@ Are you part of the MobileSpace Season 2 community? If so, please complete the f
 ![Girish Homepage](./screenshots/emanuel-locked.png)
 ![Ryan Homepage](./screenshots/jakhongir-dashboard.png)
 ![Bhavesh Homepage](./screenshots/bhavesh-dashboard.png)
-
-<br />
 
 ## Problems?
 
