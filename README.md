@@ -1,13 +1,12 @@
 # MobileSpace - Community Members
 
-This repo serves as an introduction to Git & Github for MobileSpace Season 2 community members.
+This repo serves as an introduction to Github & web dev & React for MobileSpace Season 2 community members.
 
 ### [Demo](https://mobilespace-members.netlify.com/)
 
 ## Getting started
 
-Are you part of the MobileSpace Season 2 community? If so, please complete the following assignments and submit a pull request here!
-Someone will review (and merge) it.
+Are you part of the MobileSpace Season 2 community? If so, please complete the following assignments and submit a pull request here! Someone will review (and merge) it.
 
 ## Assignment #1
 
@@ -41,22 +40,30 @@ Someone will review (and merge) it.
 
 ### TODO
 
-- [ ] [Create a locked screen with a secret phrase](https://i.redd.it/qes864onsgc01.png)
+- [x] [Create a locked screen with a secret phrase](https://i.redd.it/qes864onsgc01.png)
 
-- [ ] [Create a protected dashboard with the following 3 pages:](https://dribbble.com/tags/dashboard_ui)
-  - [ ] [Victory Charts Page](http://formidable.com/open-source/victory/) - Create 4 total charts - 1 of them has to be a custom chart made specifically for your dashboard
-  - [ ] Resume Viewer/ Portfolio Page
-  - [ ] Profile Page
+- [x] [Create a protected dashboard with the following 3 pages:](https://dribbble.com/tags/dashboard_ui)
+  - [x] [Victory Charts Page](http://formidable.com/open-source/victory/) - Create 4 total charts - 1 of them has to be a custom chart made specifically for your dashboard
+  - [x] Resume Viewer/ Portfolio Page
+  - [x] Profile Page
 
 - [ ] :star: **Bonus:** Change the secret phrase to a password & change locked screen UI
-  - [ ] :star: **Bonus:** Allow users to change secret phrase/password (update `secret = 'new_secret'` on browser's cache)
+  - [ ] :star: **Bonus:** Allow users to change secret phrase/password (update `secret = 'new_secret'` on SessionStorage)
 
-- [ ] :star: **Bonus:** Cache whether the user entered the right secret phrase/password on the browser (update `unlocked = true` on browser's cache)
-  - [ ] :star: **Bonus:** Logout feature on dashboard (update `unlocked = false` on browser's cache)
+- [ ] :star: **Bonus:** Cache whether the user entered the right secret phrase/password on the browser (update `unlocked = true` on SessionStorage)
+  - [ ] :star: **Bonus:** Logout feature on dashboard (update `unlocked = false` on SessionStorage)
 
-- [ ] :star: **Bonus:** Dig deeper into [Victory docs](http://formidable.com/open-source/victory/docs/) & create customized charts. Also update the layout on the dashbord. Look [here](https://dribbble.com/tags/dashboard_ui) for inspiration (dribble).
+- [x] :star: **Bonus:** Dig deeper into [Victory docs](http://formidable.com/open-source/victory/docs/) & create customized charts. Also update the layout on the dashbord. Look [here](https://dribbble.com/tags/dashboard_ui) for inspiration (dribble).
 
 - [ ] :star: **Bonus:** Create a custom dashboard or use [ReactDnd Library](https://github.com/react-dnd/react-dnd) to allow the user to change the dock's position (top, left, right, bottom (default))
+
+### Rockstars
+
+![Girish Homepage](./screenshots/emanuel-locked.png)
+![Ryan Homepage](./screenshots/jakhongir-dashboard.png)
+![Bhavesh Homepage](./screenshots/bhavesh-dashboard.png)
+
+<br />
 
 ## Problems?
 
