@@ -70,4 +70,58 @@
     width: 40px;
     height: 40px;
     background: transparent;
-  }  
+  }
+  
+  .William-main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #000000, rgb(69, 69, 70));
+  }
+
+  .William-dashboard-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw; 
+    color: white; 
+    align-content: center; 
+    justify-content: center; }
+
+  .William-chart-row-container{
+    display: flex; 
+    background: white;
+    justify-content: space-around; 
+    align-content: space-around;
+     
+  }
+  .William-chart-container-1 {
+    flex: 9; 
+  }
+  .William-chart-div-1 {
+    flex: 1; 
+    background:black;
+  }
+  .William-chart-container-2{
+    flex:9;
+    background:white; 
+  }
+  .William-chart-div-2{
+    flex:1; 
+    background:red; 
+  }
+  William-chart-container-3{
+    flex:9; 
+    background: white; 
+  }
+  .William-chart-div-3{
+    flex:1; 
+    background: black;
+  }
+  .William-chart-container-4{
+    flex:9;
+    background: white; 
+  }

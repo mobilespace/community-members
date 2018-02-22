@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import '../styles/WilliamHua.css'
+import '../../styles/WilliamHua.css'
 
-import LeftArrow from '../assets/left-arrow.png';
+import LeftArrow from '../../assets/left-arrow.png';
 
 const WILLIAM_AVATAR = 'https://avatars3.githubusercontent.com/u/36139326?s=460&v=4'
 
