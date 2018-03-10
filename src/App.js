@@ -36,7 +36,7 @@ export default class App extends Component {
           <Link to="/mitul/locked">
             <img className="landing-page-avatar" src={MITUL_AVATAR} />
           </Link>
-          <Link to="/william">
+          <Link to="/william/locked">
             <img className="landing-page-avatar" src={WILLIAM_AVATAR} />
           </Link>
           <Link to="/teodora/locked">

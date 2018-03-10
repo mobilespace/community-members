@@ -31,7 +31,10 @@ import RyanSettings from './members/RyanLiszewski/Settings';
 import RyanProfile from './members/RyanLiszewski/Profile';
 import RyanPortfolio from './members/RyanLiszewski/Portfolio';
 
-import William from './members/WilliamHua';
+import WilliamDashboard from './members/WilliamHua/Dashboard';
+import WilliamLocked from './portals/WilliamHua';
+import WilliamPortfolio from './members/WilliamHua/Portfolio';
+import WilliamProfile from './members/WilliamHua/Profile';
 
 import TeodoraDashboard from './members/TeodoraCaneva/Dashboard';
 import TeodoraPortfolio from './members/TeodoraCaneva/Portfolio';
@@ -141,6 +144,12 @@ const Routes = (props) => {
         <Route path="/mitul/portfolio" component={MitulPortfolio} />
         <Route path="/mitul/profile" component={MitulProfile} />
 
+        <Route exact path="/william" component={WilliamDashboard} />
+        <Route exact path="/william/dashboard" component={WilliamDashboard} />
+        <Route path="/william/locked" component={WilliamLocked} />
+        <Route path="/william/profile" component={WilliamProfile} />
+        <Route path="/william/portfolio" component={WilliamPortfolio} />
+
         <Route exact path="/thomas" component={ThomasDashboard} />
         <Route path="/thomas/dashboard" component={ThomasDashboard} />
         <Route path="/thomas/portfolio" component={ThomasPortfolio} />
@@ -157,7 +166,6 @@ const Routes = (props) => {
         <Route path="/karan/locked" component={KaranLocked} />
         
         <Route path="/affaan" component={Affaan} />
-        <Route path="/william" component={William} />
       </Switch>
     </Router>
   )
